@@ -1,0 +1,3 @@
+pager_cmd_next  =$(cmd_name)$(cmd_args) $(pager_page_next)
+pager_ok        =$(color_cmd_info)Страница $(pager_page_curr) из $(pager_page_total). Чтобы посмотреть следующую страницу наберите: $(pager_cmd_next)
+pager_error     =$(color_cmd_error)Страница $(pager_page_curr) не найдена. Чтобы посмотреть первую страницу наберите: $(pager_cmd_next)

@@ -1,0 +1,16 @@
+<server_properties>    
+    !if $(game) == sa
+        name_suffix=SA
+    !endif
+    !if $(game) == united
+        name_suffix=United
+    !endif
+    !if $(game) == gostown
+        name_suffix=Gostown
+    !endif
+    !if $(game) == anderius
+        name_suffix=Anderius
+    !endif
+    #≈сли не задан IP адрес, он беретс€ из bind сервера
+    #address=127.0.0.1
+</server_properties>

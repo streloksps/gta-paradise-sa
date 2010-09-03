@@ -1,0 +1,13 @@
+cmd_comment_info_section            =$(cmd_section_admin_man)
+cmd_comment_info_name               =/комментарии
+cmd_comment_info_params             =
+cmd_comment_info_short              =выводит инструкцию по комментариям для команд наказания
+cmd_comment_info_text               =$(color_cmd_head)Комментарии для команд: $(cmd_mute_name)\n\
+                                     $(color_cmd_text) $(comment_rules_prefix)1-$(comment_rules_prefix)X заменяется на соответствующие пункты правил\n\
+                                     $(color_cmd_text) Например, комментарий\n\
+                                     $(color_cmd_info)  $(comment_rules_prefix)2\n\
+                                     $(color_cmd_text) заменится на тект правила 2
+
+comment_rules_prefix                =п
+#comment_rules_text                  =Нарушение пункта правил $(rule_nn): $(rule). См. $(cmd_rules_name)
+comment_rules_text                  =Нарушение пункта $(rule_nn) правил. См. $(cmd_rules_name)

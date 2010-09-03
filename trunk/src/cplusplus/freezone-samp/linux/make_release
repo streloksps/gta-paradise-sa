@@ -1,0 +1,21 @@
+#
+# Компиляция в релиз режим
+echo boost dir: $FREE_MODE_BOOST_DIR
+
+if [ -z $FREE_MODE_BOOST_DIR -o ! -d $FREE_MODE_BOOST_DIR ]; then
+    echo error: boost dir not set
+    # можно прописать в .bashrc
+    exit 1
+fi
+
+work_dir=../../../../obj/freezone_linux_release
+
+if [ ! -d $work_dir ]; then mkdir -p $work_dir; fi
+
+# Так отладка возможна
+#make boost_libs_suffix="-gcc41-mt.a" compile_flags="-O3 -g -DLINUX -DNDEBUG"                      --directory=$work_dir --makefile=../src/cplusplus/freemode/linux/makefile
+# Профайлинг
+#make boost_libs_suffix="-gcc41-mt.a" compile_flags="-O2 -g -pg -DLINUX -DNDEBUG" link_flags="-g -pg -fPIC -shared" --directory=$work_dir --makefile=../src/cplusplus/freemode/linux/makefile
+
+# Данные параметры (-fomit-frame-pointer) делают не возможной отладку
+make boost_libs_suffix="-gcc43-mt.a" compile_flags="-O3 -mfpmath=sse -msse3 -DLINUX -DNDEBUG" link_flags="-fPIC -shared" --directory=$work_dir --makefile=../../src/cplusplus/freezone-samp/linux/makefile

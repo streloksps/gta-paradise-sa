@@ -1,0 +1,659 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="libs">
+      <UniqueIdentifier>{a8abad90-8226-4386-a33a-a2cf6e74d7c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{7530dd23-262d-43fb-b58b-0361d47b4541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="windows">
+      <UniqueIdentifier>{995028d8-9abf-423d-8c7d-60681e27cacf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\buffer">
+      <UniqueIdentifier>{51621e10-eb56-4584-bd00-902de6ba7e58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\command">
+      <UniqueIdentifier>{ff56284d-d188-495c-9e09-99b056c38d9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\container">
+      <UniqueIdentifier>{3bb3f452-498b-4f6c-85ae-6c7c81b7646f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\geo">
+      <UniqueIdentifier>{76c145cc-eeda-430a-9db5-e33d98bd0eda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\geo\detail">
+      <UniqueIdentifier>{9cef872c-d473-49fd-a1e6-1732fa7101f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\logger">
+      <UniqueIdentifier>{5c4ea1a1-8ea2-4918-bb2f-187f35ba0ecd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\messages">
+      <UniqueIdentifier>{1f92a848-fe60-4b49-a256-ff8f5b1e2ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\messages\player_messages">
+      <UniqueIdentifier>{c15dc766-a8ca-42a3-a9e4-9f0e6ba0c307}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\player">
+      <UniqueIdentifier>{3c9db629-3120-4507-ad04-6281bc8eda2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\samp">
+      <UniqueIdentifier>{8b873fa1-f0e7-4d27-ab0c-0636f9c575a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\samp\pawn">
+      <UniqueIdentifier>{c81238e9-4088-493e-bd81-c04a177ec6a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\serialization">
+      <UniqueIdentifier>{08a129f2-d332-4d10-998b-abc983d002bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core\utility">
+      <UniqueIdentifier>{1960bdac-3820-44bf-9fcd-9d4acd45727b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="build">
+      <UniqueIdentifier>{baddc051-b516-436d-a6be-92eda79dff00}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\core\buffer\buffer.cpp">
+      <Filter>core\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\buffer\buffer_reader.cpp">
+      <Filter>core\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\buffer\buffer_writer.cpp">
+      <Filter>core\buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\command\command_adder.cpp">
+      <Filter>core\command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\command\command_manager.cpp">
+      <Filter>core\command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\container\container.cpp">
+      <Filter>core\container</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\geo_data_base.cpp">
+      <Filter>core\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\geo_ip_info.cpp">
+      <Filter>core\geo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_asnum.cpp">
+      <Filter>core\geo\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_city.cpp">
+      <Filter>core\geo\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_country.cpp">
+      <Filter>core\geo\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_db.cpp">
+      <Filter>core\geo\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_ip_check.cpp">
+      <Filter>core\geo\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_localization.cpp">
+      <Filter>core\geo\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_org.cpp">
+      <Filter>core\geo\detail</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\logger\logger.cpp">
+      <Filter>core\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\logger\logger_writer.cpp">
+      <Filter>core\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\messages_item.cpp">
+      <Filter>core\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\messages_pager.cpp">
+      <Filter>core\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\messages_params.cpp">
+      <Filter>core\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\messages_sender.cpp">
+      <Filter>core\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\messages_storage.cpp">
+      <Filter>core\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\messages_writers.cpp">
+      <Filter>core\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\server_properties.cpp">
+      <Filter>core\messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\player_messages\chat_msg_item.cpp">
+      <Filter>core\messages\player_messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\player_messages\player_messages.cpp">
+      <Filter>core\messages\player_messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\player_messages\tags.cpp">
+      <Filter>core\messages\player_messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\messages\player_messages\tags_less.cpp">
+      <Filter>core\messages\player_messages</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\player\player.cpp">
+      <Filter>core\player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\player\player_less.cpp">
+      <Filter>core\player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\samp\samp_api.cpp">
+      <Filter>core\samp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\samp\samp_events.cpp">
+      <Filter>core\samp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\samp\samp_hook_events.cpp">
+      <Filter>core\samp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\samp\samp_hook_events_addresses.cpp">
+      <Filter>core\samp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\samp\samp_hook_events_network.cpp">
+      <Filter>core\samp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\samp\pawn\pawn_log.cpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\samp\pawn\pawn_plugin.cpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\utility\integer_expression_calc.cpp">
+      <Filter>core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\utility\locale_ru.cpp">
+      <Filter>core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\utility\path_works.cpp">
+      <Filter>core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\utility\timestuff.cpp">
+      <Filter>core\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\application.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\chronometer.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\npc.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\npcs.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\players.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\time_outs.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\timers.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\ver.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\active_points.cpp" />
+    <ClCompile Include="..\src\checkpoints.cpp" />
+    <ClCompile Include="..\src\develop_tools.cpp" />
+    <ClCompile Include="..\src\disable_onfoot_enter.cpp" />
+    <ClCompile Include="..\src\game.cpp" />
+    <ClCompile Include="..\src\ipl_loader.cpp" />
+    <ClCompile Include="..\src\map_icons.cpp" />
+    <ClCompile Include="..\src\master_list_announce.cpp" />
+    <ClCompile Include="..\src\mta10_loader.cpp" />
+    <ClCompile Include="..\src\npc_dev.cpp" />
+    <ClCompile Include="..\src\npc_taxi.cpp" />
+    <ClCompile Include="..\src\objects.cpp" />
+    <ClCompile Include="..\src\pickups.cpp" />
+    <ClCompile Include="..\src\player_animation.cpp" />
+    <ClCompile Include="..\src\player_authorization.cpp" />
+    <ClCompile Include="..\src\player_chat.cpp" />
+    <ClCompile Include="..\src\player_chat_automute_meaningless.cpp" />
+    <ClCompile Include="..\src\player_classes.cpp" />
+    <ClCompile Include="..\src\player_color.cpp" />
+    <ClCompile Include="..\src\player_connection.cpp" />
+    <ClCompile Include="..\src\player_free_for_all.cpp" />
+    <ClCompile Include="..\src\player_gamepause.cpp" />
+    <ClCompile Include="..\src\player_health.cpp" />
+    <ClCompile Include="..\src\player_info.cpp" />
+    <ClCompile Include="..\src\player_money.cpp" />
+    <ClCompile Include="..\src\player_mute.cpp" />
+    <ClCompile Include="..\src\player_name.cpp" />
+    <ClCompile Include="..\src\player_position.cpp" />
+    <ClCompile Include="..\src\player_prison.cpp" />
+    <ClCompile Include="..\src\player_spectate.cpp" />
+    <ClCompile Include="..\src\profile_cpu.cpp" />
+    <ClCompile Include="..\src\rules.cpp" />
+    <ClCompile Include="..\src\server.cpp" />
+    <ClCompile Include="..\src\server_announcements.cpp" />
+    <ClCompile Include="..\src\server_configuration.cpp" />
+    <ClCompile Include="..\src\server_guard.cpp" />
+    <ClCompile Include="..\src\server_news.cpp" />
+    <ClCompile Include="..\src\spheres.cpp" />
+    <ClCompile Include="..\src\system_call.cpp" />
+    <ClCompile Include="..\src\tester.cpp" />
+    <ClCompile Include="..\src\text_draw.cpp" />
+    <ClCompile Include="..\src\vehicle.cpp" />
+    <ClCompile Include="..\src\vehicles.cpp" />
+    <ClCompile Include="..\src\weapons.cpp" />
+    <ClCompile Include="pch.cpp">
+      <Filter>build</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\core\samp\pawn\pawn_events.cpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\player_ban_serial.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\core\buffer\buffer.hpp">
+      <Filter>core\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\buffer\buffer_filters.hpp">
+      <Filter>core\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\buffer\buffer_fwd.hpp">
+      <Filter>core\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\buffer\buffer_reader.hpp">
+      <Filter>core\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\buffer\buffer_variables.hpp">
+      <Filter>core\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\buffer\buffer_writer.hpp">
+      <Filter>core\buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\command\command_adder.hpp">
+      <Filter>core\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\command\command_manager.hpp">
+      <Filter>core\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\command\command_type.hpp">
+      <Filter>core\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\container\application_item.hpp">
+      <Filter>core\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\container\container.hpp">
+      <Filter>core\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\container\container_fwd.hpp">
+      <Filter>core\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\container\container_handlers.hpp">
+      <Filter>core\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\container\container_item.hpp">
+      <Filter>core\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\container\container_item_fwd.hpp">
+      <Filter>core\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\container\npc_item.hpp">
+      <Filter>core\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\container\player_item.hpp">
+      <Filter>core\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\geo_data_base.hpp">
+      <Filter>core\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\geo_ip_info.hpp">
+      <Filter>core\geo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter.hpp">
+      <Filter>core\geo\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_asnum.hpp">
+      <Filter>core\geo\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_city.hpp">
+      <Filter>core\geo\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_country.hpp">
+      <Filter>core\geo\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_db.hpp">
+      <Filter>core\geo\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_ip_check.hpp">
+      <Filter>core\geo\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_localization.hpp">
+      <Filter>core\geo\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_org.hpp">
+      <Filter>core\geo\detail</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\logger\logger.hpp">
+      <Filter>core\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\logger\logger_writer.hpp">
+      <Filter>core\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\messages_item.hpp">
+      <Filter>core\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\messages_pager.hpp">
+      <Filter>core\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\messages_params.hpp">
+      <Filter>core\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\messages_sender.hpp">
+      <Filter>core\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\messages_storage.hpp">
+      <Filter>core\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\messages_writers.hpp">
+      <Filter>core\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\server_properties.hpp">
+      <Filter>core\messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\player_messages\chat_msg_item.hpp">
+      <Filter>core\messages\player_messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\player_messages\player_messages.hpp">
+      <Filter>core\messages\player_messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\player_messages\tags.hpp">
+      <Filter>core\messages\player_messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\messages\player_messages\tags_less.hpp">
+      <Filter>core\messages\player_messages</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\player\player.hpp">
+      <Filter>core\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\player\player_fwd.hpp">
+      <Filter>core\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\player\player_i.hpp">
+      <Filter>core\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\player\player_less.hpp">
+      <Filter>core\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\player\player_t.hpp">
+      <Filter>core\player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_api.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_events.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_events_i.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_events_t.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_hook_events.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_hook_events_addresses.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_hook_events_i.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_hook_events_network.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\samp_hook_events_t.hpp">
+      <Filter>core\samp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\pawn\pawn_amx_fwd.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\pawn\pawn_demarshaling.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\pawn\pawn_log.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\pawn\pawn_plugin.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\pawn\pawn_plugin_i.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\serialization\configuradable.hpp">
+      <Filter>core\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\serialization\is_streameble.hpp">
+      <Filter>core\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\serialization\serialization.hpp">
+      <Filter>core\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\serialization\serialization_regex_t.hpp">
+      <Filter>core\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\serialization\storage.hpp">
+      <Filter>core\serialization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\directory.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\erase_if.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\integer_expression_calc.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\locale_ru.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\math.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\path_works.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\stream_filters.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\strings.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\utility\timestuff.hpp">
+      <Filter>core\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\application.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\chronometer.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\createble_i.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\debug.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\dynamic_items.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\game_context.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\keyboard.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\module_c.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\module_h.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\npc.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\npc_fwd.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\npc_i.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\npc_t.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\npcs.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\npcs_handlers.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\npcs_i.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\players.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\players_handlers.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\players_i.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\sounds.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\streamer.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\streamer_coord_works.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\streamer_grid.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\time_count_blocker.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\time_outs.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\timers.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\timers_i.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\ver.hpp">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\active_points.hpp" />
+    <ClInclude Include="..\src\basic_loader_t.hpp" />
+    <ClInclude Include="..\src\basic_types.hpp" />
+    <ClInclude Include="..\src\checkpoints.hpp" />
+    <ClInclude Include="..\src\checkpoints_t.hpp" />
+    <ClInclude Include="..\src\config.hpp" />
+    <ClInclude Include="..\src\develop_tools.hpp" />
+    <ClInclude Include="..\src\disable_onfoot_enter.hpp" />
+    <ClInclude Include="..\src\disable_onfoot_enter_t.hpp" />
+    <ClInclude Include="..\src\game.hpp" />
+    <ClInclude Include="..\src\ipl_loader.hpp" />
+    <ClInclude Include="..\src\ipl_loader_t.hpp" />
+    <ClInclude Include="..\src\limit.hpp" />
+    <ClInclude Include="..\src\map_icons.hpp" />
+    <ClInclude Include="..\src\map_icons_t.hpp" />
+    <ClInclude Include="..\src\master_list_announce.hpp" />
+    <ClInclude Include="..\src\mta10_loader.hpp" />
+    <ClInclude Include="..\src\mta10_loader_t.hpp" />
+    <ClInclude Include="..\src\npc_dev.hpp" />
+    <ClInclude Include="..\src\npc_taxi.hpp" />
+    <ClInclude Include="..\src\npc_taxi_t.hpp" />
+    <ClInclude Include="..\src\objects.hpp" />
+    <ClInclude Include="..\src\objects_t.hpp" />
+    <ClInclude Include="..\src\pickups.hpp" />
+    <ClInclude Include="..\src\pickups_t.hpp" />
+    <ClInclude Include="..\src\player_animation.hpp" />
+    <ClInclude Include="..\src\player_animation_t.hpp" />
+    <ClInclude Include="..\src\player_authorization.hpp" />
+    <ClInclude Include="..\src\player_chat.hpp" />
+    <ClInclude Include="..\src\player_chat_automute_meaningless.hpp" />
+    <ClInclude Include="..\src\player_chat_automute_meaningless_t.hpp" />
+    <ClInclude Include="..\src\player_chat_regex_t.hpp" />
+    <ClInclude Include="..\src\player_classes.hpp" />
+    <ClInclude Include="..\src\player_classes_t.hpp" />
+    <ClInclude Include="..\src\player_color.hpp" />
+    <ClInclude Include="..\src\player_color_t.hpp" />
+    <ClInclude Include="..\src\player_connection.hpp" />
+    <ClInclude Include="..\src\player_connection_i.hpp" />
+    <ClInclude Include="..\src\player_free_for_all.hpp" />
+    <ClInclude Include="..\src\player_free_for_all_t.hpp" />
+    <ClInclude Include="..\src\player_gamepause.hpp" />
+    <ClInclude Include="..\src\player_health.hpp" />
+    <ClInclude Include="..\src\player_health_i.hpp" />
+    <ClInclude Include="..\src\player_info.hpp" />
+    <ClInclude Include="..\src\player_money.hpp" />
+    <ClInclude Include="..\src\player_mute.hpp" />
+    <ClInclude Include="..\src\player_name.hpp" />
+    <ClInclude Include="..\src\player_position.hpp" />
+    <ClInclude Include="..\src\player_prison.hpp" />
+    <ClInclude Include="..\src\player_spectate.hpp" />
+    <ClInclude Include="..\src\player_spectate_i.hpp" />
+    <ClInclude Include="..\src\pos_change_checker.hpp" />
+    <ClInclude Include="..\src\profile_cpu.hpp" />
+    <ClInclude Include="..\src\rules.hpp" />
+    <ClInclude Include="..\src\server.hpp" />
+    <ClInclude Include="..\src\server_announcements.hpp" />
+    <ClInclude Include="..\src\server_configuration.hpp" />
+    <ClInclude Include="..\src\server_guard.hpp" />
+    <ClInclude Include="..\src\server_news.hpp" />
+    <ClInclude Include="..\src\server_paths.hpp" />
+    <ClInclude Include="..\src\sphere_t.hpp" />
+    <ClInclude Include="..\src\spheres.hpp" />
+    <ClInclude Include="..\src\system_call.hpp" />
+    <ClInclude Include="..\src\tester.hpp" />
+    <ClInclude Include="..\src\text_draw.hpp" />
+    <ClInclude Include="..\src\vehicle.hpp" />
+    <ClInclude Include="..\src\vehicle_fwd.hpp" />
+    <ClInclude Include="..\src\vehicles.hpp" />
+    <ClInclude Include="..\src\vehicles_t.hpp" />
+    <ClInclude Include="..\src\weapons.hpp" />
+    <ClInclude Include="..\src\weapons_t.hpp" />
+    <ClInclude Include="..\src\world_item_t.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_events.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\player_ban_serial.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling_amx.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling_param.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling_params.hpp">
+      <Filter>core\samp\pawn</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\windows\freemode.rc">
+      <Filter>windows</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\shared\freezone_ver.inc">
+      <Filter>build</Filter>
+    </None>
+  </ItemGroup>
+</Project>

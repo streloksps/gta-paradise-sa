@@ -1,0 +1,4 @@
+casino_disabled_msg=$(color_cmd_error)јзартные игры на сервере запрещены
+
+disable_onfoot_enter_done_player=$(zone_msg)
+disable_onfoot_enter_done_log=<log_section onfootenter/>$(player_name_full) $(zone_name)

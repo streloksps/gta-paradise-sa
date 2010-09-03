@@ -1,0 +1,15 @@
+# Ресурсы защитника сервера
+
+#server_guard_on_bad_rcon_external       =<log_section guard/badrcon/external/>$(ip)
+#server_guard_on_bad_rcon_local          =<log_section guard/badrcon/local/>$(player_name) '$(password)'
+#server_guard_on_network_connect         =<log_section guard/network/connect/>$(ip):$(port)
+#server_guard_on_network_disconnect      =<log_section guard/network/disconnect/>$(ip):$(port) $(connection_time)
+
+#server_guard_on_network_rcon_external   =<log_section guard/rconcmd/>'$(password)' '$(cmd)' ($(ip))
+
+#server_guard_ban_rcon_external          =<log_section guard/ban/bad_ext_rcon/>$(ip)
+#server_guard_ban_network                =<log_section guard/ban/network/>$(ip)
+server_guard_ban_component              =<log_section guard/ban/component/>$(player_name) $(vehicle_id) $(model_id) $(component_id) $(ip)
+
+server_guard_shutdown_onload_fs         =<log_section guard/security/onloadfs/>Ошибка целостности: попытка загрузить фильтрскрипт
+server_guard_shutdown_token             =<log_section guard/security/token/>Ошибка целостности: неправильные файлы мода или фильтр скрипта

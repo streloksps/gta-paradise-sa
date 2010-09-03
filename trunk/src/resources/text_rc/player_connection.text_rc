@@ -1,0 +1,97 @@
+player_connection_connect_admins                =$(color_server_for_admin)<nonewline/>> $(player_name_full) подключился гео: $(player_geo_long_desc)
+player_connection_connect_log                   =<log_section connection/connect/>$(player_name_full) ($(player_geo_long_desc)) {$(player_serial)}
+
+player_connection_ingame_players                =$(color_server_for_user)> $(player_name_full) вошел в игру $(player_county)
+player_connection_ingame_log                    =<log_section enter_to_game/>$(player_name_full)
+
+player_connection_death_reason_suffix           =_($(suffix))
+
+player_connection_ingame_death_reason           =$(player_name)$(player_connection_death_reason_suffix)
+
+player_connection_disconect_time_out_suffix     =T
+player_connection_disconect_quit_suffix         =Q
+player_connection_disconect_kickban_suffix      =R
+player_connection_disconect_kick_suffix         =KIC
+player_connection_disconect_ban_suffix          =BAN
+
+player_connection_disconect_death_reason        =$(player_name)$(player_connection_death_reason_suffix)
+
+player_connection_disconect_time_out_players    =$(color_server_for_user)< $(player_name_full) отключился из-за потери связи
+player_connection_disconect_quit_players        =$(color_server_for_user)< $(player_name_full) ушел
+player_connection_disconect_kickban_players     =$(color_server_for_user)< $(player_name_full) был кикнут или забанен
+player_connection_disconect_kick_players        =$(color_server_for_user)< $(player_name_full) кикнут: $(reason)
+player_connection_disconect_ban_players         =$(color_server_for_user)< $(player_name_full) забанен: $(reason)
+
+player_connection_disconect_time_out_admins     =$(color_server_for_admin)<nonewline/>< $(player_name_full) обрыв гео: $(player_geo_long_desc)
+player_connection_disconect_quit_admins         =$(color_server_for_admin)<nonewline/>< $(player_name_full) ушел гео: $(player_geo_long_desc)
+player_connection_disconect_kickban_admins      =$(color_server_for_admin)<nonewline/>< $(player_name_full) rcon кик-бан гео: $(player_geo_long_desc)
+kick_admins                                     =$(color_server_for_admin)<nonewline/>< $(player_name_full) кикнут $(admin_name_full): $(reason_raw), гео: $(player_geo_long_desc)
+ban_admins                                      =$(color_server_for_admin)<nonewline/>< $(player_name_full) забанен $(admin_name_full): $(reason_raw), гео: $(player_geo_long_desc)
+
+player_connection_disconect_time_out_log        =<log_section connection/disconnect/time_out/>$(player_name_full) $(player_time_connection) $(player_time_ingame) ($(player_geo_long_desc)) {$(player_serial)}
+player_connection_disconect_quit_log            =<log_section connection/disconnect/quit/>$(player_name_full) $(player_time_connection) $(player_time_ingame) ($(player_geo_long_desc)) {$(player_serial)}
+player_connection_disconect_kickban_log         =<log_section connection/disconnect/rconkickban/>$(player_name_full) $(player_time_connection) $(player_time_ingame) ($(player_geo_long_desc)) {$(player_serial)}
+kick_log                                        =<log_section connection/disconnect/kick/>$(player_name_full) $(player_time_connection) $(player_time_ingame) кикнут $(admin_name_full) '$(reason_raw)' ($(player_geo_long_desc)) {$(player_serial)}
+ban_log                                         =<log_section connection/disconnect/ban/>$(player_name_full) $(player_time_connection) $(player_time_ingame) забанен $(admin_name_full) '$(reason_raw)' ($(player_geo_long_desc)) {$(player_serial)}
+
+player_connection_max_players_begin_log         =<log_section players_max/begin/>
+player_connection_max_players_end_log           =<log_section players_max/end/>$(time)
+
+cmd_countries_section                           =$(cmd_section_info)
+cmd_countries_name                              =/страны
+cmd_countries_params                            =[номер_страницы]
+cmd_countries_short                             =выводит список стран игроков сервера
+cmd_countries_full                              =
+
+cmd_countries_header                            =$(color_cmd_head)Страны игроков, присутствующих на сервере
+cmd_countries_header_country                    =$(color_cmd_sub_head) $(country) ($(country_count)):
+cmd_countries_item                              =$(color_cmd_text)<preffix __/>$(item);_
+cmd_countries_unknown                           =неизвестно
+
+
+cmd_geo_section                                 =$(cmd_section_admin_info)
+cmd_geo_name                                    =/гео
+cmd_geo_params                                  =ид_игрока|ip
+cmd_geo_short                                   =выводит подробную информацию по игроку или по ip адресу
+cmd_geo_full                                    =
+
+cmd_geo_ip_to_player                            =$(color_cmd_text)Гео: $(geo_long_desc)
+cmd_geo_ip_to_log                               =<log_section geo/ip/>$(player_name) посмотрел гео: $(geo_long_desc)
+cmd_geo_player_to_player                        =$(color_cmd_text)Игрок $(geo_player_name) гео: $(geo_long_desc)
+cmd_geo_player_to_log                           =<log_section geo/player/>$(player_name) посмотрел по $(geo_player_name) гео: $(geo_long_desc)
+
+
+cmd_kick_section                                =$(cmd_section_admin_penalty)
+cmd_kick_name                                   =/кик
+cmd_kick_params                                 =ид_игрока [причина]
+cmd_kick_short                                  =отключает игрока от сервера и выводит причину См. $(cmd_comment_info_name)
+cmd_kick_full                                   =
+
+
+cmd_ban_section                                 =$(cmd_section_admin_penalty)
+cmd_ban_name                                    =/бан
+cmd_ban_params                                  =ид_игрока [причина]
+cmd_ban_short                                   =банит игрока и выводит причину См. $(cmd_comment_info_name)
+cmd_ban_full                                    =
+
+ban_cant_ban_admin                              =$(color_cmd_error)Вы не можете забанить администратора $(player_name_full)
+ban_cant_ban_admin_log                          =<log_section try_ban_admin/>$(player_name_full) $(admin_name_full)
+
+
+cmd_admins_list_section                         =$(cmd_section_admin_man)
+cmd_admins_list_name                            =/админы
+cmd_admins_list_params                          =
+cmd_admins_list_short                           =выводит список админов на сервере
+cmd_admins_list_full                            =
+
+admins_list_rcon_empty                          =$(color_server_for_admin)rcon админов нет
+admins_list_rcon_item                           =$(color_server_for_admin)<preffix rcon админы:_/>$(rcon_admin_full_name);_
+
+rcon_admin_login_admins                         =$(color_server_for_admin)<nonewline/>> Админ $(rcon_admin_name_full) вошел в ркон гео: $(rcon_admin_geo_long_desc)
+rcon_admin_login_self_empty                     =$(color_server_for_admin)Добро пожаловать в rcon. Вы на сервере пока едиственный rcon админ
+rcon_admin_login_self_item                      =$(color_server_for_admin)Добро пожаловать в rcon. Кроме вас $(admins_count):<preffix ___/> $(admins_names)
+rcon_admin_login_log                            =<log_section rcon/login/>$(rcon_admin_name_full) ($(rcon_admin_geo_long_desc))
+
+rcon_admin_disconect_time_out_log               =<log_section rcon/logout/time_out/>$(player_name_full) $(rcon_time_connection) ($(player_geo_long_desc))
+rcon_admin_disconect_quit_log                   =<log_section rcon/logout/quit/>$(player_name_full) $(rcon_time_connection) ($(player_geo_long_desc))
+rcon_admin_disconect_kickban_log                =<log_section rcon/logout/kickban/>$(player_name_full) $(rcon_time_connection) ($(player_geo_long_desc))

@@ -1,0 +1,2914 @@
+<animation_libs>
+    key=аэропорт
+    <animation_lib_val>
+        lib_name=AIRPORT
+        is_use_in_vehicle=false
+        anim_names=thrw_barl_thrw
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=аттракторы
+    <animation_lib_val>
+        lib_name=Attractors
+        is_use_in_vehicle=false
+        anim_names=Stepsit_in
+        anim_names=Stepsit_loop
+        anim_names=Stepsit_out
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бар
+    <animation_lib_val>
+        lib_name=BAR
+        is_use_in_vehicle=false
+        anim_names=Barcustom_get
+        anim_names=Barcustom_loop
+        anim_names=Barcustom_order
+        anim_names=BARman_idle
+        anim_names=Barserve_bottle
+        anim_names=Barserve_give
+        anim_names=Barserve_glass
+        anim_names=Barserve_in
+        anim_names=Barserve_loop
+        anim_names=Barserve_order
+        anim_names=dnk_stndF_loop
+        anim_names=dnk_stndM_loop
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бейсбол
+    <animation_lib_val>
+        lib_name=BASEBALL
+        is_use_in_vehicle=false
+        anim_names=Bat_1
+        anim_names=Bat_2
+        anim_names=Bat_3
+        anim_names=Bat_4
+        anim_names=Bat_block
+        anim_names=Bat_Hit_1
+        anim_names=Bat_Hit_2
+        anim_names=Bat_Hit_3
+        anim_names=Bat_IDLE
+        anim_names=Bat_M
+        anim_names=BAT_PART
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=огонь
+    <animation_lib_val>
+        lib_name=BD_FIRE
+        is_use_in_vehicle=false
+        #anim_names=BD_Fire1
+        #anim_names=BD_Fire2
+        #anim_names=BD_Fire3
+        anim_names=BD_GF_Wave
+        anim_names=BD_Panic_01
+        anim_names=BD_Panic_02
+        anim_names=BD_Panic_03
+        anim_names=BD_Panic_04
+        anim_names=BD_Panic_Loop
+        anim_names=Grlfrd_Kiss_03
+        anim_names=M_smklean_loop
+        anim_names=Playa_Kiss_03
+        anim_names=wash_up
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=пляж
+    <animation_lib_val>
+        lib_name=BEACH
+        is_use_in_vehicle=false
+        anim_names=bather
+        anim_names=Lay_Bac_Loop
+        anim_names=ParkSit_M_loop
+        anim_names=ParkSit_W_loop
+        anim_names=SitnWait_loop_W
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=пресс
+    <animation_lib_val>
+        lib_name=benchpress
+        is_use_in_vehicle=false
+        anim_names=gym_bp_celebrate
+        anim_names=gym_bp_down
+        anim_names=gym_bp_getoff
+        anim_names=gym_bp_geton
+        anim_names=gym_bp_up_A
+        anim_names=gym_bp_up_B
+        anim_names=gym_bp_up_smooth
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бф
+    <animation_lib_val>
+        lib_name=BF_injection
+        is_use_in_vehicle=false
+        anim_names=BF_getin_LHS
+        anim_names=BF_getin_RHS
+        anim_names=BF_getout_LHS
+        anim_names=BF_getout_RHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=байк1
+    <animation_lib_val>
+        lib_name=BIKED
+        is_use_in_vehicle=false
+        anim_names=BIKEd_Back
+        anim_names=BIKEd_drivebyFT
+        anim_names=BIKEd_drivebyLHS
+        anim_names=BIKEd_drivebyRHS
+        anim_names=BIKEd_Fwd
+        anim_names=BIKEd_getoffBACK
+        anim_names=BIKEd_getoffLHS
+        anim_names=BIKEd_getoffRHS
+        anim_names=BIKEd_hit
+        anim_names=BIKEd_jumponL
+        anim_names=BIKEd_jumponR
+        anim_names=BIKEd_kick
+        anim_names=BIKEd_Left
+        anim_names=BIKEd_passenger
+        anim_names=BIKEd_pushes
+        anim_names=BIKEd_Ride
+        anim_names=BIKEd_Right
+        anim_names=BIKEd_shuffle
+        anim_names=BIKEd_Still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=байкдб
+    <animation_lib_val>
+        lib_name=BIKE_DBZ
+        is_use_in_vehicle=false
+        anim_names=Pass_Driveby_BWD
+        anim_names=Pass_Driveby_FWD
+        anim_names=Pass_Driveby_LHS
+        anim_names=Pass_Driveby_RHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=байк2
+    <animation_lib_val>
+        lib_name=BIKEH
+        is_use_in_vehicle=false
+        anim_names=BIKEh_Back
+        anim_names=BIKEh_drivebyFT
+        anim_names=BIKEh_drivebyLHS
+        anim_names=BIKEh_drivebyRHS
+        anim_names=BIKEh_Fwd
+        anim_names=BIKEh_getoffBACK
+        anim_names=BIKEh_getoffLHS
+        anim_names=BIKEh_getoffRHS
+        anim_names=BIKEh_hit
+        anim_names=BIKEh_jumponL
+        anim_names=BIKEh_jumponR
+        anim_names=BIKEh_kick
+        anim_names=BIKEh_Left
+        anim_names=BIKEh_passenger
+        anim_names=BIKEh_pushes
+        anim_names=BIKEh_Ride
+        anim_names=BIKEh_Right
+        anim_names=BIKEh_Still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=байкпрыжок
+    <animation_lib_val>
+        lib_name=BIKELEAP
+        is_use_in_vehicle=false
+        anim_names=bk_blnce_in
+        anim_names=bk_blnce_out
+        anim_names=bk_jmp
+        anim_names=bk_rdy_in
+        anim_names=bk_rdy_out
+        anim_names=struggle_cesar
+        anim_names=struggle_driver
+        anim_names=truck_driver
+        anim_names=truck_getin
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=байк3
+    <animation_lib_val>
+        lib_name=BIKES
+        is_use_in_vehicle=false
+        anim_names=BIKEs_Back
+        anim_names=BIKEs_drivebyFT
+        anim_names=BIKEs_drivebyLHS
+        anim_names=BIKEs_drivebyRHS
+        anim_names=BIKEs_Fwd
+        anim_names=BIKEs_getoffBACK
+        anim_names=BIKEs_getoffLHS
+        anim_names=BIKEs_getoffRHS
+        anim_names=BIKEs_hit
+        anim_names=BIKEs_jumponL
+        anim_names=BIKEs_jumponR
+        anim_names=BIKEs_kick
+        anim_names=BIKEs_Left
+        anim_names=BIKEs_passenger
+        anim_names=BIKEs_pushes
+        anim_names=BIKEs_Ride
+        anim_names=BIKEs_Right
+        anim_names=BIKEs_Snatch_L
+        anim_names=BIKEs_Snatch_R
+        anim_names=BIKEs_Still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=байк4
+    <animation_lib_val>
+        lib_name=BIKEV
+        is_use_in_vehicle=false
+        anim_names=BIKEv_Back
+        anim_names=BIKEv_drivebyFT
+        anim_names=BIKEv_drivebyLHS
+        anim_names=BIKEv_drivebyRHS
+        anim_names=BIKEv_Fwd
+        anim_names=BIKEv_getoffBACK
+        anim_names=BIKEv_getoffLHS
+        anim_names=BIKEv_getoffRHS
+        anim_names=BIKEv_hit
+        anim_names=BIKEv_jumponL
+        anim_names=BIKEv_jumponR
+        anim_names=BIKEv_kick
+        anim_names=BIKEv_Left
+        anim_names=BIKEv_passenger
+        anim_names=BIKEv_pushes
+        anim_names=BIKEv_Ride
+        anim_names=BIKEv_Right
+        anim_names=BIKEv_Still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=минет
+    <animation_lib_val>
+        lib_name=BLOWJOBZ
+        is_use_in_vehicle=false
+        anim_names=BJ_Car_End_P
+        anim_names=BJ_Car_End_W
+        anim_names=BJ_Car_Loop_P
+        anim_names=BJ_Car_Loop_W
+        anim_names=BJ_Car_Start_P
+        anim_names=BJ_Car_Start_W
+        anim_names=BJ_Couch_End_P
+        anim_names=BJ_Couch_End_W
+        anim_names=BJ_Couch_Loop_P
+        anim_names=BJ_Couch_Loop_W
+        anim_names=BJ_Couch_Start_P
+        anim_names=BJ_Couch_Start_W
+        anim_names=BJ_Stand_End_P
+        anim_names=BJ_Couch_End_W
+        anim_names=BJ_Couch_Loop_P
+        anim_names=BJ_Couch_Loop_W
+        anim_names=BJ_Couch_Start_P
+        anim_names=BJ_Couch_Start_W
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бмх
+    <animation_lib_val>
+        lib_name=BMX
+        is_use_in_vehicle=false
+        anim_names=BMX_back
+        anim_names=BMX_bunnyhop
+        anim_names=BMX_drivebyFT
+        anim_names=BMX_driveby_LHS
+        anim_names=BMX_driveby_RHS
+        anim_names=BMX_fwd
+        anim_names=BMX_getoffBACK
+        anim_names=BMX_getoffLHS
+        anim_names=BMX_getoffRHS
+        anim_names=BMX_jumponL
+        anim_names=BMX_jumponR
+        anim_names=BMX_Left
+        anim_names=BMX_pedal
+        anim_names=BMX_pushes
+        anim_names=BMX_Ride
+        anim_names=BMX_Right
+        anim_names=BMX_sprint
+        anim_names=BMX_still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бомбер
+    <animation_lib_val>
+        lib_name=BOMBER
+        is_use_in_vehicle=false
+        anim_names=BOM_Plant
+        anim_names=BOM_Plant_2Idle
+        anim_names=BOM_Plant_Crouch_In
+        anim_names=BOM_Plant_Crouch_Out
+        anim_names=BOM_Plant_In
+        anim_names=BOM_Plant_Loop
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бокс
+    <animation_lib_val>
+        lib_name=BOX
+        is_use_in_vehicle=false
+        anim_names=boxhipin
+        anim_names=boxhipup
+        anim_names=boxshdwn
+        anim_names=boxshup
+        anim_names=bxhipwlk
+        anim_names=bxhwlki
+        anim_names=bxshwlk
+        anim_names=bxshwlki
+        anim_names=bxwlko
+        anim_names=catch_box
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=баскет
+    <animation_lib_val>
+        lib_name=BSKTBALL
+        is_use_in_vehicle=false
+        anim_names=BBALL_def_jump_shot
+        anim_names=BBALL_def_loop
+        anim_names=BBALL_def_stepL
+        anim_names=BBALL_def_stepR
+        anim_names=BBALL_Dnk
+        anim_names=BBALL_Dnk_Gli
+        #anim_names=BBALL_Dnk_Gli_O
+        anim_names=BBALL_Dnk_Lnch
+        #anim_names=BBALL_Dnk_Lnch_O
+        anim_names=BBALL_Dnk_Lnd
+        #anim_names=BBALL_Dnk_O
+        anim_names=BBALL_idle
+        anim_names=BBALL_idle2
+        #anim_names=BBALL_idle2_O
+        anim_names=BBALL_idleloop
+        #anim_names=BBALL_idleloop_O
+        #anim_names=BBALL_idle_O
+        anim_names=BBALL_Jump_Cancel
+        #anim_names=BBALL_Jump_Cancel_O
+        anim_names=BBALL_Jump_End
+        anim_names=BBALL_Jump_Shot
+        #anim_names=BBALL_Jump_Shot_O
+        #anim_names=BBALL_Net_Dnk_O
+        anim_names=BBALL_pickup
+        #anim_names=BBALL_pickup_O
+        anim_names=BBALL_react_miss
+        anim_names=BBALL_react_score
+        anim_names=BBALL_run
+        #anim_names=BBALL_run_O
+        anim_names=BBALL_SkidStop_L
+        #anim_names=BBALL_SkidStop_L_O
+        anim_names=BBALL_SkidStop_R
+        #anim_names=BBALL_SkidStop_R_O
+        anim_names=BBALL_walk
+        anim_names=BBALL_WalkStop_L
+        #anim_names=BBALL_WalkStop_L_O
+        anim_names=BBALL_WalkStop_R
+        #anim_names=BBALL_WalkStop_R_O
+        #anim_names=BBALL_walk_O
+        anim_names=BBALL_walk_start
+        #anim_names=BBALL_walk_start_O
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=дружище
+    <animation_lib_val>
+        lib_name=BUDDY
+        is_use_in_vehicle=false
+        anim_names=buddy_crouchfire
+        anim_names=buddy_crouchreload
+        anim_names=buddy_fire
+        anim_names=buddy_fire_poor
+        anim_names=buddy_reload
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=автобус
+    <animation_lib_val>
+        lib_name=BUS
+        is_use_in_vehicle=false
+        anim_names=BUS_close
+        anim_names=BUS_getin_LHS
+        anim_names=BUS_getin_RHS
+        anim_names=BUS_getout_LHS
+        anim_names=BUS_getout_RHS
+        anim_names=BUS_jacked_LHS
+        anim_names=BUS_open
+        anim_names=BUS_open_RHS
+        anim_names=BUS_pullout_LHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=камера
+    <animation_lib_val>
+        lib_name=CAMERA
+        is_use_in_vehicle=false
+        anim_names=camcrch_cmon
+        anim_names=camcrch_idleloop
+        anim_names=camcrch_stay
+        anim_names=camcrch_to_camstnd
+        anim_names=camstnd_cmon
+        anim_names=camstnd_idleloop
+        anim_names=camstnd_lkabt
+        anim_names=camstnd_to_camcrch
+        anim_names=piccrch_in
+        anim_names=piccrch_out
+        anim_names=piccrch_take
+        anim_names=picstnd_in
+        anim_names=picstnd_out
+        anim_names=picstnd_take
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=авто
+    <animation_lib_val>
+        lib_name=CAR
+        is_use_in_vehicle=false
+        anim_names=Fixn_Car_Loop
+        anim_names=Fixn_Car_Out
+        anim_names=flag_drop
+        anim_names=Sit_relaxed
+        anim_names=Tap_hand
+        anim_names=Tyd2car_bump
+        anim_names=Tyd2car_high
+        anim_names=Tyd2car_low
+        anim_names=Tyd2car_med
+        anim_names=Tyd2car_TurnL
+        anim_names=Tyd2car_TurnR
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=авточат
+    <animation_lib_val>
+        lib_name=CAR_CHAT
+        is_use_in_vehicle=false
+        anim_names=carfone_in
+        anim_names=carfone_loopA
+        anim_names=carfone_loopA_to_B
+        anim_names=carfone_loopB
+        anim_names=carfone_loopB_to_A
+        anim_names=carfone_out
+        anim_names=CAR_Sc1_BL
+        anim_names=CAR_Sc1_BR
+        anim_names=CAR_Sc1_FL
+        anim_names=CAR_Sc1_FR
+        anim_names=CAR_Sc2_FL
+        anim_names=CAR_Sc3_BR
+        anim_names=CAR_Sc3_FL
+        anim_names=CAR_Sc3_FR
+        anim_names=CAR_Sc4_BL
+        anim_names=CAR_Sc4_BR
+        anim_names=CAR_Sc4_FL
+        anim_names=CAR_Sc4_FR
+        anim_names=car_talkm_in
+        anim_names=car_talkm_loop
+        anim_names=car_talkm_out
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=носить
+    <animation_lib_val>
+        lib_name=CARRY
+        is_use_in_vehicle=false
+        anim_names=crry_prtial
+        anim_names=liftup
+        anim_names=liftup05
+        anim_names=liftup105
+        anim_names=putdwn
+        anim_names=putdwn05
+        anim_names=putdwn105
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=казино
+    <animation_lib_val>
+        lib_name=CASINO
+        is_use_in_vehicle=false
+        anim_names=cards_in
+        anim_names=cards_loop
+        anim_names=cards_lose
+        anim_names=cards_out
+        anim_names=cards_pick_01
+        anim_names=cards_pick_02
+        anim_names=cards_raise
+        anim_names=cards_win
+        anim_names=dealone
+        anim_names=manwinb
+        anim_names=manwind
+        anim_names=Roulette_bet
+        anim_names=Roulette_in
+        anim_names=Roulette_loop
+        anim_names=Roulette_lose
+        anim_names=Roulette_out
+        anim_names=Roulette_win
+        anim_names=Slot_bet_01
+        anim_names=Slot_bet_02
+        anim_names=Slot_in
+        anim_names=Slot_lose_out
+        anim_names=Slot_Plyr
+        anim_names=Slot_wait
+        anim_names=Slot_win_out
+        anim_names=wof
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=пила
+    <animation_lib_val>
+        lib_name=CHAINSAW
+        is_use_in_vehicle=false
+        anim_names=CSAW_1
+        anim_names=CSAW_2
+        anim_names=CSAW_3
+        anim_names=CSAW_G
+        anim_names=CSAW_Hit_1
+        anim_names=CSAW_Hit_2
+        anim_names=CSAW_Hit_3
+        anim_names=csaw_part
+        anim_names=IDLE_csaw
+        anim_names=WEAPON_csaw
+        anim_names=WEAPON_csawlo
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=чоппер
+    <animation_lib_val>
+        lib_name=CHOPPA
+        is_use_in_vehicle=false
+        anim_names=CHOPPA_back
+        anim_names=CHOPPA_bunnyhop
+        anim_names=CHOPPA_drivebyFT
+        anim_names=CHOPPA_driveby_LHS
+        anim_names=CHOPPA_driveby_RHS
+        anim_names=CHOPPA_fwd
+        anim_names=CHOPPA_getoffBACK
+        anim_names=CHOPPA_getoffLHS
+        anim_names=CHOPPA_getoffRHS
+        anim_names=CHOPPA_jumponL
+        anim_names=CHOPPA_jumponR
+        anim_names=CHOPPA_Left
+        anim_names=CHOPPA_pedal
+        anim_names=CHOPPA_Pushes
+        anim_names=CHOPPA_ride
+        anim_names=CHOPPA_Right
+        anim_names=CHOPPA_sprint
+        anim_names=CHOPPA_Still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=одежда
+    <animation_lib_val>
+        lib_name=CLOTHES
+        is_use_in_vehicle=false
+        anim_names=CLO_Buy
+        anim_names=CLO_In
+        anim_names=CLO_Out
+        anim_names=CLO_Pose_Hat
+        anim_names=CLO_Pose_In
+        #anim_names=CLO_Pose_In_O
+        anim_names=CLO_Pose_Legs
+        anim_names=CLO_Pose_Loop
+        anim_names=CLO_Pose_Out
+        #anim_names=CLO_Pose_Out_O
+        anim_names=CLO_Pose_Shoes
+        anim_names=CLO_Pose_Torso
+        anim_names=CLO_Pose_Watch
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=тренер
+    <animation_lib_val>
+        lib_name=COACH
+        is_use_in_vehicle=false
+        anim_names=COACH_inL
+        anim_names=COACH_inR
+        anim_names=COACH_opnL
+        anim_names=COACH_opnR
+        anim_names=COACH_outL
+        anim_names=COACH_outR
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=кольт
+    <animation_lib_val>
+        lib_name=COLT45
+        is_use_in_vehicle=false
+        anim_names=2guns_crouchfire
+        anim_names=colt45_crouchfire
+        anim_names=colt45_crouchreload
+        anim_names=colt45_fire
+        anim_names=colt45_fire_2hands
+        anim_names=colt45_reload
+        anim_names=sawnoff_reload
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=коп
+    <animation_lib_val>
+        lib_name=COP_AMBIENT
+        is_use_in_vehicle=false
+        anim_names=Copbrowse_in
+        anim_names=Copbrowse_loop
+        anim_names=Copbrowse_nod
+        anim_names=Copbrowse_out
+        anim_names=Copbrowse_shake
+        anim_names=Coplook_in
+        anim_names=Coplook_loop
+        anim_names=Coplook_nod
+        anim_names=Coplook_out
+        anim_names=Coplook_shake
+        anim_names=Coplook_think
+        anim_names=Coplook_watch
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=копдб
+    <animation_lib_val>
+        lib_name=COP_DVBYZ
+        is_use_in_vehicle=false
+        anim_names=COP_Dvby_B
+        #anim_names=COP_Dvby_FT
+        anim_names=COP_Dvby_L
+        anim_names=COP_Dvby_R
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=крак
+    <animation_lib_val>
+        lib_name=CRACK
+        is_use_in_vehicle=false
+        anim_names=Bbalbat_Idle_01
+        anim_names=Bbalbat_Idle_02
+        anim_names=crckdeth1
+        anim_names=crckdeth2
+        anim_names=crckdeth3
+        anim_names=crckdeth4
+        anim_names=crckidle1
+        anim_names=crckidle2
+        anim_names=crckidle3
+        anim_names=crckidle4
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=криб
+    <animation_lib_val>
+        lib_name=CRIB
+        is_use_in_vehicle=false
+        anim_names=CRIB_Console_Loop
+        anim_names=CRIB_Use_Switch
+        anim_names=PED_Console_Loop
+        anim_names=PED_Console_Loose
+        anim_names=PED_Console_Win
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=прыжок
+    <animation_lib_val>
+        lib_name=DAM_JUMP
+        is_use_in_vehicle=true
+        anim_names=DAM_Dive_Loop
+        anim_names=DAM_Land
+        anim_names=DAM_Launch
+        anim_names=Jump_Roll
+        anim_names=SF_JumpWall
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=танцевать
+    <animation_lib_val>
+        lib_name=DANCING
+        is_use_in_vehicle=false
+        anim_names=bd_clap
+        anim_names=bd_clap1
+        anim_names=dance_loop
+        anim_names=DAN_Down_A
+        anim_names=DAN_Left_A
+        anim_names=DAN_Loop_A
+        anim_names=DAN_Right_A
+        anim_names=DAN_Up_A
+        anim_names=dnce_M_a
+        anim_names=dnce_M_b
+        anim_names=dnce_M_c
+        anim_names=dnce_M_d
+        anim_names=dnce_M_e
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=дилер
+    <animation_lib_val>
+        lib_name=DEALER
+        is_use_in_vehicle=false
+        anim_names=DEALER_DEAL
+        anim_names=DEALER_IDLE
+        anim_names=DEALER_IDLE_01
+        anim_names=DEALER_IDLE_02
+        anim_names=DEALER_IDLE_03
+        anim_names=DRUGS_BUY
+        anim_names=shop_pay
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=фаллос
+    <animation_lib_val>
+        lib_name=DILDO
+        is_use_in_vehicle=false
+        anim_names=DILDO_1
+        anim_names=DILDO_2
+        anim_names=DILDO_3
+        anim_names=DILDO_block
+        anim_names=DILDO_G
+        anim_names=DILDO_Hit_1
+        anim_names=DILDO_Hit_2
+        anim_names=DILDO_Hit_3
+        anim_names=DILDO_IDLE
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=додж
+    <animation_lib_val>
+        lib_name=DODGE
+        is_use_in_vehicle=false
+        anim_names=Cover_Dive_01
+        anim_names=Cover_Dive_02
+        anim_names=Crushed
+        anim_names=Crush_Jump
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бульдозер
+    <animation_lib_val>
+        lib_name=DOZER
+        is_use_in_vehicle=false
+        anim_names=DOZER_Align_LHS
+        anim_names=DOZER_Align_RHS
+        anim_names=DOZER_getin_LHS
+        anim_names=DOZER_getin_RHS
+        anim_names=DOZER_getout_LHS
+        anim_names=DOZER_getout_RHS
+        anim_names=DOZER_Jacked_LHS
+        anim_names=DOZER_Jacked_RHS
+        anim_names=DOZER_pullout_LHS
+        anim_names=DOZER_pullout_RHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=дб
+    <animation_lib_val>
+        lib_name=DRIVEBYS
+        is_use_in_vehicle=false
+        anim_names=Gang_DrivebyLHS
+        anim_names=Gang_DrivebyLHS_Bwd
+        anim_names=Gang_DrivebyLHS_Fwd
+        anim_names=Gang_DrivebyRHS
+        anim_names=Gang_DrivebyRHS_Bwd
+        anim_names=Gang_DrivebyRHS_Fwd
+        anim_names=Gang_DrivebyTop_LHS
+        anim_names=Gang_DrivebyTop_RHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=толстый
+    <animation_lib_val>
+        lib_name=FAT
+        is_use_in_vehicle=false
+        anim_names=FatIdle
+        anim_names=FatIdle_armed
+        anim_names=FatIdle_Csaw
+        anim_names=FatIdle_Rocket
+        anim_names=FatRun
+        anim_names=FatRun_armed
+        anim_names=FatRun_Csaw
+        anim_names=FatRun_Rocket
+        anim_names=FatSprint
+        anim_names=FatWalk
+        anim_names=FatWalkstart
+        anim_names=FatWalkstart_Csaw
+        anim_names=FatWalkSt_armed
+        anim_names=FatWalkSt_Rocket
+        anim_names=FatWalk_armed
+        anim_names=FatWalk_Csaw
+        anim_names=FatWalk_Rocket
+        anim_names=IDLE_tired
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бой1
+    <animation_lib_val>
+        lib_name=FIGHT_B
+        is_use_in_vehicle=false
+        anim_names=FightB_1
+        anim_names=FightB_2
+        anim_names=FightB_3
+        anim_names=FightB_block
+        anim_names=FightB_G
+        anim_names=FightB_IDLE
+        anim_names=FightB_M
+        anim_names=HitB_1
+        anim_names=HitB_2
+        anim_names=HitB_3
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бой2
+    <animation_lib_val>
+        lib_name=FIGHT_C
+        is_use_in_vehicle=false
+        anim_names=FightC_1
+        anim_names=FightC_2
+        anim_names=FightC_3
+        anim_names=FightC_block
+        anim_names=FightC_blocking
+        anim_names=FightC_G
+        anim_names=FightC_IDLE
+        anim_names=FightC_M
+        anim_names=FightC_Spar
+        anim_names=HitC_1
+        anim_names=HitC_2
+        anim_names=HitC_3
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бой3
+    <animation_lib_val>
+        lib_name=FIGHT_D
+        is_use_in_vehicle=false
+        anim_names=FightD_1
+        anim_names=FightD_2
+        anim_names=FightD_3
+        anim_names=FightD_block
+        anim_names=FightD_G
+        anim_names=FightD_IDLE
+        anim_names=FightD_M
+        anim_names=HitD_1
+        anim_names=HitD_2
+        anim_names=HitD_3
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бой4
+    <animation_lib_val>
+        lib_name=FIGHT_E
+        is_use_in_vehicle=false
+        anim_names=FightKick
+        anim_names=FightKick_B
+        anim_names=Hit_fightkick
+        anim_names=Hit_fightkick_B
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=финал
+    <animation_lib_val>
+        lib_name=FINALE
+        is_use_in_vehicle=false
+        anim_names=FIN_Climb_In
+        anim_names=FIN_Cop1_ClimbOut2
+        anim_names=FIN_Cop1_Loop
+        anim_names=FIN_Cop1_Stomp
+        anim_names=FIN_Hang_L
+        anim_names=FIN_Hang_Loop
+        anim_names=FIN_Hang_R
+        anim_names=FIN_Hang_Slip
+        anim_names=FIN_Jump_On
+        anim_names=FIN_Land_Car
+        anim_names=FIN_Land_Die
+        anim_names=FIN_LegsUp
+        anim_names=FIN_LegsUp_L
+        anim_names=FIN_LegsUp_Loop
+        anim_names=FIN_LegsUp_R
+        anim_names=FIN_Let_Go
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=финал2
+    <animation_lib_val>
+        lib_name=FINALE2
+        is_use_in_vehicle=false
+        anim_names=FIN_Cop1_ClimbOut
+        anim_names=FIN_Cop1_Fall
+        anim_names=FIN_Cop1_Loop
+        anim_names=FIN_Cop1_Shot
+        anim_names=FIN_Cop1_Swing
+        anim_names=FIN_Cop2_ClimbOut
+        anim_names=FIN_Switch_P
+        anim_names=FIN_Switch_S
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=огонь
+    <animation_lib_val>
+        lib_name=FLAME
+        is_use_in_vehicle=false
+        anim_names=FLAME_fire
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=цветы
+    <animation_lib_val>
+        lib_name=Flowers
+        is_use_in_vehicle=false
+        anim_names=Flower_attack
+        anim_names=Flower_attack_M
+        anim_names=Flower_Hit
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=еда
+    <animation_lib_val>
+        lib_name=FOOD
+        is_use_in_vehicle=false
+        anim_names=EAT_Burger
+        anim_names=EAT_Chicken
+        anim_names=EAT_Pizza
+        anim_names=EAT_Vomit_P
+        anim_names=EAT_Vomit_SK
+        anim_names=FF_Dam_Bkw
+        anim_names=FF_Dam_Fwd
+        anim_names=FF_Dam_Left
+        anim_names=FF_Dam_Right
+        anim_names=FF_Die_Bkw
+        anim_names=FF_Die_Fwd
+        anim_names=FF_Die_Left
+        anim_names=FF_Die_Right
+        anim_names=FF_Sit_Eat1
+        anim_names=FF_Sit_Eat2
+        anim_names=FF_Sit_Eat3
+        anim_names=FF_Sit_In
+        anim_names=FF_Sit_In_L
+        anim_names=FF_Sit_In_R
+        anim_names=FF_Sit_Look
+        anim_names=FF_Sit_Loop
+        anim_names=FF_Sit_Out_180
+        anim_names=FF_Sit_Out_L_180
+        anim_names=FF_Sit_Out_R_180
+        anim_names=SHP_Thank
+        anim_names=SHP_Tray_In
+        anim_names=SHP_Tray_Lift
+        anim_names=SHP_Tray_Lift_In
+        anim_names=SHP_Tray_Lift_Loop
+        anim_names=SHP_Tray_Lift_Out
+        anim_names=SHP_Tray_Out
+        anim_names=SHP_Tray_Pose
+        anim_names=SHP_Tray_Return
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=гимнастика
+    <animation_lib_val>
+        lib_name=Freeweights
+        is_use_in_vehicle=false
+        anim_names=gym_barbell
+        anim_names=gym_free_A
+        anim_names=gym_free_B
+        anim_names=gym_free_celebrate
+        anim_names=gym_free_down
+        anim_names=gym_free_loop
+        anim_names=gym_free_pickup
+        anim_names=gym_free_putdown
+        anim_names=gym_free_up_smooth
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=банды
+    <animation_lib_val>
+        lib_name=GANGS
+        is_use_in_vehicle=false
+        anim_names=DEALER_DEAL
+        anim_names=DEALER_IDLE
+        anim_names=drnkbr_prtl
+        anim_names=drnkbr_prtl_F
+        anim_names=DRUGS_BUY
+        anim_names=hndshkaa
+        anim_names=hndshkba
+        anim_names=hndshkca
+        anim_names=hndshkcb
+        anim_names=hndshkda
+        anim_names=hndshkea
+        anim_names=hndshkfa
+        anim_names=hndshkfa_swt
+        anim_names=Invite_No
+        anim_names=Invite_Yes
+        anim_names=leanIDLE
+        anim_names=leanIN
+        anim_names=leanOUT
+        anim_names=prtial_gngtlkA
+        anim_names=prtial_gngtlkB
+        anim_names=prtial_gngtlkC
+        anim_names=prtial_gngtlkD
+        anim_names=prtial_gngtlkE
+        anim_names=prtial_gngtlkF
+        anim_names=prtial_gngtlkG
+        anim_names=prtial_gngtlkH
+        anim_names=prtial_hndshk_01
+        anim_names=prtial_hndshk_biz_01
+        anim_names=shake_cara
+        anim_names=shake_carK
+        anim_names=shake_carSH
+        anim_names=smkcig_prtl
+        anim_names=smkcig_prtl_F
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=гетто
+    <animation_lib_val>
+        lib_name=GHETTO_DB
+        is_use_in_vehicle=false
+        anim_names=GDB_Car2_PLY
+        anim_names=GDB_Car2_SMO
+        anim_names=GDB_Car2_SWE
+        anim_names=GDB_Car_PLY
+        anim_names=GDB_Car_RYD
+        anim_names=GDB_Car_SMO
+        anim_names=GDB_Car_SWE
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=фанк
+    <animation_lib_val>
+        lib_name=GFUNK
+        is_use_in_vehicle=false
+        anim_names=Dance_B1
+        anim_names=Dance_B10
+        anim_names=Dance_B11
+        anim_names=Dance_B12
+        anim_names=Dance_B13
+        anim_names=Dance_B14
+        anim_names=Dance_B15
+        anim_names=Dance_B16
+        anim_names=Dance_B2
+        anim_names=Dance_B3
+        anim_names=Dance_B4
+        anim_names=Dance_B5
+        anim_names=Dance_B6
+        anim_names=Dance_B7
+        anim_names=Dance_B8
+        anim_names=Dance_B9
+        anim_names=Dance_G1
+        anim_names=Dance_G10
+        anim_names=Dance_G11
+        anim_names=Dance_G12
+        anim_names=Dance_G13
+        anim_names=Dance_G14
+        anim_names=Dance_G15
+        anim_names=Dance_G16
+        anim_names=Dance_G2
+        anim_names=Dance_G3
+        anim_names=Dance_G4
+        anim_names=Dance_G5
+        anim_names=Dance_G6
+        anim_names=Dance_G7
+        anim_names=Dance_G8
+        anim_names=Dance_G9
+        anim_names=dance_loop
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=руки
+    <animation_lib_val>
+        lib_name=GHANDS
+        is_use_in_vehicle=false
+        anim_names=gsign1
+        anim_names=gsign1LH
+        anim_names=gsign2
+        anim_names=gsign2LH
+        anim_names=gsign3
+        anim_names=gsign3LH
+        anim_names=gsign4
+        anim_names=gsign4LH
+        anim_names=gsign5
+        anim_names=gsign5LH
+        anim_names=LHGsign1
+        anim_names=LHGsign2
+        anim_names=LHGsign3
+        anim_names=LHGsign4
+        anim_names=LHGsign5
+        anim_names=RHGsign1
+        anim_names=RHGsign2
+        anim_names=RHGsign3
+        anim_names=RHGsign4
+        anim_names=RHGsign5
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=очки
+    <animation_lib_val>
+        lib_name=goggles
+        is_use_in_vehicle=false
+        anim_names=goggles_put_on
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=граффити
+    <animation_lib_val>
+        lib_name=GRAFFITI
+        is_use_in_vehicle=false
+        anim_names=graffiti_Chkout
+        anim_names=spraycan_fire
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=кладбище
+    <animation_lib_val>
+        lib_name=GRAVEYARD
+        is_use_in_vehicle=false
+        anim_names=mrnF_loop
+        anim_names=mrnM_loop
+        anim_names=prst_loopa
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=граната
+    <animation_lib_val>
+        lib_name=GRENADE
+        is_use_in_vehicle=false
+        anim_names=WEAPON_start_throw
+        anim_names=WEAPON_throw
+        anim_names=WEAPON_throwu
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=гимназия
+    <animation_lib_val>
+        lib_name=GYMNASIUM
+        is_use_in_vehicle=false
+        anim_names=GYMshadowbox
+        anim_names=gym_bike_celebrate
+        anim_names=gym_bike_fast
+        anim_names=gym_bike_faster
+        anim_names=gym_bike_getoff
+        anim_names=gym_bike_geton
+        anim_names=gym_bike_pedal
+        anim_names=gym_bike_slow
+        anim_names=gym_bike_still
+        anim_names=gym_jog_falloff
+        anim_names=gym_shadowbox
+        anim_names=gym_tread_celebrate
+        anim_names=gym_tread_falloff
+        anim_names=gym_tread_getoff
+        anim_names=gym_tread_geton
+        anim_names=gym_tread_jog
+        anim_names=gym_tread_sprint
+        anim_names=gym_tread_tired
+        anim_names=gym_tread_walk
+        anim_names=gym_walk_falloff
+        #anim_names=Pedals_fast
+        #anim_names=Pedals_med
+        #anim_names=Pedals_slow
+        #anim_names=Pedals_still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=стрижки
+    <animation_lib_val>
+        lib_name=HAIRCUTS
+        is_use_in_vehicle=false
+        anim_names=BRB_Beard_01
+        anim_names=BRB_Buy
+        anim_names=BRB_Cut
+        anim_names=BRB_Cut_In
+        anim_names=BRB_Cut_Out
+        anim_names=BRB_Hair_01
+        anim_names=BRB_Hair_02
+        anim_names=BRB_In
+        anim_names=BRB_Loop
+        anim_names=BRB_Out
+        anim_names=BRB_Sit_In
+        anim_names=BRB_Sit_Loop
+        anim_names=BRB_Sit_Out
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=кража
+    <animation_lib_val>
+        lib_name=HEIST9
+        is_use_in_vehicle=false
+        anim_names=CAS_G2_GasKO
+        anim_names=swt_wllpk_L
+        anim_names=swt_wllpk_L_back
+        anim_names=swt_wllpk_R
+        anim_names=swt_wllpk_R_back
+        anim_names=swt_wllshoot_in_L
+        anim_names=swt_wllshoot_in_R
+        anim_names=swt_wllshoot_out_L
+        anim_names=swt_wllshoot_out_R
+        anim_names=Use_SwipeCard
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=дом
+    <animation_lib_val>
+        lib_name=INT_HOUSE
+        is_use_in_vehicle=false
+        anim_names=BED_In_L
+        anim_names=BED_In_R
+        anim_names=BED_Loop_L
+        anim_names=BED_Loop_R
+        anim_names=BED_Out_L
+        anim_names=BED_Out_R
+        anim_names=LOU_In
+        anim_names=LOU_Loop
+        anim_names=LOU_Out
+        anim_names=wash_up
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=офис
+    <animation_lib_val>
+        lib_name=INT_OFFICE
+        is_use_in_vehicle=false
+        anim_names=FF_Dam_Fwd
+        anim_names=OFF_Sit_2Idle_180
+        anim_names=OFF_Sit_Bored_Loop
+        anim_names=OFF_Sit_Crash
+        anim_names=OFF_Sit_Drink
+        anim_names=OFF_Sit_Idle_Loop
+        anim_names=OFF_Sit_In
+        anim_names=OFF_Sit_Read
+        anim_names=OFF_Sit_Type_Loop
+        anim_names=OFF_Sit_Watch
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=магазин
+    <animation_lib_val>
+        lib_name=INT_SHOP
+        is_use_in_vehicle=false
+        anim_names=shop_cashier
+        anim_names=shop_in
+        anim_names=shop_lookA
+        anim_names=shop_lookB
+        anim_names=shop_loop
+        anim_names=shop_out
+        anim_names=shop_pay
+        anim_names=shop_shelf
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бизнес
+    <animation_lib_val>
+        lib_name=JST_BUISNESS
+        is_use_in_vehicle=false
+        anim_names=girl_01
+        anim_names=girl_02
+        anim_names=player_01
+        anim_names=smoke_01
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=карт
+    <animation_lib_val>
+        lib_name=KART
+        is_use_in_vehicle=false
+        anim_names=KART_getin_LHS
+        anim_names=KART_getin_RHS
+        anim_names=KART_getout_LHS
+        anim_names=KART_getout_RHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=поцелуй
+    <animation_lib_val>
+        lib_name=KISSING
+        is_use_in_vehicle=false
+        anim_names=BD_GF_Wave
+        anim_names=gfwave2
+        anim_names=GF_CarArgue_01
+        anim_names=GF_CarArgue_02
+        anim_names=GF_CarSpot
+        anim_names=GF_StreetArgue_01
+        anim_names=GF_StreetArgue_02
+        anim_names=gift_get
+        anim_names=gift_give
+        anim_names=Grlfrd_Kiss_01
+        anim_names=Grlfrd_Kiss_02
+        anim_names=Grlfrd_Kiss_03
+        anim_names=Playa_Kiss_01
+        anim_names=Playa_Kiss_02
+        anim_names=Playa_Kiss_03
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=нож
+    <animation_lib_val>
+        lib_name=KNIFE
+        is_use_in_vehicle=false
+        anim_names=KILL_Knife_Ped_Damage
+        anim_names=KILL_Knife_Ped_Die
+        anim_names=KILL_Knife_Player
+        anim_names=KILL_Partial
+        anim_names=knife_1
+        anim_names=knife_2
+        anim_names=knife_3
+        anim_names=Knife_4
+        anim_names=knife_block
+        anim_names=Knife_G
+        anim_names=knife_hit_1
+        anim_names=knife_hit_2
+        anim_names=knife_hit_3
+        anim_names=knife_IDLE
+        anim_names=knife_part
+        anim_names=WEAPON_knifeidle
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=танец1
+    <animation_lib_val>
+        lib_name=LAPDAN1
+        is_use_in_vehicle=false
+        anim_names=LAPDAN_D
+        anim_names=LAPDAN_P
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=танец2
+    <animation_lib_val>
+        lib_name=LAPDAN2
+        is_use_in_vehicle=false
+        anim_names=LAPDAN_D
+        anim_names=LAPDAN_P
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=танец3
+    <animation_lib_val>
+        lib_name=LAPDAN3
+        is_use_in_vehicle=false
+        anim_names=LAPDAN_D
+        anim_names=LAPDAN_P
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=лоурайдер
+    <animation_lib_val>
+        lib_name=LOWRIDER
+        is_use_in_vehicle=false
+        anim_names=F_smklean_loop
+        anim_names=lrgirl_bdbnce
+        anim_names=lrgirl_hair
+        anim_names=lrgirl_hurry
+        anim_names=lrgirl_idleloop
+        anim_names=lrgirl_idle_to_l0
+        anim_names=lrgirl_l0_bnce
+        anim_names=lrgirl_l0_loop
+        anim_names=lrgirl_l0_to_l1
+        anim_names=lrgirl_l12_to_l0
+        anim_names=lrgirl_l1_bnce
+        anim_names=lrgirl_l1_loop
+        anim_names=lrgirl_l1_to_l2
+        anim_names=lrgirl_l2_bnce
+        anim_names=lrgirl_l2_loop
+        anim_names=lrgirl_l2_to_l3
+        anim_names=lrgirl_l345_to_l1
+        anim_names=lrgirl_l3_bnce
+        anim_names=lrgirl_l3_loop
+        anim_names=lrgirl_l3_to_l4
+        anim_names=lrgirl_l4_bnce
+        anim_names=lrgirl_l4_loop
+        anim_names=lrgirl_l4_to_l5
+        anim_names=lrgirl_l5_bnce
+        anim_names=lrgirl_l5_loop
+        anim_names=M_smklean_loop
+        anim_names=M_smkstnd_loop
+        anim_names=prtial_gngtlkB
+        anim_names=prtial_gngtlkC
+        anim_names=prtial_gngtlkD
+        anim_names=prtial_gngtlkE
+        anim_names=prtial_gngtlkF
+        anim_names=prtial_gngtlkG
+        anim_names=prtial_gngtlkH
+        anim_names=RAP_A_Loop
+        anim_names=RAP_B_Loop
+        anim_names=RAP_C_Loop
+        anim_names=Sit_relaxed
+        anim_names=Tap_hand
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=погоня
+    <animation_lib_val>
+        lib_name=MD_CHASE
+        is_use_in_vehicle=false
+        anim_names=Carhit_Hangon
+        anim_names=Carhit_Tumble
+        #anim_names=donutdrop
+        #anim_names=Fen_Choppa_L1
+        #anim_names=Fen_Choppa_L2
+        #anim_names=Fen_Choppa_L3
+        #anim_names=Fen_Choppa_R1
+        #anim_names=Fen_Choppa_R2
+        #anim_names=Fen_Choppa_R3
+        anim_names=Hangon_Stun_loop
+        anim_names=Hangon_Stun_Turn
+        anim_names=MD_BIKE_2_HANG
+        anim_names=MD_BIKE_Jmp_BL
+        anim_names=MD_BIKE_Jmp_F
+        anim_names=MD_BIKE_Lnd_BL
+        anim_names=MD_BIKE_Lnd_Die_BL
+        anim_names=MD_BIKE_Lnd_Die_F
+        anim_names=MD_BIKE_Lnd_F
+        anim_names=MD_BIKE_Lnd_Roll
+        anim_names=MD_BIKE_Lnd_Roll_F
+        anim_names=MD_BIKE_Punch
+        anim_names=MD_BIKE_Punch_F
+        anim_names=MD_BIKE_Shot_F
+        anim_names=MD_HANG_Lnd_Roll
+        anim_names=MD_HANG_Loop
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=конец
+    <animation_lib_val>
+        lib_name=MD_END
+        is_use_in_vehicle=false
+        anim_names=END_SC1_PLY
+        anim_names=END_SC1_RYD
+        anim_names=END_SC1_SMO
+        anim_names=END_SC1_SWE
+        anim_names=END_SC2_PLY
+        anim_names=END_SC2_RYD
+        anim_names=END_SC2_SMO
+        anim_names=END_SC2_SWE
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=медик
+    <animation_lib_val>
+        lib_name=MEDIC
+        is_use_in_vehicle=false
+        anim_names=CPR
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=другое
+    <animation_lib_val>
+        lib_name=MISC
+        is_use_in_vehicle=false
+        anim_names=bitchslap
+        anim_names=BMX_celebrate
+        anim_names=BMX_comeon
+        anim_names=bmx_idleloop_01
+        anim_names=bmx_idleloop_02
+        anim_names=bmx_talkleft_in
+        anim_names=bmx_talkleft_loop
+        anim_names=bmx_talkleft_out
+        anim_names=bmx_talkright_in
+        anim_names=bmx_talkright_loop
+        anim_names=bmx_talkright_out
+        anim_names=bng_wndw
+        anim_names=bng_wndw_02
+        anim_names=Case_pickup
+        anim_names=door_jet
+        anim_names=GRAB_L
+        anim_names=GRAB_R
+        anim_names=Hiker_Pose
+        anim_names=Hiker_Pose_L
+        anim_names=Idle_Chat_02
+        anim_names=KAT_Throw_K
+        #anim_names=KAT_Throw_O
+        anim_names=KAT_Throw_P
+        #anim_names=PASS_Rifle_O
+        anim_names=PASS_Rifle_Ped
+        anim_names=PASS_Rifle_Ply
+        anim_names=pickup_box
+        anim_names=Plane_door
+        anim_names=Plane_exit
+        anim_names=Plane_hijack
+        anim_names=Plunger_01
+        anim_names=Plyrlean_loop
+        anim_names=plyr_shkhead
+        anim_names=Run_Dive
+        anim_names=Scratchballs_01
+        anim_names=SEAT_LR
+        anim_names=Seat_talk_01
+        anim_names=Seat_talk_02
+        anim_names=SEAT_watch
+        #anim_names=smalplane_door
+        #anim_names=smlplane_door
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=байк
+    <animation_lib_val>
+        lib_name=MTB
+        is_use_in_vehicle=false
+        anim_names=MTB_back
+        anim_names=MTB_bunnyhop
+        anim_names=MTB_drivebyFT
+        anim_names=MTB_driveby_LHS
+        anim_names=MTB_driveby_RHS
+        anim_names=MTB_fwd
+        anim_names=MTB_getoffBACK
+        anim_names=MTB_getoffLHS
+        anim_names=MTB_getoffRHS
+        anim_names=MTB_jumponL
+        anim_names=MTB_jumponR
+        anim_names=MTB_Left
+        anim_names=MTB_pedal
+        anim_names=MTB_pushes
+        anim_names=MTB_Ride
+        anim_names=MTB_Right
+        anim_names=MTB_sprint
+        anim_names=MTB_still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=мышечный
+    <animation_lib_val>
+        lib_name=MUSCULAR
+        is_use_in_vehicle=false
+        anim_names=MscleWalkst_armed
+        anim_names=MscleWalkst_Csaw
+        anim_names=Mscle_rckt_run
+        anim_names=Mscle_rckt_walkst
+        anim_names=Mscle_run_Csaw
+        anim_names=MuscleIdle
+        anim_names=MuscleIdle_armed
+        anim_names=MuscleIdle_Csaw
+        anim_names=MuscleIdle_rocket
+        anim_names=MuscleRun
+        anim_names=MuscleRun_armed
+        anim_names=MuscleSprint
+        anim_names=MuscleWalk
+        anim_names=MuscleWalkstart
+        anim_names=MuscleWalk_armed
+        anim_names=Musclewalk_Csaw
+        anim_names=Musclewalk_rocket
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=невада
+    <animation_lib_val>
+        lib_name=NEVADA
+        is_use_in_vehicle=false
+        anim_names=NEVADA_getin
+        anim_names=NEVADA_getout
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=охранять
+    <animation_lib_val>
+        lib_name=ON_LOOKERS
+        is_use_in_vehicle=false
+        anim_names=lkaround_in
+        anim_names=lkaround_loop
+        anim_names=lkaround_out
+        anim_names=lkup_in
+        anim_names=lkup_loop
+        anim_names=lkup_out
+        anim_names=lkup_point
+        anim_names=panic_cower
+        anim_names=panic_hide
+        anim_names=panic_in
+        anim_names=panic_loop
+        anim_names=panic_out
+        anim_names=panic_point
+        anim_names=panic_shout
+        anim_names=Pointup_in
+        anim_names=Pointup_loop
+        anim_names=Pointup_out
+        anim_names=Pointup_shout
+        anim_names=point_in
+        anim_names=point_loop
+        anim_names=point_out
+        anim_names=shout_01
+        anim_names=shout_02
+        anim_names=shout_in
+        anim_names=shout_loop
+        anim_names=shout_out
+        anim_names=wave_in
+        anim_names=wave_loop
+        anim_names=wave_out
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=отб
+    <animation_lib_val>
+        lib_name=OTB
+        is_use_in_vehicle=false
+        anim_names=betslp_in
+        anim_names=betslp_lkabt
+        anim_names=betslp_loop
+        anim_names=betslp_out
+        anim_names=betslp_tnk
+        anim_names=wtchrace_cmon
+        anim_names=wtchrace_in
+        anim_names=wtchrace_loop
+        anim_names=wtchrace_lose
+        anim_names=wtchrace_out
+        anim_names=wtchrace_win
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=парашют
+    <animation_lib_val>
+        lib_name=PARACHUTE
+        is_use_in_vehicle=false
+        anim_names=FALL_skyDive
+        anim_names=FALL_SkyDive_Accel
+        anim_names=FALL_skyDive_DIE
+        anim_names=FALL_SkyDive_L
+        anim_names=FALL_SkyDive_R
+        anim_names=PARA_decel
+        #anim_names=PARA_decel_O
+        anim_names=PARA_float
+        #anim_names=PARA_float_O
+        anim_names=PARA_Land
+        #anim_names=PARA_Land_O
+        anim_names=PARA_Land_Water
+        #anim_names=PARA_Land_Water_O
+        anim_names=PARA_open
+        #anim_names=PARA_open_O
+        #anim_names=PARA_Rip_Land_O
+        #anim_names=PARA_Rip_Loop_O
+        #anim_names=PARA_Rip_O
+        anim_names=PARA_steerL
+        #anim_names=PARA_steerL_O
+        anim_names=PARA_steerR
+        #anim_names=PARA_steerR_O
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=парк
+    <animation_lib_val>
+        lib_name=PARK
+        is_use_in_vehicle=false
+        anim_names=Tai_Chi_in
+        anim_names=Tai_Chi_Loop
+        anim_names=Tai_Chi_Out
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=паулмак
+    <animation_lib_val>
+        lib_name=PAULNMAC
+        is_use_in_vehicle=false
+        anim_names=Piss_in
+        anim_names=Piss_loop
+        anim_names=Piss_out
+        anim_names=PnM_Argue1_A
+        anim_names=PnM_Argue1_B
+        anim_names=PnM_Argue2_A
+        anim_names=PnM_Argue2_B
+        anim_names=PnM_Loop_A
+        anim_names=PnM_Loop_B
+        anim_names=wank_in
+        anim_names=wank_loop
+        anim_names=wank_out
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=пед
+    <animation_lib_val>
+        lib_name=PED
+        is_use_in_vehicle=false
+        anim_names=abseil
+        anim_names=ARRESTgun
+        anim_names=ATM
+        anim_names=BIKE_elbowL
+        anim_names=BIKE_elbowR
+        anim_names=BIKE_fallR
+        anim_names=BIKE_fall_off
+        anim_names=BIKE_pickupL
+        anim_names=BIKE_pickupR
+        anim_names=BIKE_pullupL
+        anim_names=BIKE_pullupR
+        anim_names=bomber
+        anim_names=CAR_alignHI_LHS
+        anim_names=CAR_alignHI_RHS
+        anim_names=CAR_align_LHS
+        anim_names=CAR_align_RHS
+        anim_names=CAR_closedoorL_LHS
+        anim_names=CAR_closedoorL_RHS
+        anim_names=CAR_closedoor_LHS
+        anim_names=CAR_closedoor_RHS
+        anim_names=CAR_close_LHS
+        anim_names=CAR_close_RHS
+        anim_names=CAR_crawloutRHS
+        anim_names=CAR_dead_LHS
+        anim_names=CAR_dead_RHS
+        anim_names=CAR_doorlocked_LHS
+        anim_names=CAR_doorlocked_RHS
+        anim_names=CAR_fallout_LHS
+        anim_names=CAR_fallout_RHS
+        anim_names=CAR_getinL_LHS
+        anim_names=CAR_getinL_RHS
+        anim_names=CAR_getin_LHS
+        anim_names=CAR_getin_RHS
+        anim_names=CAR_getoutL_LHS
+        anim_names=CAR_getoutL_RHS
+        anim_names=CAR_getout_LHS
+        anim_names=CAR_getout_RHS
+        anim_names=car_hookertalk
+        anim_names=CAR_jackedLHS
+        anim_names=CAR_jackedRHS
+        anim_names=CAR_jumpin_LHS
+        anim_names=CAR_LB
+        anim_names=CAR_LB_pro
+        anim_names=CAR_LB_weak
+        anim_names=CAR_LjackedLHS
+        anim_names=CAR_LjackedRHS
+        anim_names=CAR_Lshuffle_RHS
+        anim_names=CAR_Lsit
+        anim_names=CAR_open_LHS
+        anim_names=CAR_open_RHS
+        anim_names=CAR_pulloutL_LHS
+        anim_names=CAR_pulloutL_RHS
+        anim_names=CAR_pullout_LHS
+        anim_names=CAR_pullout_RHS
+        anim_names=CAR_Qjacked
+        anim_names=CAR_rolldoor
+        anim_names=CAR_rolldoorLO
+        anim_names=CAR_rollout_LHS
+        anim_names=CAR_rollout_RHS
+        anim_names=CAR_shuffle_RHS
+        anim_names=CAR_sit
+        anim_names=CAR_sitp
+        anim_names=CAR_sitpLO
+        anim_names=CAR_sit_pro
+        anim_names=CAR_sit_weak
+        anim_names=CAR_tune_radio
+        anim_names=CLIMB_idle
+        anim_names=CLIMB_jump
+        anim_names=CLIMB_jump2fall
+        anim_names=CLIMB_jump_B
+        anim_names=CLIMB_Pull
+        anim_names=CLIMB_Stand
+        anim_names=CLIMB_Stand_finish
+        anim_names=cower
+        anim_names=Crouch_Roll_L
+        anim_names=Crouch_Roll_R
+        anim_names=DAM_armL_frmBK
+        anim_names=DAM_armL_frmFT
+        anim_names=DAM_armL_frmLT
+        anim_names=DAM_armR_frmBK
+        anim_names=DAM_armR_frmFT
+        anim_names=DAM_armR_frmRT
+        anim_names=DAM_LegL_frmBK
+        anim_names=DAM_LegL_frmFT
+        anim_names=DAM_LegL_frmLT
+        anim_names=DAM_LegR_frmBK
+        anim_names=DAM_LegR_frmFT
+        anim_names=DAM_LegR_frmRT
+        anim_names=DAM_stomach_frmBK
+        anim_names=DAM_stomach_frmFT
+        anim_names=DAM_stomach_frmLT
+        anim_names=DAM_stomach_frmRT
+        anim_names=DOOR_LHinge_O
+        anim_names=DOOR_RHinge_O
+        anim_names=DrivebyL_L
+        anim_names=DrivebyL_R
+        anim_names=Driveby_L
+        anim_names=Driveby_R
+        anim_names=DRIVE_BOAT
+        anim_names=DRIVE_BOAT_back
+        anim_names=DRIVE_BOAT_L
+        anim_names=DRIVE_BOAT_R
+        anim_names=Drive_L
+        anim_names=Drive_LO_l
+        anim_names=Drive_LO_R
+        anim_names=Drive_L_pro
+        anim_names=Drive_L_pro_slow
+        anim_names=Drive_L_slow
+        anim_names=Drive_L_weak
+        anim_names=Drive_L_weak_slow
+        anim_names=Drive_R
+        anim_names=Drive_R_pro
+        anim_names=Drive_R_pro_slow
+        anim_names=Drive_R_slow
+        anim_names=Drive_R_weak
+        anim_names=Drive_R_weak_slow
+        anim_names=Drive_truck
+        anim_names=DRIVE_truck_back
+        anim_names=DRIVE_truck_L
+        anim_names=DRIVE_truck_R
+        anim_names=Drown
+        anim_names=DUCK_cower
+        anim_names=endchat_01
+        anim_names=endchat_02
+        anim_names=endchat_03
+        anim_names=EV_dive
+        anim_names=EV_step
+        #anim_names=facanger
+        #anim_names=facgum
+        #anim_names=facsurp
+        #anim_names=facsurpm
+        #anim_names=factalk
+        #anim_names=facurios
+        anim_names=FALL_back
+        anim_names=FALL_collapse
+        anim_names=FALL_fall
+        anim_names=FALL_front
+        anim_names=FALL_glide
+        anim_names=FALL_land
+        anim_names=FALL_skyDive
+        anim_names=Fight2Idle
+        anim_names=FightA_1
+        anim_names=FightA_2
+        anim_names=FightA_3
+        anim_names=FightA_block
+        anim_names=FightA_G
+        anim_names=FightA_M
+        anim_names=FIGHTIDLE
+        anim_names=FightShB
+        anim_names=FightShF
+        anim_names=FightSh_BWD
+        anim_names=FightSh_FWD
+        anim_names=FightSh_Left
+        anim_names=FightSh_Right
+        anim_names=flee_lkaround_01
+        anim_names=FLOOR_hit
+        anim_names=FLOOR_hit_f
+        anim_names=fucku
+        anim_names=gang_gunstand
+        anim_names=gas_cwr
+        anim_names=getup
+        anim_names=getup_front
+        anim_names=gum_eat
+        anim_names=GunCrouchBwd
+        anim_names=GunCrouchFwd
+        anim_names=GunMove_BWD
+        anim_names=GunMove_FWD
+        anim_names=GunMove_L
+        anim_names=GunMove_R
+        anim_names=Gun_2_IDLE
+        anim_names=GUN_BUTT
+        anim_names=GUN_BUTT_crouch
+        anim_names=Gun_stand
+        anim_names=handscower
+        anim_names=handsup
+        anim_names=HitA_1
+        anim_names=HitA_2
+        anim_names=HitA_3
+        anim_names=HIT_back
+        anim_names=HIT_behind
+        anim_names=HIT_front
+        anim_names=HIT_GUN_BUTT
+        anim_names=HIT_L
+        anim_names=HIT_R
+        anim_names=HIT_walk
+        anim_names=HIT_wall
+        anim_names=Idlestance_fat
+        anim_names=idlestance_old
+        anim_names=IDLE_armed
+        anim_names=IDLE_chat
+        anim_names=IDLE_csaw
+        anim_names=Idle_Gang1
+        anim_names=IDLE_HBHB
+        anim_names=IDLE_ROCKET
+        anim_names=IDLE_stance
+        anim_names=IDLE_taxi
+        anim_names=IDLE_tired
+        anim_names=Jetpack_Idle
+        anim_names=JOG_femaleA
+        anim_names=JOG_maleA
+        anim_names=JUMP_glide
+        anim_names=JUMP_land
+        anim_names=JUMP_launch
+        anim_names=JUMP_launch_R
+        anim_names=KART_drive
+        anim_names=KART_L
+        anim_names=KART_LB
+        anim_names=KART_R
+        anim_names=KD_left
+        anim_names=KD_right
+        anim_names=KO_shot_face
+        anim_names=KO_shot_front
+        anim_names=KO_shot_stom
+        anim_names=KO_skid_back
+        anim_names=KO_skid_front
+        anim_names=KO_spin_L
+        anim_names=KO_spin_R
+        anim_names=pass_Smoke_in_car
+        anim_names=phone_in
+        anim_names=phone_out
+        anim_names=phone_talk
+        anim_names=Player_Sneak
+        anim_names=Player_Sneak_walkstart
+        anim_names=roadcross
+        anim_names=roadcross_female
+        anim_names=roadcross_gang
+        anim_names=roadcross_old
+        anim_names=run_1armed
+        anim_names=run_armed
+        anim_names=run_civi
+        anim_names=run_csaw
+        anim_names=run_fat
+        anim_names=run_fatold
+        anim_names=run_gang1
+        anim_names=run_left
+        anim_names=run_old
+        anim_names=run_player
+        anim_names=run_right
+        anim_names=run_rocket
+        anim_names=Run_stop
+        anim_names=Run_stopR
+        anim_names=Run_Wuzi
+        anim_names=SEAT_down
+        anim_names=SEAT_idle
+        anim_names=SEAT_up
+        anim_names=SHOT_leftP
+        anim_names=SHOT_partial
+        anim_names=SHOT_partial_B
+        anim_names=SHOT_rightP
+        anim_names=Shove_Partial
+        anim_names=Smoke_in_car
+        anim_names=sprint_civi
+        anim_names=sprint_panic
+        anim_names=Sprint_Wuzi
+        anim_names=swat_run
+        anim_names=Swim_Tread
+        anim_names=Tap_hand
+        anim_names=Tap_handP
+        anim_names=turn_180
+        anim_names=Turn_L
+        anim_names=Turn_R
+        anim_names=WALK_armed
+        anim_names=WALK_civi
+        anim_names=WALK_csaw
+        anim_names=Walk_DoorPartial
+        anim_names=WALK_drunk
+        anim_names=WALK_fat
+        anim_names=WALK_fatold
+        anim_names=WALK_gang1
+        anim_names=WALK_gang2
+        anim_names=WALK_old
+        anim_names=WALK_player
+        anim_names=WALK_rocket
+        anim_names=WALK_shuffle
+        anim_names=WALK_start
+        anim_names=WALK_start_armed
+        anim_names=WALK_start_csaw
+        anim_names=WALK_start_rocket
+        anim_names=Walk_Wuzi
+        anim_names=WEAPON_crouch
+        anim_names=woman_idlestance
+        anim_names=woman_run
+        anim_names=WOMAN_runbusy
+        anim_names=WOMAN_runfatold
+        anim_names=woman_runpanic
+        anim_names=WOMAN_runsexy
+        anim_names=WOMAN_walkbusy
+        anim_names=WOMAN_walkfatold
+        anim_names=WOMAN_walknorm
+        anim_names=WOMAN_walkold
+        anim_names=WOMAN_walkpro
+        anim_names=WOMAN_walksexy
+        anim_names=WOMAN_walkshop
+        anim_names=XPRESSscratch
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=игрокдб
+    <animation_lib_val>
+        lib_name=PLAYER_DVBYS
+        is_use_in_vehicle=false
+        anim_names=Plyr_DrivebyBwd
+        anim_names=Plyr_DrivebyFwd
+        anim_names=Plyr_DrivebyLHS
+        anim_names=Plyr_DrivebyRHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=лениться
+    <animation_lib_val>
+        lib_name=PLAYIDLES
+        is_use_in_vehicle=false
+        anim_names=shift
+        anim_names=shldr
+        anim_names=stretch
+        anim_names=strleg
+        anim_names=time
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=полиция
+    <animation_lib_val>
+        lib_name=POLICE
+        is_use_in_vehicle=false
+        anim_names=CopTraf_Away
+        anim_names=CopTraf_Come
+        anim_names=CopTraf_Left
+        anim_names=CopTraf_Stop
+        anim_names=COP_getoutcar_LHS
+        anim_names=Cop_move_FWD
+        anim_names=crm_drgbst_01
+        anim_names=Door_Kick
+        anim_names=plc_drgbst_01
+        anim_names=plc_drgbst_02
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=пул
+    <animation_lib_val>
+        lib_name=POOL
+        is_use_in_vehicle=false
+        anim_names=POOL_ChalkCue
+        anim_names=POOL_Idle_Stance
+        anim_names=POOL_Long_Shot
+        #anim_names=POOL_Long_Shot_O
+        anim_names=POOL_Long_Start
+        #anim_names=POOL_Long_Start_O
+        anim_names=POOL_Med_Shot
+        #anim_names=POOL_Med_Shot_O
+        anim_names=POOL_Med_Start
+        #anim_names=POOL_Med_Start_O
+        anim_names=POOL_Place_White
+        anim_names=POOL_Short_Shot
+        #anim_names=POOL_Short_Shot_O
+        anim_names=POOL_Short_Start
+        #anim_names=POOL_Short_Start_O
+        anim_names=POOL_Walk
+        anim_names=POOL_Walk_Start
+        anim_names=POOL_XLong_Shot
+        #anim_names=POOL_XLong_Shot_O
+        anim_names=POOL_XLong_Start
+        #anim_names=POOL_XLong_Start_O
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бедный
+    <animation_lib_val>
+        lib_name=POOR
+        is_use_in_vehicle=false
+        anim_names=WINWASH_Start
+        anim_names=WINWASH_Wash2Beg
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=питон
+    <animation_lib_val>
+        lib_name=PYTHON
+        is_use_in_vehicle=false
+        anim_names=python_crouchfire
+        anim_names=python_crouchreload
+        anim_names=python_fire
+        anim_names=python_fire_poor
+        anim_names=python_reload
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=квад
+    <animation_lib_val>
+        lib_name=QUAD
+        is_use_in_vehicle=false
+        anim_names=QUAD_back
+        anim_names=QUAD_driveby_FT
+        anim_names=QUAD_driveby_LHS
+        anim_names=QUAD_driveby_RHS
+        anim_names=QUAD_FWD
+        anim_names=QUAD_getoff_B
+        anim_names=QUAD_getoff_LHS
+        anim_names=QUAD_getoff_RHS
+        anim_names=QUAD_geton_LHS
+        anim_names=QUAD_geton_RHS
+        anim_names=QUAD_hit
+        anim_names=QUAD_kick
+        anim_names=QUAD_Left
+        anim_names=QUAD_passenger
+        anim_names=QUAD_reverse
+        anim_names=QUAD_ride
+        anim_names=QUAD_Right
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=кваддб
+    <animation_lib_val>
+        lib_name=QUAD_DBZ
+        is_use_in_vehicle=false
+        anim_names=Pass_Driveby_BWD
+        anim_names=Pass_Driveby_FWD
+        anim_names=Pass_Driveby_LHS
+        anim_names=Pass_Driveby_RHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=рэп
+    <animation_lib_val>
+        lib_name=RAPPING
+        is_use_in_vehicle=false
+        anim_names=Laugh_01
+        anim_names=RAP_A_IN
+        anim_names=RAP_A_Loop
+        anim_names=RAP_A_OUT
+        anim_names=RAP_B_IN
+        anim_names=RAP_B_Loop
+        anim_names=RAP_B_OUT
+        anim_names=RAP_C_Loop
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=винтовка
+    <animation_lib_val>
+        lib_name=RIFLE
+        is_use_in_vehicle=false
+        anim_names=RIFLE_crouchfire
+        anim_names=RIFLE_crouchload
+        anim_names=RIFLE_fire
+        anim_names=RIFLE_fire_poor
+        anim_names=RIFLE_load
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бунт
+    <animation_lib_val>
+        lib_name=RIOT
+        is_use_in_vehicle=false
+        anim_names=RIOT_ANGRY
+        anim_names=RIOT_ANGRY_B
+        anim_names=RIOT_challenge
+        anim_names=RIOT_CHANT
+        anim_names=RIOT_FUKU
+        anim_names=RIOT_PUNCHES
+        anim_names=RIOT_shout
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=грабить
+    <animation_lib_val>
+        lib_name=ROB_BANK
+        is_use_in_vehicle=false
+        anim_names=CAT_Safe_End
+        anim_names=CAT_Safe_Open
+        anim_names=CAT_Safe_Open_O
+        anim_names=CAT_Safe_Rob
+        anim_names=SHP_HandsUp_Scr
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=ракета
+    <animation_lib_val>
+        lib_name=ROCKET
+        is_use_in_vehicle=false
+        anim_names=idle_rocket
+        anim_names=RocketFire
+        anim_names=run_rocket
+        anim_names=walk_rocket
+        anim_names=WALK_start_rocket
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=танцующий
+    <animation_lib_val>
+        lib_name=RUNNINGMAN
+        is_use_in_vehicle=false
+        anim_names=Dance_B1
+        anim_names=Dance_B10
+        anim_names=Dance_B11
+        anim_names=Dance_B12
+        anim_names=Dance_B13
+        anim_names=Dance_B14
+        anim_names=Dance_B15
+        anim_names=Dance_B16
+        anim_names=Dance_B2
+        anim_names=Dance_B3
+        anim_names=Dance_B4
+        anim_names=Dance_B5
+        anim_names=Dance_B6
+        anim_names=Dance_B7
+        anim_names=Dance_B8
+        anim_names=Dance_B9
+        anim_names=Dance_G1
+        anim_names=Dance_G10
+        anim_names=Dance_G11
+        anim_names=Dance_G12
+        anim_names=Dance_G13
+        anim_names=Dance_G14
+        anim_names=Dance_G15
+        anim_names=Dance_G16
+        anim_names=Dance_G2
+        anim_names=Dance_G3
+        anim_names=Dance_G4
+        anim_names=Dance_G5
+        anim_names=Dance_G6
+        anim_names=Dance_G7
+        anim_names=Dance_G8
+        anim_names=Dance_G9
+        anim_names=dance_loop
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=рустлер
+    <animation_lib_val>
+        lib_name=RUSTLER
+        is_use_in_vehicle=false
+        anim_names=Plane_align_LHS
+        anim_names=Plane_close
+        anim_names=Plane_getin
+        anim_names=Plane_getout
+        anim_names=Plane_open
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=райдер
+    <animation_lib_val>
+        lib_name=RYDER
+        is_use_in_vehicle=false
+        anim_names=RYD_Beckon_01
+        anim_names=RYD_Beckon_02
+        anim_names=RYD_Beckon_03
+        anim_names=RYD_Die_PT1
+        anim_names=RYD_Die_PT2
+        anim_names=Van_Crate_L
+        anim_names=Van_Crate_R
+        anim_names=Van_Fall_L
+        anim_names=Van_Fall_R
+        anim_names=Van_Lean_L
+        anim_names=Van_Lean_R
+        anim_names=VAN_PickUp_E
+        anim_names=VAN_PickUp_S
+        anim_names=Van_Stand
+        anim_names=Van_Stand_Crate
+        anim_names=Van_Throw
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=диджей
+    <animation_lib_val>
+        lib_name=SCRATCHING
+        is_use_in_vehicle=false
+        anim_names=scdldlp
+        anim_names=scdlulp
+        anim_names=scdrdlp
+        anim_names=scdrulp
+        anim_names=sclng_l
+        anim_names=sclng_r
+        anim_names=scmid_l
+        anim_names=scmid_r
+        anim_names=scshrtl
+        anim_names=scshrtr
+        anim_names=sc_ltor
+        anim_names=sc_rtol
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=шамал
+    <animation_lib_val>
+        lib_name=SHAMAL
+        is_use_in_vehicle=false
+        anim_names=SHAMAL_align
+        anim_names=SHAMAL_getin_LHS
+        anim_names=SHAMAL_getout_LHS
+        anim_names=SHAMAL_open
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=магазин
+    <animation_lib_val>
+        lib_name=SHOP
+        is_use_in_vehicle=false
+        anim_names=ROB_2Idle
+        anim_names=ROB_Loop
+        anim_names=ROB_Loop_Threat
+        anim_names=ROB_Shifty
+        anim_names=ROB_StickUp_In
+        anim_names=SHP_Duck
+        anim_names=SHP_Duck_Aim
+        anim_names=SHP_Duck_Fire
+        anim_names=SHP_Gun_Aim
+        anim_names=SHP_Gun_Duck
+        anim_names=SHP_Gun_Fire
+        anim_names=SHP_Gun_Grab
+        anim_names=SHP_Gun_Threat
+        anim_names=SHP_HandsUp_Scr
+        anim_names=SHP_Jump_Glide
+        anim_names=SHP_Jump_Land
+        anim_names=SHP_Jump_Launch
+        anim_names=SHP_Rob_GiveCash
+        anim_names=SHP_Rob_HandsUp
+        anim_names=SHP_Rob_React
+        anim_names=SHP_Serve_End
+        anim_names=SHP_Serve_Idle
+        anim_names=SHP_Serve_Loop
+        anim_names=SHP_Serve_Start
+        anim_names=Smoke_RYD
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=дробовик
+    <animation_lib_val>
+        lib_name=SHOTGUN
+        is_use_in_vehicle=false
+        anim_names=shotgun_crouchfire
+        anim_names=shotgun_fire
+        anim_names=shotgun_fire_poor
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=тихо
+    <animation_lib_val>
+        lib_name=SILENCED
+        is_use_in_vehicle=false
+        anim_names=CrouchReload
+        anim_names=SilenceCrouchfire
+        anim_names=Silence_fire
+        anim_names=Silence_reload
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=коньки
+    <animation_lib_val>
+        lib_name=SKATE
+        is_use_in_vehicle=false
+        anim_names=skate_idle
+        anim_names=skate_run
+        anim_names=skate_sprint
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=курение
+    <animation_lib_val>
+        lib_name=SMOKING
+        is_use_in_vehicle=false
+        anim_names=F_smklean_loop
+        anim_names=M_smklean_loop
+        anim_names=M_smkstnd_loop
+        anim_names=M_smk_drag
+        anim_names=M_smk_in
+        anim_names=M_smk_loop
+        anim_names=M_smk_out
+        anim_names=M_smk_tap
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=снайпер
+    <animation_lib_val>
+        lib_name=SNIPER
+        is_use_in_vehicle=false
+        anim_names=WEAPON_sniper
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=снм
+    <animation_lib_val>
+        lib_name=SNM
+        is_use_in_vehicle=false
+        anim_names=SNM_CANED_IDLE_P
+        anim_names=SNM_CANED_IDLE_W
+        anim_names=SNM_CANED_P
+        anim_names=SNM_CANED_W
+        anim_names=SNM_CANE_IDLE_P
+        anim_names=SNM_CANE_IDLE_W
+        anim_names=SNM_CANE_P
+        anim_names=SNM_CANE_W
+        anim_names=SPANKEDP
+        anim_names=SPANKEDW
+        anim_names=SPANKED_IDLEP
+        anim_names=SPANKED_IDLEW
+        anim_names=SPANKINGP
+        anim_names=SPANKINGW
+        anim_names=SPANKING_ENDP
+        anim_names=SPANKING_ENDW
+        anim_names=SPANKING_IDLEP
+        anim_names=SPANKING_IDLEW
+        anim_names=SPANKING_SITTINGIDLEP
+        anim_names=SPANKING_SITTINGIDLEW
+        anim_names=SPANKING_SITTINGP
+        anim_names=SPANKING_SITTINGW
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=балончик
+    <animation_lib_val>
+        lib_name=SPRAYCAN
+        is_use_in_vehicle=false
+        anim_names=spraycan_fire
+        anim_names=spraycan_full
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=стрип
+    <animation_lib_val>
+        lib_name=STRIP
+        is_use_in_vehicle=false
+        anim_names=PLY_CASH
+        anim_names=PUN_CASH
+        anim_names=PUN_HOLLER
+        anim_names=PUN_LOOP
+        anim_names=strip_A
+        anim_names=strip_B
+        anim_names=strip_C
+        anim_names=strip_D
+        anim_names=strip_E
+        anim_names=strip_F
+        anim_names=strip_G
+        anim_names=STR_A2B
+        anim_names=STR_B2A
+        anim_names=STR_B2C
+        anim_names=STR_C1
+        anim_names=STR_C2
+        anim_names=STR_C2B
+        anim_names=STR_Loop_A
+        anim_names=STR_Loop_B
+        anim_names=STR_Loop_C
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=загорать
+    <animation_lib_val>
+        lib_name=SUNBATHE
+        is_use_in_vehicle=false
+        anim_names=batherdown
+        anim_names=batherup
+        anim_names=Lay_Bac_in
+        anim_names=Lay_Bac_out
+        anim_names=ParkSit_M_IdleA
+        anim_names=ParkSit_M_IdleB
+        anim_names=ParkSit_M_IdleC
+        anim_names=ParkSit_M_in
+        anim_names=ParkSit_M_out
+        anim_names=ParkSit_W_idleA
+        anim_names=ParkSit_W_idleB
+        anim_names=ParkSit_W_idleC
+        anim_names=ParkSit_W_in
+        anim_names=ParkSit_W_out
+        anim_names=SBATHE_F_LieB2Sit
+        anim_names=SBATHE_F_Out
+        anim_names=SitnWait_in_W
+        anim_names=SitnWait_out_W
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=сват
+    <animation_lib_val>
+        lib_name=SWAT
+        is_use_in_vehicle=false
+        anim_names=gnstwall_injurd
+        anim_names=JMP_Wall1m_180
+        anim_names=Rail_fall
+        anim_names=Rail_fall_crawl
+        anim_names=swt_breach_01
+        anim_names=swt_breach_02
+        anim_names=swt_breach_03
+        anim_names=swt_go
+        anim_names=swt_lkt
+        anim_names=swt_sty
+        anim_names=swt_vent_01
+        anim_names=swt_vent_02
+        anim_names=swt_vnt_sht_die
+        anim_names=swt_vnt_sht_in
+        anim_names=swt_vnt_sht_loop
+        anim_names=swt_wllpk_L
+        anim_names=swt_wllpk_L_back
+        anim_names=swt_wllpk_R
+        anim_names=swt_wllpk_R_back
+        anim_names=swt_wllshoot_in_L
+        anim_names=swt_wllshoot_in_R
+        anim_names=swt_wllshoot_out_L
+        anim_names=swt_wllshoot_out_R
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=свит
+    <animation_lib_val>
+        lib_name=SWEET
+        is_use_in_vehicle=false
+        anim_names=ho_ass_slapped
+        anim_names=LaFin_Player
+        anim_names=LaFin_Sweet
+        anim_names=plyr_hndshldr_01
+        anim_names=sweet_ass_slap
+        anim_names=sweet_hndshldr_01
+        anim_names=Sweet_injuredloop
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=плавать
+    <animation_lib_val>
+        lib_name=SWIM
+        is_use_in_vehicle=false
+        anim_names=Swim_Breast
+        anim_names=SWIM_crawl
+        anim_names=Swim_Dive_Under
+        anim_names=Swim_Glide
+        anim_names=Swim_jumpout
+        anim_names=Swim_Tread
+        anim_names=Swim_Under
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=меч
+    <animation_lib_val>
+        lib_name=SWORD
+        is_use_in_vehicle=false
+        anim_names=sword_1
+        anim_names=sword_2
+        anim_names=sword_3
+        anim_names=sword_4
+        anim_names=sword_block
+        anim_names=Sword_Hit_1
+        anim_names=Sword_Hit_2
+        anim_names=Sword_Hit_3
+        anim_names=sword_IDLE
+        anim_names=sword_part
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=бак
+    <animation_lib_val>
+        lib_name=TANK
+        is_use_in_vehicle=false
+        anim_names=TANK_align_LHS
+        anim_names=TANK_close_LHS
+        anim_names=TANK_doorlocked
+        anim_names=TANK_getin_LHS
+        anim_names=TANK_getout_LHS
+        anim_names=TANK_open_LHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=тату
+    <animation_lib_val>
+        lib_name=TATTOOS
+        is_use_in_vehicle=false
+        #anim_names=TAT_ArmL_In_O
+        anim_names=TAT_ArmL_In_P
+        anim_names=TAT_ArmL_In_T
+        #anim_names=TAT_ArmL_Out_O
+        anim_names=TAT_ArmL_Out_P
+        anim_names=TAT_ArmL_Out_T
+        #anim_names=TAT_ArmL_Pose_O
+        anim_names=TAT_ArmL_Pose_P
+        anim_names=TAT_ArmL_Pose_T
+        #anim_names=TAT_ArmR_In_O
+        anim_names=TAT_ArmR_In_P
+        anim_names=TAT_ArmR_In_T
+        #anim_names=TAT_ArmR_Out_O
+        anim_names=TAT_ArmR_Out_P
+        anim_names=TAT_ArmR_Out_T
+        #anim_names=TAT_ArmR_Pose_O
+        anim_names=TAT_ArmR_Pose_P
+        anim_names=TAT_ArmR_Pose_T
+        #anim_names=TAT_Back_In_O
+        anim_names=TAT_Back_In_P
+        anim_names=TAT_Back_In_T
+        #anim_names=TAT_Back_Out_O
+        anim_names=TAT_Back_Out_P
+        anim_names=TAT_Back_Out_T
+        #anim_names=TAT_Back_Pose_O
+        anim_names=TAT_Back_Pose_P
+        anim_names=TAT_Back_Pose_T
+        anim_names=TAT_Back_Sit_In_P
+        anim_names=TAT_Back_Sit_Loop_P
+        anim_names=TAT_Back_Sit_Out_P
+        #anim_names=TAT_Bel_In_O
+        anim_names=TAT_Bel_In_T
+        #anim_names=TAT_Bel_Out_O
+        anim_names=TAT_Bel_Out_T
+        #anim_names=TAT_Bel_Pose_O
+        anim_names=TAT_Bel_Pose_T
+        #anim_names=TAT_Che_In_O
+        anim_names=TAT_Che_In_P
+        anim_names=TAT_Che_In_T
+        #anim_names=TAT_Che_Out_O
+        anim_names=TAT_Che_Out_P
+        anim_names=TAT_Che_Out_T
+        #anim_names=TAT_Che_Pose_O
+        anim_names=TAT_Che_Pose_P
+        anim_names=TAT_Che_Pose_T
+        #anim_names=TAT_Drop_O
+        #anim_names=TAT_Idle_Loop_O
+        anim_names=TAT_Idle_Loop_T
+        #anim_names=TAT_Sit_In_O
+        anim_names=TAT_Sit_In_P
+        anim_names=TAT_Sit_In_T
+        #anim_names=TAT_Sit_Loop_O
+        anim_names=TAT_Sit_Loop_P
+        anim_names=TAT_Sit_Loop_T
+        #anim_names=TAT_Sit_Out_O
+        anim_names=TAT_Sit_Out_P
+        anim_names=TAT_Sit_Out_T
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=тек
+    <animation_lib_val>
+        lib_name=TEC
+        is_use_in_vehicle=false
+        anim_names=TEC_crouchfire
+        anim_names=TEC_crouchreload
+        anim_names=TEC_fire
+        anim_names=TEC_reload
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=поезд
+    <animation_lib_val>
+        lib_name=TRAIN
+        is_use_in_vehicle=false
+        anim_names=tran_gtup
+        anim_names=tran_hng
+        anim_names=tran_ouch
+        anim_names=tran_stmb
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=грузовик
+    <animation_lib_val>
+        lib_name=TRUCK
+        is_use_in_vehicle=false
+        anim_names=TRUCK_ALIGN_LHS
+        anim_names=TRUCK_ALIGN_RHS
+        anim_names=TRUCK_closedoor_LHS
+        anim_names=TRUCK_closedoor_RHS
+        anim_names=TRUCK_close_LHS
+        anim_names=TRUCK_close_RHS
+        anim_names=TRUCK_getin_LHS
+        anim_names=TRUCK_getin_RHS
+        anim_names=TRUCK_getout_LHS
+        anim_names=TRUCK_getout_RHS
+        anim_names=TRUCK_jackedLHS
+        anim_names=TRUCK_jackedRHS
+        anim_names=TRUCK_open_LHS
+        anim_names=TRUCK_open_RHS
+        anim_names=TRUCK_pullout_LHS
+        anim_names=TRUCK_pullout_RHS
+        anim_names=TRUCK_Shuffle
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=узи
+    <animation_lib_val>
+        lib_name=UZI
+        is_use_in_vehicle=false
+        anim_names=UZI_crouchfire
+        anim_names=UZI_crouchreload
+        anim_names=UZI_fire
+        anim_names=UZI_fire_poor
+        anim_names=UZI_reload
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=фургон
+    <animation_lib_val>
+        lib_name=VAN
+        is_use_in_vehicle=false
+        anim_names=VAN_close_back_LHS
+        anim_names=VAN_close_back_RHS
+        anim_names=VAN_getin_Back_LHS
+        anim_names=VAN_getin_Back_RHS
+        anim_names=VAN_getout_back_LHS
+        anim_names=VAN_getout_back_RHS
+        anim_names=VAN_open_back_LHS
+        anim_names=VAN_open_back_RHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=продажа
+    <animation_lib_val>
+        lib_name=VENDING
+        is_use_in_vehicle=false
+        anim_names=VEND_Drink2_P
+        anim_names=VEND_Drink_P
+        anim_names=vend_eat1_P
+        anim_names=VEND_Eat_P
+        anim_names=VEND_Use
+        anim_names=VEND_Use_pt2
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=вихрь
+    <animation_lib_val>
+        lib_name=VORTEX
+        is_use_in_vehicle=false
+        anim_names=CAR_jumpin_LHS
+        anim_names=CAR_jumpin_RHS
+        anim_names=vortex_getout_LHS
+        anim_names=vortex_getout_RHS
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=путник
+    <animation_lib_val>
+        lib_name=WAYFARER
+        is_use_in_vehicle=false
+        anim_names=WF_Back
+        anim_names=WF_drivebyFT
+        anim_names=WF_drivebyLHS
+        anim_names=WF_drivebyRHS
+        anim_names=WF_Fwd
+        anim_names=WF_getoffBACK
+        anim_names=WF_getoffLHS
+        anim_names=WF_getoffRHS
+        anim_names=WF_hit
+        anim_names=WF_jumponL
+        anim_names=WF_jumponR
+        anim_names=WF_kick
+        anim_names=WF_Left
+        anim_names=WF_passenger
+        anim_names=WF_pushes
+        anim_names=WF_Ride
+        anim_names=WF_Right
+        anim_names=WF_Still
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=оружие
+    <animation_lib_val>
+        lib_name=WEAPONS
+        is_use_in_vehicle=false
+        anim_names=SHP_1H_Lift
+        anim_names=SHP_1H_Lift_End
+        anim_names=SHP_1H_Ret
+        anim_names=SHP_1H_Ret_S
+        anim_names=SHP_2H_Lift
+        anim_names=SHP_2H_Lift_End
+        anim_names=SHP_2H_Ret
+        anim_names=SHP_2H_Ret_S
+        anim_names=SHP_Ar_Lift
+        anim_names=SHP_Ar_Lift_End
+        anim_names=SHP_Ar_Ret
+        anim_names=SHP_Ar_Ret_S
+        anim_names=SHP_G_Lift_In
+        anim_names=SHP_G_Lift_Out
+        anim_names=SHP_Tray_In
+        anim_names=SHP_Tray_Out
+        anim_names=SHP_Tray_Pose
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=воп
+    <animation_lib_val>
+        lib_name=WOP
+        is_use_in_vehicle=false
+        anim_names=Dance_B1
+        anim_names=Dance_B10
+        anim_names=Dance_B11
+        anim_names=Dance_B12
+        anim_names=Dance_B13
+        anim_names=Dance_B14
+        anim_names=Dance_B15
+        anim_names=Dance_B16
+        anim_names=Dance_B2
+        anim_names=Dance_B3
+        anim_names=Dance_B4
+        anim_names=Dance_B5
+        anim_names=Dance_B6
+        anim_names=Dance_B7
+        anim_names=Dance_B8
+        anim_names=Dance_B9
+        anim_names=Dance_G1
+        anim_names=Dance_G10
+        anim_names=Dance_G11
+        anim_names=Dance_G12
+        anim_names=Dance_G13
+        anim_names=Dance_G14
+        anim_names=Dance_G15
+        anim_names=Dance_G16
+        anim_names=Dance_G2
+        anim_names=Dance_G3
+        anim_names=Dance_G4
+        anim_names=Dance_G5
+        anim_names=Dance_G6
+        anim_names=Dance_G7
+        anim_names=Dance_G8
+        anim_names=Dance_G9
+        anim_names=dance_loop
+    </animation_lib_val>
+</animation_libs>
+
+<animation_libs>
+    key=вузи
+    <animation_lib_val>
+        lib_name=WUZI
+        is_use_in_vehicle=false
+        anim_names=CS_Dead_Guy
+        anim_names=CS_Plyr_pt1
+        anim_names=CS_Plyr_pt2
+        anim_names=CS_Wuzi_pt1
+        anim_names=CS_Wuzi_pt2
+        anim_names=Walkstart_Idle_01
+        anim_names=Wuzi_follow
+        anim_names=Wuzi_Greet_Plyr
+        anim_names=Wuzi_Greet_Wuzi
+        anim_names=Wuzi_grnd_chk
+        anim_names=Wuzi_stand_loop
+        anim_names=Wuzi_Walk
+    </animation_lib_val>
+</animation_libs>

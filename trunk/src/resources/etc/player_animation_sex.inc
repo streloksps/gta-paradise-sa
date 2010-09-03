@@ -1,0 +1,27 @@
+<animation_libs>
+    key=секс
+    <animation_lib_val>
+        lib_name=SEX
+        is_use_in_vehicle=false
+        anim_names=SEX_1to2_P
+        anim_names=SEX_1to2_W
+        anim_names=SEX_1_Cum_P
+        anim_names=SEX_1_Cum_W
+        anim_names=SEX_1_Fail_P
+        anim_names=SEX_1_Fail_W
+        anim_names=SEX_1_P
+        anim_names=SEX_1_W
+        anim_names=SEX_2to3_P
+        anim_names=SEX_2to3_W
+        anim_names=SEX_2_Fail_P
+        anim_names=SEX_2_Fail_W
+        anim_names=SEX_2_P
+        anim_names=SEX_2_W
+        anim_names=SEX_3to1_P
+        anim_names=SEX_3to1_W
+        anim_names=SEX_3_Fail_P
+        anim_names=SEX_3_Fail_W
+        anim_names=SEX_3_P
+        anim_names=SEX_3_W
+    </animation_lib_val>
+</animation_libs>

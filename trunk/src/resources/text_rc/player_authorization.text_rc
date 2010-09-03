@@ -1,0 +1,17 @@
+player_preconnect_player            =$(color_connection_msg)\
+                                    SA-MP $(server_version) инициализирован\n\
+                                    Подключаемся к $(server_address)...\n\
+                                    Подключение установлено. Загружаем...
+
+player_connect_player               =$(player_preconnect_player)\n\
+                                    Добро пожаловать на $(server_name)
+
+
+player_connect_begin_player         =<clear/>$(player_preconnect_player)
+
+player_connect_done_player          =<clear/>$(player_connect_player)\n\
+                                    $(color_cmd_info)\
+                                    Справка: $(cmd_help_name); правила сервера: $(cmd_rules_name); $(player_connect_news)
+
+#player_connect_news                 =Новое: Можно использовать русские имена
+player_connect_news                 =

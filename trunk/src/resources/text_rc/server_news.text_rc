@@ -1,0 +1,9 @@
+cmd_news_section                =$(cmd_section_info)
+cmd_news_name                   =/новости
+cmd_news_params                 =[номер_страницы]
+cmd_news_short                  =новости сервера
+cmd_news_full                   =
+
+cmd_news_header                 =$(color_cmd_head)Новости сервера $(server_name):
+cmd_news_item_user              =$(color_cmd_text) $(nn). $(text);
+cmd_news_item_admin             =$(color_server_for_admin) $(nn). $(text);

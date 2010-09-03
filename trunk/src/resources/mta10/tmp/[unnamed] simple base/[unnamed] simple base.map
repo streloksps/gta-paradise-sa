@@ -1,0 +1,29 @@
+<map edf:definitions="editor_main">
+    <object id="object (gate_autoR) (1)" model="985" interior="0" dimension="0" name="delux object" posX="2339.610" posY="-667.833" posZ="130.013" rotX="0.0" rotY="0.0" rotZ="90.000" />
+    <object id="object (gate_autoR) (2)" model="985" interior="0" dimension="0" name="delux object (1)" posX="2339.611" posY="-660.583" posZ="129.949" rotX="0.0" rotY="0.0" rotZ="-90.000" />
+    <object id="object (gate_autoR) (3)" model="985" interior="0" dimension="0" name="delux object (2)" posX="2339.307" posY="-652.884" posZ="129.683" rotX="0.0" rotY="0.0" rotZ="-90.000" />
+    <object id="object (gate_autoR) (4)" model="985" interior="0" dimension="0" name="delux object (3)" posX="2339.310" posY="-645.145" posZ="129.622" rotX="0.0" rotY="0.0" rotZ="-90.000" />
+    <object id="object (gate_autoR) (5)" model="985" interior="0" dimension="0" name="delux object (4)" posX="2343.375" posY="-641.330" posZ="130.004" rotX="0.0" rotY="0.0" rotZ="-180.000" />
+    <object id="object (gate_autoR) (6)" model="985" interior="0" dimension="0" name="delux object (5)" posX="2351.236" posY="-640.653" posZ="130.228" rotX="0.0" rotY="0.0" rotZ="11.250" />
+    <object id="object (gate_autoR) (7)" model="985" interior="0" dimension="0" name="delux object (6)" posX="2359.003" posY="-639.873" posZ="130.466" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (gate_autoR) (8)" model="985" interior="0" dimension="0" name="delux object (7)" posX="2343.537" posY="-671.660" posZ="133.474" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (gate_autoR) (9)" model="985" interior="0" dimension="0" name="delux object (8)" posX="2350.909" posY="-671.624" posZ="133.506" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (gate_autoR) (10)" model="985" interior="0" dimension="0" name="delux object (9)" posX="2357.757" posY="-671.211" posZ="132.697" rotX="0.0" rotY="0.0" rotZ="11.250" />
+    <object id="object (gate_autoR) (11)" model="985" interior="0" dimension="0" name="delux object (10)" posX="2364.223" posY="-669.856" posZ="131.509" rotX="0.0" rotY="0.0" rotZ="22.500" />
+    <object id="object (gate_autoR) (12)" model="985" interior="0" dimension="0" name="delux object (11)" posX="2366.118" posY="-639.721" posZ="129.725" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (gate_autoR) (13)" model="985" interior="0" dimension="0" name="delux object (12)" posX="2373.798" posY="-639.215" posZ="128.668" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (gate_autoR) (14)" model="985" interior="0" dimension="0" name="delux object (13)" posX="2381.402" posY="-639.390" posZ="127.829" rotX="0.0" rotY="0.0" rotZ="-11.250" />
+    <object id="object (gate_autoR) (15)" model="985" interior="0" dimension="0" name="delux object (14)" posX="2370.552" posY="-666.442" posZ="129.860" rotX="0.0" rotY="0.0" rotZ="33.750" />
+    <object id="object (gate_autoR) (16)" model="985" interior="0" dimension="0" name="delux object (15)" posX="2377.401" posY="-664.431" posZ="129.317" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (gen_roofbit3) (1)" model="1689" interior="0" dimension="0" name="delux object (16)" posX="2358.219" posY="-670.952" posZ="136.715" rotX="0.0" rotY="0.0" rotZ="11.250" />
+    <object id="object (DYN_TABLE_03) (1)" model="1516" interior="0" dimension="0" name="delux object (17)" posX="2360.024" posY="-648.426" posZ="127.371" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (mrk_seating1) (1)" model="1723" interior="0" dimension="0" name="delux object (18)" posX="2358.288" posY="-649.382" posZ="127.049" rotX="0.0" rotY="0.0" rotZ="90.000" />
+    <object id="object (mrk_seating1b) (1)" model="1724" interior="0" dimension="0" name="delux object (19)" posX="2359.393" posY="-646.127" posZ="127.202" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (MED_OFFICE_DESK_1) (1)" model="2165" interior="0" dimension="0" name="delux object (20)" posX="2354.411" posY="-646.745" posZ="127.055" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (MIKE_DIN_CHAIR) (1)" model="2310" interior="0" dimension="0" name="delux object (21)" posX="2354.900" posY="-647.741" posZ="127.554" rotX="0.0" rotY="0.0" rotZ="-90.000" />
+    <object id="object (LM_stripChair) (1)" model="2724" interior="0" dimension="0" name="delux object (22)" posX="2356.630" posY="-646.716" posZ="127.602" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (ci_guardhouse1) (1)" model="5837" interior="0" dimension="0" name="delux object (23)" posX="2364.481" posY="-641.931" posZ="129.403" rotX="0.0" rotY="0.0" rotZ="-180.000" />
+    <object id="object (compmedhos5_LAe) (1)" model="3558" interior="0" dimension="0" name="delux object (24)" posX="2373.681" posY="-658.703" posZ="129.321" rotX="0.0" rotY="0.0" rotZ="0.0" />
+    <object id="object (subwaygate) (1)" model="971" interior="0" dimension="0" name="delux object (25)" posX="2381.459" posY="-659.956" posZ="130.627" rotX="0.0" rotY="0.0" rotZ="90.000" />
+    <object id="object (subwaygate) (2)" model="971" interior="0" dimension="0" name="delux object (26)" posX="2383.652" posY="-641.496" posZ="129.561" rotX="0.0" rotY="0.0" rotZ="78.750" />
+</map>

@@ -1,0 +1,31 @@
+# ресурсы модуля работы с ником
+
+player_ban_serial_reject            =$(color_cmd_error)Вы забанены на этом сервере.
+player_ban_serial_reject_admins     =$(color_server_for_admin)<nonewline/>< $(player_name_full) сер-кик гео: $(player_geo_long_desc)
+player_ban_serial_reject_log        =<log_section connection/reject/serial/>$(player_name_full) ($(player_geo_long_desc)) {$(player_serial)}
+
+cmd_ban_serial_unban_section        =$(cmd_section_admin_penalty_cancel)
+cmd_ban_serial_unban_name           =/разсериал
+cmd_ban_serial_unban_params         =номер_ас серийный_номер
+cmd_ban_serial_unban_short          =удаляет из списка забаненных указанный серийный номер
+cmd_ban_serial_unban_full           =
+
+ban_serial_unban_error_not_found    =$(color_cmd_error)Серийный номер AS$(as_num) {$(serial)} не найден.
+
+cmd_ban_serial_list_section         =$(cmd_section_admin_penalty_list)
+cmd_ban_serial_list_name            =/сериалс
+cmd_ban_serial_list_params          =[номер_страницы]
+cmd_ban_serial_list_short           =выводит список забаненных серийных номеров
+cmd_ban_serial_list_full            =
+
+ban_serial_list_header              =$(color_cmd_head)Забаненные серийные номера ($(count)):
+ban_serial_list_item                =$(color_cmd_text)<preffix __/>AS$(as_num) {$(serial)} $(remain);_
+ban_serial_list_empty               =$(color_cmd_text)Нет забаненных серийных номеров
+
+ban_serial_unban_ok                 =$(color_cmd_text)Из бан листа удален серийный номер: AS$(as_num) {$(serial)}
+ban_serial_unban_ok_log             =<log_section serial/unban/hand/>$(cmd_player_name) AS$(as_num) {$(serial)}
+
+ban_serial_ban_auto_admins          =$(color_server_for_admin)<nonewline/> Забанен серийный номер: AS$(as_num) {$(serial)}
+ban_serial_ban_auto_log             =<log_section serial/ban/auto/>AS$(as_num) {$(serial)}
+
+ban_serial_unban_auto_log           =<log_section serial/unban/auto/>AS$(as_num) {$(serial)}

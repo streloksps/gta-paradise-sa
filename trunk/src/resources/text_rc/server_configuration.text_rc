@@ -1,0 +1,6 @@
+server_autoreconfigure_begin_log    =<log_section server/autoreconfig/begin/>
+server_autoreconfigure_done_log     =<log_section server/autoreconfig/done/>
+server_autoreconfigure_error_log    =<log_section server/autoreconfig/error/>
+
+server_autoreconfigure_done_admins  =$(color_server_for_admin)Автопереконфигурирование сервера успешно выполнено
+server_autoreconfigure_error_admins =$(color_cmd_error)Ошибка выполнения автопереконфигурирования

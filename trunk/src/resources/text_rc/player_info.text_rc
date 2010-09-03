@@ -1,0 +1,63 @@
+cmd_player_info_section             =$(cmd_section_admin_man)
+cmd_player_info_name                =/инфо
+cmd_player_info_params              =[ид_игрока]
+cmd_player_info_short               =показывает/убирает инфо по игроку
+cmd_player_info_full                =
+
+cmd_player_info_stop_player         =$(color_cmd_ok)Вы отключили показ информации
+cmd_player_info_stop_log            =<log_section player_info/off/>$(cmd_player_name)
+
+cmd_player_info_start_self_player   =$(color_cmd_ok)Вы включили показ информации по себе
+cmd_player_info_start_self_log      =<log_section player_info/on/self/>$(cmd_player_name)
+
+cmd_player_info_start_id_player     =$(color_cmd_ok)Вы включили показ информации по $(info_player_name)
+cmd_player_info_start_id_log        =<log_section player_info/on/id/>$(cmd_player_name) $(info_player_name)
+
+player_info_textdraw                =<x 15.0/><y 210.0/><letter_size_x 0.25/><letter_size_y 1.05/><color $(player_color)/><alignment left/><background_color 0x000000FF/><font_style style1/><is_proportional true/><shadow 1/><outline 1/><box_is_use false/><box_color 0/><box_x 0.0/><box_y 0.0/>\
+    $(player_info_player_name)$(player_info_is_rcon_admin_block) $(player_info_player_color_index) $(player_info_player_hp) $(player_info_player_armor)$(player_info_speed_block)$(player_info_vehicle_block)$(player_info_vehicle_speed_block)$(player_info_spectate_block)~n~\
+    $(player_info_money_sign)$(player_info_money_server) $(player_info_money_player) $(player_info_ping) $(player_info_score)$(player_info_sleep_block)$(player_info_is_block_block)$(player_info_game_state_block)~n~\
+    $(player_info_geo)~n~\
+    $(player_info_serial)~n~\
+    $(weapons)
+    #$(player_info_cpu_script) $(player_info_cpu_network) $(player_info_cpu_load_average)~n~\
+    #$(player_info_position)
+    
+player_info_player_name             =$(player_name) ($(player_id))
+player_info_player_color_index      =~w~~h~c:~y~~h~ $(player_color_index)
+player_info_player_hp               =~w~~h~hp:~y~~h~ $(player_health)
+player_info_player_armor            =~w~~h~ar:~y~~h~ $(player_armour)
+player_info_vehicle_health          =~w~~h~vhp:~y~~h~ $(vehicle_health)
+player_info_spectate                =~w~~h~spec:~y~~h~ $(spec_player_name) ($(spec_player_id))
+player_info_game_state              =~w~~h~state:~p~ $(state)
+player_info_money_sign              =$(player_info_money_sign_equal_block)$(player_info_money_sign_greater_block)$(player_info_money_sign_less_block)
+player_info_money_server            =~w~~h~server:~g~~h~ $$(money_server)
+player_info_money_player            =~w~~h~player:~g~~h~ $$(money_client)
+player_info_ping                    =~w~~h~ping:~y~~h~ $(ping)        
+player_info_geo                     =~w~~h~geo:~y~~h~ $(geo)
+player_info_position                =~w~~h~pos:~y~~h~ $(position)
+player_info_speed                   =~w~~h~speed:~y~~h~ $(speed)
+player_info_score                   =~w~~h~score:~y~~h~ $(player_score)
+player_info_vehicle_speed           =~w~~h~vspeed:~y~~h~ $(vehicle_speed)
+player_info_vehicle_name            =~w~~h~vname:~y~~h~ $(vehicle_name)
+player_info_vehicle_sys_name        =~w~~h~vsysname:~y~~h~ $(vehicle_sys_name)
+player_info_serial                  =~w~~h~serial:~y~~h~ $(player_serial)
+
+player_info_weapon_active           =~b~~h~$(weapon_name):~y~~h~ $(weapon_count)~n~
+player_info_weapon_normal           =~w~~h~$(weapon_name):~y~~h~ $(weapon_count)~n~
+
+player_info_cpu_script              =~w~~h~cpu-script user: ~y~~h~$(cpu_script_user)%~w~~h~ kernel: ~y~~h~$(cpu_script_kernel)%~w~~h~;
+player_info_cpu_network             =~w~~h~cpu-network user: ~y~~h~$(cpu_network_user)%~w~~h~ kernel: ~y~~h~$(cpu_network_kernel)%~w~~h~;
+player_info_cpu_load_average        =~w~~h~load average:~y~~h~ $(cpu_load_average1) $(cpu_load_average5) $(cpu_load_average15)
+
+player_info_money_sign_equal_block  =~g~~h~$~w~~h~=_
+player_info_money_sign_greater_block=~r~~h~$<_
+player_info_money_sign_less_block   =~g~~h~$>_
+
+player_info_vehicle_block           =_$(player_info_vehicle_health) $(player_info_vehicle_sys_name)
+player_info_sleep_block             =_~b~~h~ZZz
+player_info_is_block_block          =_~r~~h~blocked
+player_info_is_rcon_admin_block     =_~g~rcon
+player_info_spectate_block          =_$(player_info_spectate)
+player_info_game_state_block        =_$(player_info_game_state)
+player_info_speed_block             =_$(player_info_speed)
+player_info_vehicle_speed_block     =_$(player_info_vehicle_speed)

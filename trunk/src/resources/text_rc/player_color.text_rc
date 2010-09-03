@@ -1,0 +1,21 @@
+player_color_init_log                   =<log_section player_color/init/>$(player_name) $(id) $(color_hex) '$(name)'
+
+cmd_player_color_section                =$(cmd_section_visual)
+cmd_player_color_name                   =/цвет
+cmd_player_color_params                 =ид_цвета
+cmd_player_color_short                  =сменить цвет ника. Список цветов смотрите: $(cmd_player_color_list_name)
+cmd_player_color_full                   =
+
+cmd_player_color_error_id               =$(color_cmd_error)Ошибка: возможные значения для ид_цвета - от 0 до $(max_id). Полный список: $(cmd_player_color_list_name)
+cmd_player_color_done                   =<color $(color)/>Вы успешно установили цвет №$(id) $(name)
+cmd_player_color_done_log               =<log_section player_color/set/>$(cmd_player_name) $(id) $(color_hex) '$(name)'
+
+
+cmd_player_color_list_section           =$(cmd_section_info)
+cmd_player_color_list_name              =/цветс
+cmd_player_color_list_params            =[номер_страницы]
+cmd_player_color_list_short             =отображает список цветов для команды $(cmd_player_color_name)
+cmd_player_color_list_full              =
+
+cmd_player_color_list_header            =$(color_cmd_head)Список цветов для команды $(cmd_player_color_name)
+cmd_player_color_list_item              =<color $(color)/> Пример цвета №$(id) $(name)

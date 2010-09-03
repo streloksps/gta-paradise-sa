@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8919B09D-9D77-401B-8A2F-37089A6767EC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>freezone</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="main.props" />
+    <Import Project="boost.props" />
+    <Import Project="freezone.props" />
+    <Import Project="debug.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="main.props" />
+    <Import Project="boost.props" />
+    <Import Project="freezone.props" />
+    <Import Project="release.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FREEZONE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy $(TargetPath) "D:\dev_server\samp03bsvr_R2_win32\plugins\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FREEZONE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\active_points.cpp" />
+    <ClCompile Include="..\src\checkpoints.cpp" />
+    <ClCompile Include="..\src\core\application.cpp" />
+    <ClCompile Include="..\src\core\buffer\buffer.cpp" />
+    <ClCompile Include="..\src\core\buffer\buffer_reader.cpp" />
+    <ClCompile Include="..\src\core\buffer\buffer_writer.cpp" />
+    <ClCompile Include="..\src\core\chronometer.cpp" />
+    <ClCompile Include="..\src\core\command\command_adder.cpp" />
+    <ClCompile Include="..\src\core\command\command_manager.cpp" />
+    <ClCompile Include="..\src\core\container\container.cpp" />
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_asnum.cpp" />
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_city.cpp" />
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_country.cpp" />
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_db.cpp" />
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_ip_check.cpp" />
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_localization.cpp" />
+    <ClCompile Include="..\src\core\geo\detail\geo_info_getter_org.cpp" />
+    <ClCompile Include="..\src\core\geo\geo_data_base.cpp" />
+    <ClCompile Include="..\src\core\geo\geo_ip_info.cpp" />
+    <ClCompile Include="..\src\core\logger\logger.cpp" />
+    <ClCompile Include="..\src\core\logger\logger_writer.cpp" />
+    <ClCompile Include="..\src\core\messages\messages_item.cpp" />
+    <ClCompile Include="..\src\core\messages\messages_pager.cpp" />
+    <ClCompile Include="..\src\core\messages\messages_params.cpp" />
+    <ClCompile Include="..\src\core\messages\messages_sender.cpp" />
+    <ClCompile Include="..\src\core\messages\messages_storage.cpp" />
+    <ClCompile Include="..\src\core\messages\messages_writers.cpp" />
+    <ClCompile Include="..\src\core\messages\player_messages\chat_msg_item.cpp" />
+    <ClCompile Include="..\src\core\messages\player_messages\player_messages.cpp" />
+    <ClCompile Include="..\src\core\messages\player_messages\tags.cpp" />
+    <ClCompile Include="..\src\core\messages\player_messages\tags_less.cpp" />
+    <ClCompile Include="..\src\core\messages\server_properties.cpp" />
+    <ClCompile Include="..\src\core\npc.cpp" />
+    <ClCompile Include="..\src\core\npcs.cpp" />
+    <ClCompile Include="..\src\core\players.cpp" />
+    <ClCompile Include="..\src\core\player\player.cpp" />
+    <ClCompile Include="..\src\core\player\player_less.cpp" />
+    <ClCompile Include="..\src\core\samp\pawn\pawn_events.cpp" />
+    <ClCompile Include="..\src\core\samp\pawn\pawn_log.cpp" />
+    <ClCompile Include="..\src\core\samp\pawn\pawn_plugin.cpp" />
+    <ClCompile Include="..\src\core\samp\samp_api.cpp" />
+    <ClCompile Include="..\src\core\samp\samp_events.cpp" />
+    <ClCompile Include="..\src\core\samp\samp_hook_events.cpp" />
+    <ClCompile Include="..\src\core\samp\samp_hook_events_addresses.cpp" />
+    <ClCompile Include="..\src\core\samp\samp_hook_events_network.cpp" />
+    <ClCompile Include="..\src\core\timers.cpp" />
+    <ClCompile Include="..\src\core\time_outs.cpp" />
+    <ClCompile Include="..\src\core\utility\integer_expression_calc.cpp" />
+    <ClCompile Include="..\src\core\utility\locale_ru.cpp" />
+    <ClCompile Include="..\src\core\utility\path_works.cpp" />
+    <ClCompile Include="..\src\core\utility\timestuff.cpp" />
+    <ClCompile Include="..\src\core\ver.cpp" />
+    <ClCompile Include="..\src\develop_tools.cpp" />
+    <ClCompile Include="..\src\disable_onfoot_enter.cpp" />
+    <ClCompile Include="..\src\game.cpp" />
+    <ClCompile Include="..\src\ipl_loader.cpp" />
+    <ClCompile Include="..\src\map_icons.cpp" />
+    <ClCompile Include="..\src\master_list_announce.cpp" />
+    <ClCompile Include="..\src\mta10_loader.cpp" />
+    <ClCompile Include="..\src\npc_dev.cpp" />
+    <ClCompile Include="..\src\npc_taxi.cpp" />
+    <ClCompile Include="..\src\objects.cpp" />
+    <ClCompile Include="..\src\pickups.cpp" />
+    <ClCompile Include="..\src\player_animation.cpp" />
+    <ClCompile Include="..\src\player_authorization.cpp" />
+    <ClCompile Include="..\src\player_ban_serial.cpp" />
+    <ClCompile Include="..\src\player_chat.cpp" />
+    <ClCompile Include="..\src\player_chat_automute_meaningless.cpp" />
+    <ClCompile Include="..\src\player_classes.cpp" />
+    <ClCompile Include="..\src\player_color.cpp" />
+    <ClCompile Include="..\src\player_connection.cpp" />
+    <ClCompile Include="..\src\player_free_for_all.cpp" />
+    <ClCompile Include="..\src\player_gamepause.cpp" />
+    <ClCompile Include="..\src\player_health.cpp" />
+    <ClCompile Include="..\src\player_info.cpp" />
+    <ClCompile Include="..\src\player_money.cpp" />
+    <ClCompile Include="..\src\player_mute.cpp" />
+    <ClCompile Include="..\src\player_name.cpp" />
+    <ClCompile Include="..\src\player_position.cpp" />
+    <ClCompile Include="..\src\player_prison.cpp" />
+    <ClCompile Include="..\src\player_spectate.cpp" />
+    <ClCompile Include="..\src\profile_cpu.cpp" />
+    <ClCompile Include="..\src\rules.cpp" />
+    <ClCompile Include="..\src\server.cpp" />
+    <ClCompile Include="..\src\server_announcements.cpp" />
+    <ClCompile Include="..\src\server_configuration.cpp" />
+    <ClCompile Include="..\src\server_guard.cpp" />
+    <ClCompile Include="..\src\server_news.cpp" />
+    <ClCompile Include="..\src\spheres.cpp" />
+    <ClCompile Include="..\src\system_call.cpp" />
+    <ClCompile Include="..\src\tester.cpp" />
+    <ClCompile Include="..\src\text_draw.cpp" />
+    <ClCompile Include="..\src\vehicle.cpp" />
+    <ClCompile Include="..\src\vehicles.cpp" />
+    <ClCompile Include="..\src\weapons.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\active_points.hpp" />
+    <ClInclude Include="..\src\basic_loader_t.hpp" />
+    <ClInclude Include="..\src\basic_types.hpp" />
+    <ClInclude Include="..\src\checkpoints.hpp" />
+    <ClInclude Include="..\src\checkpoints_t.hpp" />
+    <ClInclude Include="..\src\config.hpp" />
+    <ClInclude Include="..\src\core\application.hpp" />
+    <ClInclude Include="..\src\core\buffer\buffer.hpp" />
+    <ClInclude Include="..\src\core\buffer\buffer_filters.hpp" />
+    <ClInclude Include="..\src\core\buffer\buffer_fwd.hpp" />
+    <ClInclude Include="..\src\core\buffer\buffer_reader.hpp" />
+    <ClInclude Include="..\src\core\buffer\buffer_variables.hpp" />
+    <ClInclude Include="..\src\core\buffer\buffer_writer.hpp" />
+    <ClInclude Include="..\src\core\chronometer.hpp" />
+    <ClInclude Include="..\src\core\command\command_adder.hpp" />
+    <ClInclude Include="..\src\core\command\command_manager.hpp" />
+    <ClInclude Include="..\src\core\command\command_type.hpp" />
+    <ClInclude Include="..\src\core\container\application_item.hpp" />
+    <ClInclude Include="..\src\core\container\container.hpp" />
+    <ClInclude Include="..\src\core\container\container_fwd.hpp" />
+    <ClInclude Include="..\src\core\container\container_handlers.hpp" />
+    <ClInclude Include="..\src\core\container\container_item.hpp" />
+    <ClInclude Include="..\src\core\container\container_item_fwd.hpp" />
+    <ClInclude Include="..\src\core\container\npc_item.hpp" />
+    <ClInclude Include="..\src\core\container\player_item.hpp" />
+    <ClInclude Include="..\src\core\createble_i.hpp" />
+    <ClInclude Include="..\src\core\debug.h" />
+    <ClInclude Include="..\src\core\dynamic_items.hpp" />
+    <ClInclude Include="..\src\core\game_context.hpp" />
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter.hpp" />
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_asnum.hpp" />
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_city.hpp" />
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_country.hpp" />
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_db.hpp" />
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_ip_check.hpp" />
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_localization.hpp" />
+    <ClInclude Include="..\src\core\geo\detail\geo_info_getter_org.hpp" />
+    <ClInclude Include="..\src\core\geo\geo_data_base.hpp" />
+    <ClInclude Include="..\src\core\geo\geo_ip_info.hpp" />
+    <ClInclude Include="..\src\core\keyboard.hpp" />
+    <ClInclude Include="..\src\core\logger\logger.hpp" />
+    <ClInclude Include="..\src\core\logger\logger_writer.hpp" />
+    <ClInclude Include="..\src\core\messages\messages_item.hpp" />
+    <ClInclude Include="..\src\core\messages\messages_pager.hpp" />
+    <ClInclude Include="..\src\core\messages\messages_params.hpp" />
+    <ClInclude Include="..\src\core\messages\messages_sender.hpp" />
+    <ClInclude Include="..\src\core\messages\messages_storage.hpp" />
+    <ClInclude Include="..\src\core\messages\messages_writers.hpp" />
+    <ClInclude Include="..\src\core\messages\player_messages\chat_msg_item.hpp" />
+    <ClInclude Include="..\src\core\messages\player_messages\player_messages.hpp" />
+    <ClInclude Include="..\src\core\messages\player_messages\tags.hpp" />
+    <ClInclude Include="..\src\core\messages\player_messages\tags_less.hpp" />
+    <ClInclude Include="..\src\core\messages\server_properties.hpp" />
+    <ClInclude Include="..\src\core\module_c.hpp" />
+    <ClInclude Include="..\src\core\module_h.hpp" />
+    <ClInclude Include="..\src\core\npc.hpp" />
+    <ClInclude Include="..\src\core\npcs.hpp" />
+    <ClInclude Include="..\src\core\npcs_handlers.hpp" />
+    <ClInclude Include="..\src\core\npcs_i.hpp" />
+    <ClInclude Include="..\src\core\npc_fwd.hpp" />
+    <ClInclude Include="..\src\core\npc_i.hpp" />
+    <ClInclude Include="..\src\core\npc_t.hpp" />
+    <ClInclude Include="..\src\core\players.hpp" />
+    <ClInclude Include="..\src\core\players_handlers.hpp" />
+    <ClInclude Include="..\src\core\players_i.hpp" />
+    <ClInclude Include="..\src\core\player\player.hpp" />
+    <ClInclude Include="..\src\core\player\player_fwd.hpp" />
+    <ClInclude Include="..\src\core\player\player_i.hpp" />
+    <ClInclude Include="..\src\core\player\player_less.hpp" />
+    <ClInclude Include="..\src\core\player\player_t.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_amx_fwd.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_demarshaling.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_events.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_log.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling_amx.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling_param.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling_params.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_plugin.hpp" />
+    <ClInclude Include="..\src\core\samp\pawn\pawn_plugin_i.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_api.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_events.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_events_i.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_events_t.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_hook_events.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_hook_events_addresses.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_hook_events_i.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_hook_events_network.hpp" />
+    <ClInclude Include="..\src\core\samp\samp_hook_events_t.hpp" />
+    <ClInclude Include="..\src\core\serialization\configuradable.hpp" />
+    <ClInclude Include="..\src\core\serialization\is_streameble.hpp" />
+    <ClInclude Include="..\src\core\serialization\serialization.hpp" />
+    <ClInclude Include="..\src\core\serialization\serialization_regex_t.hpp" />
+    <ClInclude Include="..\src\core\serialization\storage.hpp" />
+    <ClInclude Include="..\src\core\sounds.hpp" />
+    <ClInclude Include="..\src\core\streamer.hpp" />
+    <ClInclude Include="..\src\core\streamer_coord_works.hpp" />
+    <ClInclude Include="..\src\core\streamer_grid.hpp" />
+    <ClInclude Include="..\src\core\timers.hpp" />
+    <ClInclude Include="..\src\core\timers_i.hpp" />
+    <ClInclude Include="..\src\core\time_count_blocker.hpp" />
+    <ClInclude Include="..\src\core\time_outs.hpp" />
+    <ClInclude Include="..\src\core\utility\directory.hpp" />
+    <ClInclude Include="..\src\core\utility\erase_if.hpp" />
+    <ClInclude Include="..\src\core\utility\integer_expression_calc.hpp" />
+    <ClInclude Include="..\src\core\utility\locale_ru.hpp" />
+    <ClInclude Include="..\src\core\utility\math.hpp" />
+    <ClInclude Include="..\src\core\utility\path_works.hpp" />
+    <ClInclude Include="..\src\core\utility\stream_filters.hpp" />
+    <ClInclude Include="..\src\core\utility\strings.hpp" />
+    <ClInclude Include="..\src\core\utility\timestuff.hpp" />
+    <ClInclude Include="..\src\core\ver.hpp" />
+    <ClInclude Include="..\src\develop_tools.hpp" />
+    <ClInclude Include="..\src\disable_onfoot_enter.hpp" />
+    <ClInclude Include="..\src\disable_onfoot_enter_t.hpp" />
+    <ClInclude Include="..\src\game.hpp" />
+    <ClInclude Include="..\src\ipl_loader.hpp" />
+    <ClInclude Include="..\src\ipl_loader_t.hpp" />
+    <ClInclude Include="..\src\limit.hpp" />
+    <ClInclude Include="..\src\map_icons.hpp" />
+    <ClInclude Include="..\src\map_icons_t.hpp" />
+    <ClInclude Include="..\src\master_list_announce.hpp" />
+    <ClInclude Include="..\src\mta10_loader.hpp" />
+    <ClInclude Include="..\src\mta10_loader_t.hpp" />
+    <ClInclude Include="..\src\npc_dev.hpp" />
+    <ClInclude Include="..\src\npc_taxi.hpp" />
+    <ClInclude Include="..\src\npc_taxi_t.hpp" />
+    <ClInclude Include="..\src\objects.hpp" />
+    <ClInclude Include="..\src\objects_t.hpp" />
+    <ClInclude Include="..\src\pickups.hpp" />
+    <ClInclude Include="..\src\pickups_t.hpp" />
+    <ClInclude Include="..\src\player_animation.hpp" />
+    <ClInclude Include="..\src\player_animation_t.hpp" />
+    <ClInclude Include="..\src\player_authorization.hpp" />
+    <ClInclude Include="..\src\player_ban_serial.hpp" />
+    <ClInclude Include="..\src\player_chat.hpp" />
+    <ClInclude Include="..\src\player_chat_automute_meaningless.hpp" />
+    <ClInclude Include="..\src\player_chat_automute_meaningless_t.hpp" />
+    <ClInclude Include="..\src\player_chat_regex_t.hpp" />
+    <ClInclude Include="..\src\player_classes.hpp" />
+    <ClInclude Include="..\src\player_classes_t.hpp" />
+    <ClInclude Include="..\src\player_color.hpp" />
+    <ClInclude Include="..\src\player_color_t.hpp" />
+    <ClInclude Include="..\src\player_connection.hpp" />
+    <ClInclude Include="..\src\player_connection_i.hpp" />
+    <ClInclude Include="..\src\player_free_for_all.hpp" />
+    <ClInclude Include="..\src\player_free_for_all_t.hpp" />
+    <ClInclude Include="..\src\player_gamepause.hpp" />
+    <ClInclude Include="..\src\player_health.hpp" />
+    <ClInclude Include="..\src\player_health_i.hpp" />
+    <ClInclude Include="..\src\player_info.hpp" />
+    <ClInclude Include="..\src\player_money.hpp" />
+    <ClInclude Include="..\src\player_mute.hpp" />
+    <ClInclude Include="..\src\player_name.hpp" />
+    <ClInclude Include="..\src\player_position.hpp" />
+    <ClInclude Include="..\src\player_prison.hpp" />
+    <ClInclude Include="..\src\player_spectate.hpp" />
+    <ClInclude Include="..\src\player_spectate_i.hpp" />
+    <ClInclude Include="..\src\pos_change_checker.hpp" />
+    <ClInclude Include="..\src\profile_cpu.hpp" />
+    <ClInclude Include="..\src\rules.hpp" />
+    <ClInclude Include="..\src\server.hpp" />
+    <ClInclude Include="..\src\server_announcements.hpp" />
+    <ClInclude Include="..\src\server_configuration.hpp" />
+    <ClInclude Include="..\src\server_guard.hpp" />
+    <ClInclude Include="..\src\server_news.hpp" />
+    <ClInclude Include="..\src\server_paths.hpp" />
+    <ClInclude Include="..\src\spheres.hpp" />
+    <ClInclude Include="..\src\sphere_t.hpp" />
+    <ClInclude Include="..\src\system_call.hpp" />
+    <ClInclude Include="..\src\tester.hpp" />
+    <ClInclude Include="..\src\text_draw.hpp" />
+    <ClInclude Include="..\src\vehicle.hpp" />
+    <ClInclude Include="..\src\vehicles.hpp" />
+    <ClInclude Include="..\src\vehicles_t.hpp" />
+    <ClInclude Include="..\src\vehicle_fwd.hpp" />
+    <ClInclude Include="..\src\weapons.hpp" />
+    <ClInclude Include="..\src\weapons_t.hpp" />
+    <ClInclude Include="..\src\world_item_t.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\src\windows\freemode.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="lib_hashlib2plus.vcxproj">
+      <Project>{15001b0a-12ea-449b-b8fb-92d735256e42}</Project>
+    </ProjectReference>
+    <ProjectReference Include="lib_maxmind-geoip.vcxproj">
+      <Project>{767a5d6e-9e75-4a42-b92b-2c8baa394773}</Project>
+    </ProjectReference>
+    <ProjectReference Include="lib_samp-plugin-sdk.vcxproj">
+      <Project>{283f22b0-e798-42af-8896-68d03ce943e1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="lib_utility.vcxproj">
+      <Project>{cf2fb8ab-8576-4edc-b2d2-ecacd442f953}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\shared\freezone_ver.inc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

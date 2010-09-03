@@ -1,0 +1,18 @@
+#
+# Компиляция в дебаг режим
+echo boost dir: $FREE_MODE_BOOST_DIR
+
+if [ -z $FREE_MODE_BOOST_DIR ]; then
+    echo error: boost dir not set
+    exit 1
+fi
+
+if [ ! -d $FREE_MODE_BOOST_DIR ]; then
+    echo error: boost dir not exist
+    exit 1
+fi
+
+work_dir=../../../../bin_debug/
+
+if [ ! -d $work_dir ]; then mkdir $work_dir; fi
+make boost_libs_suffix="-gcc41-mt-d.a" compile_flags="-O0 -g -DLINUX -DDEBUG" link_flags="-fPIC -shared" --directory=$work_dir --makefile=../src/cplusplus/freemode/linux/makefile

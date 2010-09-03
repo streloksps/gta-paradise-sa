@@ -1,0 +1,21 @@
+time_zero       =менее секунды
+
+time_seconds0   =секунд
+time_seconds1   =секунда
+time_seconds2   =секунды
+
+time_minuts0    =минут
+time_minuts1    =минута
+time_minuts2    =минуты
+
+time_hours0     =часов
+time_hours1     =час
+time_hours2     =часа
+
+time_days0      =дней
+time_days1      =день
+time_days2      =дня
+
+time_weeks0     =недель
+time_weeks1     =неделя
+time_weeks2     =недели

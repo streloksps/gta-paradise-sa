@@ -1,0 +1,49 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "../../../shared/freezone_ver.inc"
+#include "afxres.h"
+#include "../core/debug.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VERSION_MAJOR,VERSION_MINOR,VERSION_BUILD_ID,0
+ PRODUCTVERSION VERSION_MAJOR,VERSION_MINOR,VERSION_BUILD_ID,0
+ FILEFLAGSMASK 0x17L
+#ifndef NDEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041904b0"
+        BEGIN
+            VALUE "CompanyName", "MissingLink"
+            VALUE "FileDescription", "GTA - Paradise FreeMode" DEBUG_FLAG
+            VALUE "LegalCopyright", "Copyright© MissingLink 2010"
+            VALUE "ProductName", "SA-MP freemode"
+            VALUE "FileVersion", VERSION_STR_DESC
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x419, 1200
+    END
+END
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////

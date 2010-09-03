@@ -1,0 +1,17 @@
+cmd_section_info_main               =<sort  1/>Важная информация
+cmd_section_visual                  =<sort  2/>Внешний вид
+cmd_section_chat                    =<sort  3/>Общение
+cmd_section_info                    =<sort  4/>Информация
+cmd_section_stuff                   =<sort  5/>Разное
+cmd_section_animation               =<sort  6/>Анимации
+cmd_section_vehicles                =<sort  7/>Транспорт
+cmd_section_admin_chat              =<sort  8/>Админка общение
+cmd_section_admin_info              =<sort  9/>Админка информация
+cmd_section_admin_penalty           =<sort 10/>Админка наказание
+cmd_section_admin_penalty_cancel    =<sort 11/>Админка отмена наказания
+cmd_section_admin_penalty_list      =<sort 12/>Админка список наказаний
+cmd_section_admin_system            =<sort 13/>Админка служебные
+cmd_section_admin_authorization     =<sort 14/>Админка авторизация
+cmd_section_admin_man               =<sort 15/>Админка справочная информация
+cmd_section_admin_develop           =<sort 16/>Команды для разработчика
+cmd_section_admin_develop_npc       =<sort 17/>Команды для разработчика (боты)

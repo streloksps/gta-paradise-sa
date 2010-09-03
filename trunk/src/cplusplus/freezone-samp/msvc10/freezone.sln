@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "freezone", "freezone.vcxproj", "{8919B09D-9D77-401B-8A2F-37089A6767EC}"
+	ProjectSection(ProjectDependencies) = postProject
+		{15001B0A-12EA-449B-B8FB-92D735256E42} = {15001B0A-12EA-449B-B8FB-92D735256E42}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_hashlib2plus", "lib_hashlib2plus.vcxproj", "{15001B0A-12EA-449B-B8FB-92D735256E42}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_maxmind-geoip", "lib_maxmind-geoip.vcxproj", "{767A5D6E-9E75-4A42-B92B-2C8BAA394773}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_samp-plugin-sdk", "lib_samp-plugin-sdk.vcxproj", "{283F22B0-E798-42AF-8896-68D03CE943E1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lib_utility", "lib_utility.vcxproj", "{CF2FB8AB-8576-4EDC-B2D2-ECACD442F953}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8919B09D-9D77-401B-8A2F-37089A6767EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8919B09D-9D77-401B-8A2F-37089A6767EC}.Debug|Win32.Build.0 = Debug|Win32
+		{8919B09D-9D77-401B-8A2F-37089A6767EC}.Release|Win32.ActiveCfg = Release|Win32
+		{8919B09D-9D77-401B-8A2F-37089A6767EC}.Release|Win32.Build.0 = Release|Win32
+		{15001B0A-12EA-449B-B8FB-92D735256E42}.Debug|Win32.ActiveCfg = Debug|Win32
+		{15001B0A-12EA-449B-B8FB-92D735256E42}.Debug|Win32.Build.0 = Debug|Win32
+		{15001B0A-12EA-449B-B8FB-92D735256E42}.Release|Win32.ActiveCfg = Release|Win32
+		{15001B0A-12EA-449B-B8FB-92D735256E42}.Release|Win32.Build.0 = Release|Win32
+		{767A5D6E-9E75-4A42-B92B-2C8BAA394773}.Debug|Win32.ActiveCfg = Debug|Win32
+		{767A5D6E-9E75-4A42-B92B-2C8BAA394773}.Debug|Win32.Build.0 = Debug|Win32
+		{767A5D6E-9E75-4A42-B92B-2C8BAA394773}.Release|Win32.ActiveCfg = Release|Win32
+		{767A5D6E-9E75-4A42-B92B-2C8BAA394773}.Release|Win32.Build.0 = Release|Win32
+		{283F22B0-E798-42AF-8896-68D03CE943E1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{283F22B0-E798-42AF-8896-68D03CE943E1}.Debug|Win32.Build.0 = Debug|Win32
+		{283F22B0-E798-42AF-8896-68D03CE943E1}.Release|Win32.ActiveCfg = Release|Win32
+		{283F22B0-E798-42AF-8896-68D03CE943E1}.Release|Win32.Build.0 = Release|Win32
+		{CF2FB8AB-8576-4EDC-B2D2-ECACD442F953}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CF2FB8AB-8576-4EDC-B2D2-ECACD442F953}.Debug|Win32.Build.0 = Debug|Win32
+		{CF2FB8AB-8576-4EDC-B2D2-ECACD442F953}.Release|Win32.ActiveCfg = Release|Win32
+		{CF2FB8AB-8576-4EDC-B2D2-ECACD442F953}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

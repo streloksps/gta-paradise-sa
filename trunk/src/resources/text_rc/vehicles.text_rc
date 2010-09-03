@@ -1,0 +1,79 @@
+cmd_vehicle_paintjob_section                =$(cmd_section_vehicles)
+cmd_vehicle_paintjob_name                   =/аэр
+cmd_vehicle_paintjob_params                 =ид
+cmd_vehicle_paintjob_short                  =меняет аэрографию автомобиля
+cmd_vehicle_paintjob_full                   =
+
+cmd_vehicle_paintjob_error_out_of_range     =$(color_cmd_error)Аэрография ид=$(id) для $(v_name) ($(v_real_name)) не верена. Значения ид от 1 до $(id_max)
+cmd_vehicle_paintjob_error_duplicate        =$(color_cmd_error)Аэрография ид=$(id) для $(v_name) ($(v_real_name)) уже установлена. Попробуйте другое значение ид от 1 до $(id_max)
+cmd_vehicle_paintjob_done                   =$(color_cmd_ok)Вы успешно сменили аэрографию ид=$(id) для $(v_name) ($(v_real_name)) за $$(money)
+cmd_vehicle_paintjob_done_log               =<log_section vehicle/paintjob/>$(cmd_player_name) $(v_id) $(v_model_id) $(v_sys_name) $(mod_garage_sys_name) $(garage_sys_name) $(id) $(gta_id)
+
+
+cmd_vehicle_color_section                   =$(cmd_section_vehicles)
+cmd_vehicle_color_name                      =/цт
+cmd_vehicle_color_params                    =ид1 [ид2] [ид3]
+cmd_vehicle_color_short                     =меняет цвет(а) транспорта. Смотрите список: $(cmd_vehicle_color_list_name)
+cmd_vehicle_color_full                      =
+cmd_vehicle_color_param_notchange           =-
+
+cmd_vehicle_color_error_arg1                =$(color_cmd_error)Ошибка синтаксиса вызова команды\n$(color_cmd_text)Использование: $(cmd_vehicle_color_name) ид - меняет цвет транспорта. Смотрите список: $(cmd_vehicle_color_list_name)
+cmd_vehicle_color_error_arg2                =$(color_cmd_error)Ошибка синтаксиса вызова команды\n$(color_cmd_text)Использование: $(cmd_vehicle_color_name) ид1 ид2 - меняет цвета транспорта. Смотрите список: $(cmd_vehicle_color_list_name)
+cmd_vehicle_color_error_arg3                =$(color_cmd_error)Ошибка синтаксиса вызова команды\n$(color_cmd_text)Использование: $(cmd_vehicle_color_name) ид1 ид2 ид3 - меняет цвета транспорта. Смотрите список: $(cmd_vehicle_color_list_name)
+cmd_vehicle_color_error_out_of_range        =$(color_cmd_error)Цвет ид=$(id) не верен. Возможные значения от 1 до $(id_max)
+cmd_vehicle_color_error_not_colors          =$(color_cmd_error)Вы не указали ни одного цвета на замену
+cmd_vehicle_color_done1                     =<color $(color1_raw)/>Вы успешно установили основной цвет ид=$(color1_id) $(color1_name) для $(v_name) ($(v_real_name)) за $$(money_item)
+cmd_vehicle_color_done1_log                 =<log_section vehicle/color/1/>$(cmd_player_name) $(v_id) $(v_model_id) $(v_sys_name) $(mod_garage_sys_name) $(garage_sys_name) $(color1_id) $(color1_gtaid) '$(color1_name)'
+cmd_vehicle_color_done2                     =<color $(color2_raw)/>Вы успешно установили дополнительный цвет ид=$(color2_id) $(color2_name) для $(v_name) ($(v_real_name)) за $$(money_item)
+cmd_vehicle_color_done2_log                 =<log_section vehicle/color/2/>$(cmd_player_name) $(v_id) $(v_model_id) $(v_sys_name) $(mod_garage_sys_name) $(garage_sys_name) $(color2_id) $(color2_gtaid) '$(color2_name)'
+cmd_vehicle_color_done_trailer              =<color $(color_trailer_raw)/>Вы успешно установили цвет ид=$(color_trailer_id) $(color_trailer_name) для прицепа $(t_name) ($(t_real_name)) за $$(money_item)
+cmd_vehicle_color_done_trailer_log          =<log_section vehicle/color/trailer/>$(cmd_player_name) $(t_id) $(t_model_id) $(t_sys_name) $(mod_garage_sys_name) $(garage_sys_name) $(color_trailer_id) $(color_trailer_gtaid) '$(color_trailer_name)'
+
+
+cmd_vehicle_modification_section            =$(cmd_section_vehicles)
+cmd_vehicle_modification_name               =/тюн
+cmd_vehicle_modification_params             =группа [ид_компонента]
+cmd_vehicle_modification_short              =устанавливает компонент тюнинга на транспорт. Список: $(cmd_vehicle_modification_list_name)
+cmd_vehicle_modification_full               =
+cmd_vehicle_modification_arg_delimiter      =,
+
+cmd_vehicle_modification_error_bad_group    =$(color_cmd_error)Имя группы '$(user_group_name)' для $(v_name) ($(v_real_name)) неверно. Смотрите список: $(cmd_vehicle_modification_list_name)
+cmd_vehicle_modification_error_need_id      =$(color_cmd_error)Для группы '$(group_name)' для $(v_name) ($(v_real_name)) необходимо ид компонента от 1 до $(id_max)
+cmd_vehicle_modification_error_out_of_range =$(color_cmd_error)Для группы '$(group_name)' для $(v_name) ($(v_real_name)) ид=$(id) не верено. Возможные значения от 1 до $(id_max)
+cmd_vehicle_modification_error_duplicate    =$(color_cmd_error)Компонет тюнинга ид=$(id) '$(name)' группы '$(group_name)' для $(v_name) ($(v_real_name)) уже установлен
+cmd_vehicle_modification_done               =$(color_cmd_ok)Вы поставили компонет тюнинга группы '$(group_name)' ид=$(id) '$(name)' для $(v_name) ($(v_real_name)) за $$(money)
+cmd_vehicle_modification_done_log           =<log_section vehicle/mod/vehicle/>$(cmd_player_name) $(v_id) $(v_model_id) $(v_sys_name) $(mod_garage_sys_name) $(garage_sys_name) $(slot) $(sys_name)
+cmd_vehicle_modification_done_trailer       =$(color_cmd_ok)Вы поставили компонет тюнинга группы '$(group_name)' ид=$(id) '$(name)' для прицепа $(t_name) ($(t_real_name))
+cmd_vehicle_modification_done_trailer_log   =<log_section vehicle/mod/trailer/>$(cmd_player_name) $(t_id) $(t_model_id) $(t_sys_name) $(mod_garage_sys_name) $(garage_sys_name) $(slot) $(sys_name)
+
+
+cmd_vehicle_color_list_section              =$(cmd_section_info)
+cmd_vehicle_color_list_name                 =/цтс
+cmd_vehicle_color_list_params               =[номер_страницы]
+cmd_vehicle_color_list_short                =отображает список цветов для команды $(cmd_vehicle_color_name)
+cmd_vehicle_color_list_full                 =
+
+cmd_vehicle_color_list_header1              =$(color_cmd_head)Список цветов для $(v_name) ($(v_real_name)). Использовать: $(cmd_vehicle_color_name) ид
+cmd_vehicle_color_list_header2              =$(color_cmd_head)Список цветов для $(v_name) ($(v_real_name)). Использовать: $(cmd_vehicle_color_name) ид1 ид2
+cmd_vehicle_color_list_header3              =$(color_cmd_head)Список цветов для $(v_name) ($(v_real_name)). Использовать: $(cmd_vehicle_color_name) ид1 ид2 ид3
+cmd_vehicle_color_list_item                 =<color $(color)/> Пример цвета ид=$(id) $(name)
+
+
+cmd_vehicle_modification_list_section       =$(cmd_section_info)
+cmd_vehicle_modification_list_name          =/тюнс
+cmd_vehicle_modification_list_params        =[номер_страницы]
+cmd_vehicle_modification_list_short         =отображает список групп и компонент для команды $(cmd_vehicle_modification_name)
+cmd_vehicle_modification_list_full          =
+
+cmd_vehicle_modification_list_header        =$(color_cmd_head)Группы и компоненты тюнинга $(v_name) ($(v_real_name)) для команды $(cmd_vehicle_modification_name)
+cmd_vehicle_modification_list_gp_header     =$(color_cmd_text) $(group_name):_
+cmd_vehicle_modification_list_item          =$(color_cmd_text)<preffix ___/>$(id)~-~$(name)~$$(price);_
+cmd_vehicle_modification_list_gp_single     =$(color_cmd_text) $(group_name): $(name)~$$(price);
+
+on_modgarage_enter_foot                     =$(color_cmd_error)$(mod_garage_name). У вас нет транспорта для тюнинга
+on_modgarage_enter_foot_log                 =<log_section modgarage/enter/foot/>$(player_name) $(mod_garage_sys_name) $(garage_sys_name)
+on_modgarage_enter_valid                    =$(color_cmd_info)$(mod_garage_name). Для $(v_name) ($(v_real_name)) команды: $(valid_cmd_list)
+on_modgarage_enter_valid_log                =<log_section modgarage/enter/valid/>$(player_name) $(mod_garage_sys_name) $(garage_sys_name) $(v_id) $(v_model_id) $(v_sys_name)
+on_modgarage_enter_invalid                  =$(color_cmd_error)$(mod_garage_name). $(v_name) ($(v_real_name)) не может модифицироваться в этом тюнинге
+on_modgarage_enter_invalid_log              =<log_section modgarage/enter/invalid/>$(player_name) $(mod_garage_sys_name) $(garage_sys_name) $(v_id) $(v_model_id) $(v_sys_name)
+on_modgarage_leave_log                      =<log_section modgarage/leave/>$(player_name) $(mod_garage_sys_name) $(garage_sys_name)
