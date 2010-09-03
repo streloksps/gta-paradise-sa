@@ -1,0 +1,5 @@
+<map edf:definitions="editor_main">
+        <object id="object (gnhtelgrnd_lvs) (3)" model="8661" interior="0" dimension="0" posX="7241.013671875" posY="7436.8125" posZ="12.654787063599" rotX="0" rotY="270" rotZ="270" />
+        <object id="object (gnhtelgrnd_lvs) (3)" model="8661" interior="0" dimension="0" posX="7234.263671875" posY="7436.9091796875" posZ="12.6457862854" rotX="0" rotY="270" rotZ="270" />
+        <object id="object (CE_Fredbar01ld) (1)" model="4520" interior="0" dimension="0" posX="7238.0126953125" posY="7445.880859375" posZ="4.7924480438232" rotX="0" rotY="0" rotZ="88.055419921875" />
+</map>

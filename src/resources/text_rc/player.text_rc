@@ -1,0 +1,12 @@
+player_bad_id               =$(color_cmd_error)Игрок '$(player_id)' не подключен
+player_not_same             =$(color_cmd_error)Вы не можете применять данную команду к себе
+player_not_on_foot          =$(color_cmd_error)Вы не можете применять данную команду, находясь в транспорте
+player_not_in_game          =$(color_cmd_error)Вы должны находиться в игре
+player_not_in_game_player   =$(color_cmd_error)Игрок $(player_name) должен находиться в игре
+player_not_for_admin        =$(color_cmd_error)Администратор не может применять данную команду
+player_is_spectate_player   =$(color_cmd_error)Игрок $(player_name) находится в режиме наблюдения
+
+player_block                =<log_section acheat/block/$(reason_group)/>$(player_name) ($(player_geo_long_desc))
+player_block_admins         =$(color_server_for_admin)$(player_name) заблокирован за $(reason_group)
+player_block_info           =<log_section acheat/block/$(reason_group)/>$(player_name) $(reason_info) ($(player_geo_long_desc))
+player_block_info_admins    =$(color_server_for_admin)$(player_name) заблокирован за $(reason_group): $(reason_info)

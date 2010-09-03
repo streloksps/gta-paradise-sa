@@ -1,0 +1,277 @@
+player_chat_deny_not_in_game        =$(color_cmd_error)Вы не можете пользоваться чатом, пока не вошли в игру
+player_chat_deny_is_chat_off        =$(color_cmd_error)Администрация отключила вам чат, за нарушение правил сервера. Смотрите $(cmd_rules_name)
+player_chat_deny_is_flood           =$(color_cmd_error)Вы слишком часто пишете сообщения. Подождите $(time_out) секунд(ы)
+player_chat_deny_shared_is_flood    =$(color_cmd_error)Вы слишком часто пишете в общий чат. Попробуйте командный, ближний чаты и лс. Подождите $(time_out) секунд(ы)
+
+player_chat_deny_to_not_in_game     =$(color_cmd_error)Нельзя отправить сообщение игроку $(pm_to_player_name), так как он еще не вошел в игру
+player_chat_deny_to_is_chat_off     =$(color_cmd_error)Нельзя отправить сообщение игроку $(pm_to_player_name), так как у него отключен чат
+player_chat_deny_to_is_ignored      =$(color_cmd_error)Нельзя отправить сообщение игроку $(pm_to_player_name), так как он вас занес в список игнора
+player_chat_deny_to_sleep           =$(color_cmd_error)Нельзя отправить сообщение игроку $(pm_to_player_name), так как он сейчас спит
+
+player_chat_deny_not_in_game_log    =<log_section chat/block/not_in_game/>$(player_name) $(type) '$(msg)'
+player_chat_deny_is_chat_off_log    =<log_section chat/block/chat_off/>$(player_name) $(type) '$(msg)'
+player_chat_deny_is_flood_log       =<log_section chat/block/flood/>$(player_name) $(time_out) $(type) '$(msg)'
+player_chat_deny_shared_is_flood_log=<log_section chat/block/flood/shared/>$(player_name) $(time_out) '$(msg)'
+
+player_chat_deny_to_not_in_game_log =<log_section chat/block_to/not_in_game/>$(player_name) $(pm_to_player_name)
+player_chat_deny_to_is_chat_off_log =<log_section chat/block_to/chat_off/>$(player_name) $(pm_to_player_name)
+player_chat_deny_to_is_ignored_log  =<log_section chat/block_to/ignore/>$(player_name) $(pm_to_player_name)
+player_chat_deny_to_sleep_log       =<log_section chat/block_to/sleep/>$(player_name) $(pm_to_player_name)
+
+# Примерная видимость в сампе ника игрока
+chat_bubble_distance                =<distance 66.5/>
+
+player_chat_bubble                  =<color 0xFFFFFF/>$(chat_bubble_distance)<time 45000/>$(msg)
+player_close_chat_bubble            =<color 0x95EE7A/>$(chat_bubble_distance)<time 45000/>$(msg)
+
+
+cmd_pm_section                      =$(cmd_section_chat)
+cmd_pm_name                         =/лс
+cmd_pm_params                       =ид_игрока текст
+cmd_pm_short                        =отправляет личное сообщение игроку
+cmd_pm_full                         =
+
+cmd_pm_msg                          =$(color_chat_pm)<preffix ЛС от $(pm_player_name_sender):_/>$(pm_msg)
+cmd_pm_msg_player                   =$(color_chat_pm)<preffix ЛС для $(pm_player_name_dest):_/>$(pm_msg)
+cmd_pm_msg_admins                   =$(color_chat_pm_to_admins)<preffix ЛС от $(pm_player_name_sender) к $(pm_player_name_dest):_/>$(pm_msg)
+cmd_pm_msg_log                      =<log_section chat/pm/>$(pm_player_name_sender) $(pm_player_name_dest) '$(pm_msg)'
+
+
+cmd_pm_destination_set_section      =$(cmd_section_chat)
+cmd_pm_destination_set_name         =/писать
+cmd_pm_destination_set_params       =ид_игрока
+cmd_pm_destination_set_short        =задает игрока, которому вы будете отправлять личные сообщения командой $(cmd_pm_destination_chat_name)
+cmd_pm_destination_set_full         =
+
+cmd_pm_destination_set_done         =$(color_cmd_ok)Чтобы отправить личное сообщение $(pm_destination_player) наберите: $(cmd_pm_destination_chat_name)текст
+cmd_pm_destination_set_done_log     =<log_section chat/pm_destination/set/>$(cmd_player_name) $(pm_destination_player)
+
+cmd_pm_destination_chat_section     =$(cmd_section_chat)
+cmd_pm_destination_chat_name        =-
+cmd_pm_destination_chat_params      =текст
+cmd_pm_destination_chat_short       =отправляет личное сообщение игроку, указанному командой $(cmd_pm_destination_set_name)
+cmd_pm_destination_chat_full        =
+
+cmd_pm_destination_chat_error_no    =$(color_cmd_error)Вы не задали получателя личных сообщений. См: $(cmd_pm_destination_set_name)
+
+
+cmd_report_section                  =$(cmd_section_chat)
+cmd_report_name                     =/жб
+cmd_report_params                   =ид_игрока текст_жалобы
+cmd_report_short                    =отправляет администраторам жалобу на нарушителя правил сервера
+cmd_report_full                     =
+
+cmd_report_done_player              =$(color_cmd_ok)Вы отправили жалобу на $(report_to_name): $(text)
+cmd_report_done_admins              =$(color_chat_report)Жалоба от $(report_from_name) на $(report_to_name): $(text)
+cmd_report_done_log                 =<log_section chat/report/>$(report_from_name) $(report_to_name) '$(text)'
+
+
+cmd_ignore_section                  =$(cmd_section_chat)
+cmd_ignore_name                     =/игнор
+cmd_ignore_params                   =ид_игрока
+cmd_ignore_short                    =включает/отключает получение сообщений (лс и общего чата) от игрока
+cmd_ignore_full                     =
+
+cmd_ignore_add                      =$(color_cmd_ok)Вы добавили $(ignor_player_name) в список игнора. Теперь вы не будете видеть его сообщений
+cmd_ignore_remove                   =$(color_cmd_ok)Вы убрали $(ignor_player_name) из списока игнора. Теперь вы можете читать все его сообщения
+cmd_ignore_add_log                  =<log_section chat_ignore/add/>$(cmd_player_name) $(ignor_player_name)
+cmd_ignore_remove_log               =<log_section chat_ignore/remove/>$(cmd_player_name) $(ignor_player_name)
+
+
+cmd_ignore_list_section             =$(cmd_section_info)
+cmd_ignore_list_name                =/игнорс
+cmd_ignore_list_params              =[номер_страницы]
+cmd_ignore_list_short               =выводит список игнорируемых игроков. Смотрите $(cmd_ignore_name)
+cmd_ignore_list_full                =
+
+cmd_ignore_list_header              =$(color_cmd_head)Список игроков в игноре. Чтобы добавить/удалить игрока наберите: $(cmd_ignore_name) ид_игрока
+cmd_ignore_list_empty               =$(color_cmd_text) Список пуст
+cmd_ignore_list_item                =$(color_cmd_text)<preffix _/>$(item_player_name);_
+
+
+cmd_admin_chat_section              =$(cmd_section_admin_chat)
+cmd_admin_chat_name                 =!
+cmd_admin_chat_params               =сообщение
+cmd_admin_chat_short                =выводит сообщение в админ чат
+cmd_admin_chat_full                 =
+
+cmd_admin_chat_admins               =$(color_chat_admin_chat)<preffix АЧ $(admin_chat_name_sender):_/>$(admin_chat_msg)
+cmd_admin_chat_log                  =<log_section chat/admin_chat/>$(admin_chat_name_sender) '$(admin_chat_msg)'
+
+
+cmd_admin_say_section               =$(cmd_section_admin_chat)
+cmd_admin_say_name                  =/всем
+cmd_admin_say_params                =сообщение
+cmd_admin_say_short                 =выводит сообщение от имени админа всем игрокам
+cmd_admin_say_full                  =
+
+cmd_admin_say_users                 =$(color_admin_for_user)<preffix Админ:_/>$(admin_say_msg)
+cmd_admin_say_admins                =$(color_server_for_admin)<preffix Игрокам от $(admin_say_name_sender):_/>$(admin_say_msg)
+cmd_admin_say_log                   =<log_section chat/admin/say/>$(admin_say_name_sender) '$(admin_say_msg)'
+
+
+cmd_mute_section                    =$(cmd_section_admin_penalty)
+cmd_mute_name                       =/мут
+cmd_mute_params                     =ид_игрока [время_минуты] [причина]
+cmd_mute_short                      =отключить чат игроку на заданное время. См. $(cmd_comment_info_name)
+cmd_mute_full                       =
+
+cmd_mute_error_max_time             =$(color_cmd_error)Не правильное время отключения чата. Возможные значения от $(mute_time_min) до $(mute_time_max) минут(ы)
+cmd_mute_error_muted                =$(color_cmd_error)У игрока $(mute_player_name) чат уже отключен
+cmd_mute_done_players               =$(color_admin_for_user)У $(mute_player_name) отключен чат на $(mute_time_minutes) минут(у,ы): $(mute_reason)
+cmd_mute_done_admins                =$(color_server_for_admin)$(mute_admin_name) отключил чат у $(mute_player_name) на $(mute_time_minutes) минут(у,ы): $(mute_reason_raw)
+cmd_mute_done_log                   =<log_section mute/on/hand/>$(mute_player_name) $(mute_time_minutes) $(mute_admin_name) '$(mute_reason_raw)'
+
+
+cmd_unmute_section                  =$(cmd_section_admin_penalty_cancel)
+cmd_unmute_name                     =/размут
+cmd_unmute_params                   =ид_игрока
+cmd_unmute_short                    =включает чат игроку, выключенный командой $(cmd_mute_name)
+cmd_unmute_full                     =
+
+cmd_unmute_error_unmuted            =$(color_cmd_error)У игрока $(unmute_player_name) чат уже включен
+cmd_unmute_done_players             =$(color_admin_for_user)У $(unmute_player_name) включили чат
+cmd_unmute_done_admins              =$(color_server_for_admin)$(unmute_admin_name) включил чат $(unmute_player_name)
+cmd_unmute_done_log                 =<log_section mute/off/hand/>$(unmute_player_name) админ $(unmute_admin_name)
+
+
+cmd_mute_list_section               =$(cmd_section_admin_penalty_list)
+cmd_mute_list_name                  =/мутс
+cmd_mute_list_params                =[номер_страницы]
+cmd_mute_list_short                 =выводит список игроков, у которых отключен в чат в данный момент
+cmd_mute_list_full                  =
+
+cmd_mute_list_header                =$(color_cmd_head)Список игроков у которых отключен чат:
+cmd_mute_list_empty                 =$(color_cmd_text) Список пуст
+cmd_mute_list_item                  =$(color_cmd_text)<preffix _/>$(item_player_name)~-~$(time_remain);_
+
+
+auto_unmute_done_all                =$(color_admin_for_user)У $(autounmute_player_name) автоматически включился чат
+auto_unmute_done_log                =<log_section mute/off/auto/>$(autounmute_player_name)
+
+
+mute_show_remain_time               =$(color_admin_for_user)Чат будет отключен еще в течение $(time_remain) минут(ы). Пока почитайте: $(cmd_rules_name)
+
+
+cmd_automute_list_section           =$(cmd_section_admin_man)
+cmd_automute_list_name              =/автомуты
+cmd_automute_list_params            =[номер_страницы]
+cmd_automute_list_short             =выводит список слов для автомута
+cmd_automute_list_full              =
+
+cmd_automute_list_header            =$(color_cmd_head)Список слов для автомута $(items_count) шт, вероятность $(auto_mute_exec_frequency) процентов, задержка [$(auto_mute_delay_min), $(auto_mute_delay_max)] секунд, разделители '$(auto_mute_spliters)'
+cmd_automute_list_item              =$(color_cmd_text)<preffix _/>$(item_val)~-~$(item_penalty);_
+
+
+automute_dictionary_to_mute_admins  =$(color_server_for_admin)$(player_name) написал запрещенные слова '$(worlds)' на $(total_time) минут(у,ы), заглушен через $(mute_in_time) секунд(у,ы)
+automute_dictionary_to_mute_log     =<log_section automute/dictionary/mute/>$(player_name) $(total_time) '$(worlds)' '$(msg)' $(mute_in_time)
+automute_dictionary_no_mute_admins  =$(color_server_for_admin)$(player_name) написал запрещенные слова '$(worlds)' на $(total_time) минут(у,ы), заглушен не будет
+automute_dictionary_no_mute_log     =<log_section automute/dictionary/no_mute/>$(player_name) $(total_time) '$(worlds)' '$(msg)'
+
+automute_meaningless_to_mute_admins =$(color_server_for_admin)$(player_name) написал бессмысленную фразу ($(metric)) на $(total_time) минут(у,ы), заглушен через $(mute_in_time) секунд(у,ы)
+automute_meaningless_to_mute_log    =<log_section automute/meaningless/mute/>$(player_name) $(metric) $(total_time) '$(msg)' $(mute_in_time) 
+automute_meaningless_no_mute_admins =$(color_server_for_admin)$(player_name) написал бессмысленную фразу ($(metric)) на $(total_time) минут(у,ы), заглушен не будет
+automute_meaningless_no_mute_log    =<log_section automute/meaningless/no_mute/>$(player_name) $(metric) $(total_time) '$(msg)'
+
+#automute_done_players               =$(color_admin_for_user)У $(player_name) отключен чат на $(mute_time) минут(у,ы): Нарушение пункта правил 5: $(rule5). См. $(cmd_rules_name)
+automute_done_players               =$(color_admin_for_user)У $(player_name) отключен чат на $(mute_time) минут(у,ы): Нарушение пункта 5 правил. См. $(cmd_rules_name)
+automute_done_admins                =$(color_server_for_admin)Nemesis отключила чат у $(player_name) на $(mute_time) минут(у,ы)
+automute_done_log                   =<log_section mute/on/auto/>$(player_name) $(mute_time)
+
+
+cmd_regexblock_list_section         =$(cmd_section_admin_man)
+cmd_regexblock_list_name            =/регексы
+cmd_regexblock_list_params          =[номер_страницы]
+cmd_regexblock_list_short           =выводит список регулярных выражений для блокировки сообщений
+cmd_regexblock_list_full            =пусто
+
+cmd_regexblock_list_header          =$(color_cmd_head)Список регулярных выражений для блокировки сообщений
+cmd_regexblock_list_item            =$(color_cmd_text)<preffix _/>$(item_nn). <preffix ___/>$(item_name): '$(item_value)'
+
+player_chat_log                     =<log_section chat/msg/>$(player_name_sender) '$(msg)'
+player_close_chat_log               =<log_section chat/close/>$(player_name_sender) '$(msg)'
+player_chat_block_log               =<log_section chat/block/broadcast/advertising/>$(player_name_sender) '$(regex_name)' - '$(regex_match)': '$(msg)'
+player_chat_block_admins            =$(color_server_for_admin)У $(player_name_sender) заблокировано сообщение по $(regex_name) - '$(regex_match)': '$(msg)'
+
+player_blocked_chat_log             =<log_section chat/block/broadcast/player_blocked/>$(player_name_sender) '$(msg)'
+
+
+cmd_group_chat_add_section          =$(cmd_section_chat)
+cmd_group_chat_add_name             =/кч
+cmd_group_chat_add_params           =[имя_чата]
+cmd_group_chat_add_short            =добавляет/удаляет вас из командного чата. См: $(cmd_group_chat_name), $(cmd_group_chat_list_name)
+cmd_group_chat_add_full             =
+
+group_chat_add_error_length         =$(color_cmd_error)Имя чата '$(group_chat_name)' неверно. Возможная длина от $(group_chat_name_min) до $(group_chat_name_max) символов
+group_chat_add_error_in             =$(color_cmd_error)Вы уже находитесь в командном чате '$(group_chat_name)'
+
+group_chat_enter_new_player         =$(color_cmd_ok)Вы создали командный чат '$(group_chat_name)'. После подключения других игроков отсылать сообщения так: $(cmd_group_chat_name)текст
+group_chat_enter_new_log            =<log_section group_chat/in/create/>$(player_name) '$(group_chat_name)'
+
+group_chat_enter_player             =$(color_cmd_ok)> Вы вошли в командный чат '$(group_chat_name)'. В чате еще $(group_chat_count): $(group_chat_names)
+group_chat_enter_players            =$(color_cmd_ok)> К вашему командному чату присоединился $(player_name)
+group_chat_enter_log                =<log_section group_chat/in/>$(player_name) '$(group_chat_name)'
+
+group_chat_leave_last_player        =$(color_cmd_ok)Вы удалили командный чат '$(group_chat_name)'
+group_chat_leave_last_log           =<log_section group_chat/out/destroy/>$(player_name) '$(group_chat_name)'
+
+group_chat_leave_player             =$(color_cmd_ok)< Вы покинули командный чат '$(group_chat_name)'
+group_chat_leave_players            =$(color_cmd_ok)< Командный чат покинул $(player_name)
+group_chat_leave_log                =<log_section group_chat/out/>$(player_name) '$(group_chat_name)'
+
+
+cmd_group_chat_list_section         =$(cmd_section_info)
+cmd_group_chat_list_name            =/кчс
+cmd_group_chat_list_params          =[номер_страницы]
+cmd_group_chat_list_short           =выводит список игроков в вашем командном чате. См: $(cmd_group_chat_name), $(cmd_group_chat_add_name)
+cmd_group_chat_list_full            =
+
+cmd_group_chat_error_empty          =$(color_cmd_error)Вы не находитесь в командном чате. Чтобы войти в командный чат: $(cmd_group_chat_add_name) имя_чата
+cmd_group_chat_list_text            =$(color_cmd_text)Состав чата '$(group_chat_name)' $(group_chat_count)<preffix ___/>: $(group_chat_names)
+
+cmd_group_chat_list_all_section     =$(cmd_section_admin_info)
+cmd_group_chat_list_all_name        =/кчвсе
+cmd_group_chat_list_all_params      =[номер_страницы]
+cmd_group_chat_list_all_short       =выводит список командных чатов сервера
+cmd_group_chat_list_all_full        =
+
+cmd_group_chat_list_all_empty       =$(color_cmd_error)На сервере нет командных чатов
+cmd_group_chat_list_all_header      =$(color_cmd_head)Список командных чатов сервера $(chats_count):
+cmd_group_chat_list_all_item        =$(color_cmd_text)<preffix _/>Чат '$(group_chat_name)' $(group_chat_count)<preffix ___/>: $(group_chat_names)
+
+
+
+cmd_group_chat_section              =$(cmd_section_chat)
+cmd_group_chat_name                 =*
+cmd_group_chat_params               =текст
+cmd_group_chat_short                =отправляет текст в ваш командный чат. См: $(cmd_group_chat_add_name), $(cmd_group_chat_list_name)
+cmd_group_chat_full                 =
+
+cmd_group_chat_error_low            =$(color_cmd_error)Вы один в командном чате '$(group_chat_name)'. Прежде чем отправлять сообщения дождитесь других участников
+
+cmd_group_chat_msg                  =$(color_chat_group_chat)<preffix *$(cmd_player_name):_/>$(msg)
+cmd_group_chat_msg_admins           =$(color_chat_group_to_admins)<preffix КЧ $(cmd_player_name) '$(group_chat_name)':_/>$(msg)
+cmd_group_chat_msg_log              =<log_section chat/group/>$(cmd_player_name) '$(group_chat_name)' '$(msg)'
+
+
+cmd_chat_off_section                =$(cmd_section_chat)
+cmd_chat_off_name                   =/чат
+cmd_chat_off_params                 =
+cmd_chat_off_short                  =выключает/включает общий чат
+cmd_chat_off_full                   =
+
+cmd_chat_off_error_admin            =$(color_cmd_error)Администрация не может отключать себе обший чат
+cmd_chat_off_error_msg              =$(color_cmd_error)Вы отключили себе общий чат и не можете в него писать. Чтобы включить: $(cmd_chat_off_name)
+cmd_chat_off_error_msg_log          =<log_section chat/selfoff/mgs/>$(player_name_sender) '$(msg)'
+
+cmd_chat_off_trun_off               =$(color_cmd_ok)Вы отключили себе общий чат. Чтобы включить наберите снова: $(cmd_chat_off_name)
+cmd_chat_off_trun_on                =$(color_cmd_ok)Вы включили себе общий чат. Чтобы отключить наберите снова: $(cmd_chat_off_name)
+
+cmd_chat_off_trun_off_log           =<log_section chat/selfoff/off/>$(cmd_player_name)
+cmd_chat_off_trun_on_log            =<log_section chat/selfoff/on/>$(cmd_player_name)
+
+cmd_close_chat_section              =$(cmd_section_chat)
+cmd_close_chat_name                 ==
+cmd_close_chat_params               =текст
+cmd_close_chat_short                =отправляет сообщение всем, кто находиться рядом с вами
+cmd_close_chat_full                 =

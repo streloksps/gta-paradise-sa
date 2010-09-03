@@ -1,0 +1,32 @@
+<map edf:definitions="editor_main">
+    <object id="object (Helipad1_las) (1)" model="4874" interior="0" dimension="0" name="delux object" posX="610.1279296875" posY="-3039.35546875" posZ="2.4803848266602" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (pltschlhnger01_lvs) (1)" model="8253" interior="0" dimension="0" name="delux object (1)" posX="628.32342529297" posY="-3049.8828125" posZ="3.942195892334" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (xjetty01) (1)" model="17068" interior="0" dimension="0" name="delux object (2)" posX="630.35314941406" posY="-3039.5610351563" posZ="0.20781916379929" rotX="0" rotY="0" rotZ="89.324340820313" />
+    <object id="object (cxref_woodjetty) (1)" model="3406" interior="0" dimension="0" name="delux object (3)" posX="643.826171875" posY="-3036.31640625" posZ="-1.6593341827393" rotX="0" rotY="0" rotZ="59.5458984375" />
+    <object id="object (des_ranchjetty) (1)" model="11495" interior="0" dimension="0" name="delux object (4)" posX="620.07592773438" posY="-3049.5317382813" posZ="0.21270078420639" rotX="0" rotY="0" rotZ="179.18981933594" />
+    <object id="object (cxref_woodjetty) (3)" model="3406" interior="0" dimension="0" name="delux object (6)" posX="625.81909179688" posY="-3050.08984375" posZ="-1.6540838479996" rotX="0" rotY="0" rotZ="358.8896484375" />
+    <object id="object (CEnewhillhus) (1)" model="13696" interior="0" dimension="0" name="delux object (8)" posX="586.84722900391" posY="-3074.2348632813" posZ="2.1747126579285" rotX="0" rotY="0" rotZ="89.325012207031" />
+    <object id="object (cxref_woodjetty) (5)" model="3406" interior="0" dimension="0" name="delux object (9)" posX="578.80670166016" posY="-3062.3620605469" posZ="0.024471282958984" rotX="0" rotY="5.9550170898438" rotZ="89.325012207031" />
+    <object id="object (helipad) (1)" model="3928" interior="0" dimension="0" name="delux object (10)" posX="586.09722900391" posY="-3069.0017089844" posZ="8.5728797912598" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (radarmast1_LAwN) (1)" model="13714" interior="0" dimension="0" name="delux object (11)" posX="583.74536132813" posY="-3084.3374023438" posZ="14.225662231445" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (dam_turbine_2) (1)" model="11486" interior="0" dimension="0" name="delux object (12)" posX="610.31622314453" posY="-3091.3115234375" posZ="-16.022514343262" rotX="0" rotY="0" rotZ="180.68005371094" />
+    <object id="object (refthinchim1) (1)" model="3258" interior="0" dimension="0" name="delux object (13)" posX="610.74591064453" posY="-3092.1657714844" posZ="15.153059005737" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (cxrf_oiltank) (1)" model="3287" interior="0" dimension="0" name="delux object (14)" posX="614.29919433594" posY="-3075.1682128906" posZ="7.0723671913147" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (des_pipestrut03) (1)" model="16090" interior="0" dimension="0" name="delux object (15)" posX="612.24768066406" posY="-3030.3330078125" posZ="1.9482815265656" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (Y_GENERATOR) (1)" model="920" interior="0" dimension="0" name="delux object (16)" posX="609.22155761719" posY="-3092.39453125" posZ="15.582514762878" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (ref_oiltank01) (1)" model="3255" interior="0" dimension="0" name="delux object (17)" posX="620.76782226563" posY="-3074.9243164063" posZ="2.3133201599121" rotX="0" rotY="0" rotZ="180.63500976563" />
+    <object id="object (Pier04_LAw2) (1)" model="6300" interior="0" dimension="0" name="delux object (20)" posX="566.82922363281" posY="-3040.2514648438" posZ="-6.3316097259521" rotX="0" rotY="0" rotZ="269.95971679688" />
+    <object id="object (xjetty01) (2)" model="17068" interior="0" dimension="0" name="delux object (21)" posX="518.97790527344" posY="-3015.1640625" posZ="1.1928558349609" rotX="0" rotY="0" rotZ="270.67492675781" />
+    <object id="object (facttanks_SFSe04) (1)" model="11290" interior="0" dimension="0" name="delux object (22)" posX="551.94830322266" posY="-3017.5234375" posZ="7.5512900352478" rotX="0" rotY="359.5" rotZ="89.5" />
+    <object id="object (CEwrehse07) (1)" model="13078" interior="0" dimension="0" name="delux object (23)" posX="549.17901611328" posY="-3071.0810546875" posZ="5.181224822998" rotX="0" rotY="0" rotZ="90" />
+    <object id="object (cutnwplant10) (1)" model="17023" interior="0" dimension="0" name="delux object (24)" posX="575.25512695313" posY="-3016.4152832031" posZ="-31.377265930176" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (ammotrn_obj) (1)" model="3066" interior="0" dimension="0" name="delux object (25)" posX="568.34558105469" posY="-3028.4521484375" posZ="2.7773540019989" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lasdkrtgrp1) (1)" model="3573" interior="0" dimension="0" name="delux object (26)" posX="557.11981201172" posY="-3025.6362304688" posZ="4.4147691726685" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lasdkrtgrp2) (1)" model="3574" interior="0" dimension="0" name="delux object (27)" posX="539.4111328125" posY="-3045.6667480469" posZ="4.4147691726685" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (las2dkwar04) (1)" model="5262" interior="0" dimension="0" name="delux object (28)" posX="542.73010253906" posY="-3024.8820800781" posZ="4.6807384490967" rotX="0" rotY="0" rotZ="138.95001220703" />
+    <object id="object (vgsfrates08) (1)" model="8335" interior="0" dimension="0" name="delux object (29)" posX="544.81872558594" posY="-3067.7651367188" posZ="11.590272903442" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (frght_BOXES08) (1)" model="9589" interior="0" dimension="0" name="delux object (30)" posX="556.76879882813" posY="-3043.0979003906" posZ="4.6396293640137" rotX="0" rotY="0" rotZ="0" />
+    <vehicle id="noname" paintjob="0" model="452" plate="PXT7QJS" interior="0" dimension="0" posX="627.27856445313" posY="-3052.8928222656" posZ="-0.37242078781128" rotX="0" rotY="0" rotZ="268.68713378906" />
+    <vehicle id="noname" paintjob="0" model="487" plate="K03UG4O" interior="0" dimension="0" posX="586.02197265625" posY="-3069.0393066406" posZ="9.8378801345825" rotX="0" rotY="0" rotZ="270.1103515625" />
+    <object id="object (cxref_woodjetty) (3)" model="3406" interior="0" dimension="0" name="delux object (6)" posX="634.58160400391" posY="-3050.2641601563" posZ="-1.6540838479996" rotX="0" rotY="0" rotZ="358.88488769531" />
+</map>

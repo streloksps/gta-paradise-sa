@@ -1,0 +1,4 @@
+geo_db_load_begin   =<log_section geo_db/load/begin />инициализация загрузки
+geo_db_load_item    =<log_section geo_db/load/item  />загружена база '$(geo_db_filename)' тип: '$(geo_db_type)' описание: '$(geo_db_info)'
+geo_db_load_end     =<log_section geo_db/load/begin />загрузка завершена
+geo_db_unload       =<log_section geo_db/unload     />выгрузка всего

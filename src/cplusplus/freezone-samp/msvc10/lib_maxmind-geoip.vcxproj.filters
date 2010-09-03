@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\maxmind-geoip\GeoIP.c" />
+    <ClCompile Include="..\..\maxmind-geoip\GeoIPCity.c" />
+    <ClCompile Include="..\..\maxmind-geoip\regionName.c" />
+    <ClCompile Include="..\..\maxmind-geoip\timeZone.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\maxmind-geoip\GeoIP.h" />
+    <ClInclude Include="..\..\maxmind-geoip\GeoIP_fwd.h" />
+    <ClInclude Include="..\..\maxmind-geoip\GeoIP_internal.h" />
+    <ClInclude Include="..\..\maxmind-geoip\GeoIPCity.h" />
+    <ClInclude Include="..\..\maxmind-geoip\global.h" />
+    <ClInclude Include="..\..\maxmind-geoip\types.h" />
+  </ItemGroup>
+</Project>

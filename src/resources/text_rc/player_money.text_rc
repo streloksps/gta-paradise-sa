@@ -1,0 +1,16 @@
+money_error_low_money               =$(color_cmd_error)У вас недостаточно денег. Необходимо $$(money)
+money_error_many_money_player       =$(color_cmd_error)У игрока $(player_name) слишком много денег
+
+cmd_money_send_section              =$(cmd_section_stuff)
+cmd_money_send_name                 =/дать
+cmd_money_send_params               =ид_игрока сумма
+cmd_money_send_short                =передает деньги указанному игроку
+cmd_money_send_full                 =
+
+cmd_money_send_error_ban_money      =$(color_cmd_error)Указана неверная сумма. Возможные значения от $(money_min) до $(money_max)
+cmd_money_send_error_to_far         =$(color_cmd_error)Игрок $(receive_player_name) слишком далеко от вас. Подойдите к нему ближе
+cmd_money_send_error_spectate       =$(color_cmd_error)Нельзя отсылать деньги, находясь в режиме слежения
+
+cmd_money_send_done                 =$(color_cmd_ok)Вы успешно передали $$(money) $(receive_player_name)
+cmd_money_send_done_receive         =$(color_cmd_ok)Вы получили $$(money) от $(player_name)
+cmd_money_send_done_log             =<log_section money/send/>$(player_name) $(receive_player_name) $(money)

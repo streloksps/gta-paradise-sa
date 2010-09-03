@@ -1,0 +1,42 @@
+cmd_suicide_section                     =$(cmd_section_stuff)
+cmd_suicide_name                        =/умереть
+cmd_suicide_params                      =
+cmd_suicide_short                       =убить себя
+cmd_suicide_full                        =
+
+cmd_suicide_done_player                 =$(color_cmd_ok)Вы успешно себя убили
+cmd_suicide_done_log                    =<log_section health/self_suicided/>$(cmd_player_name)
+
+
+cmd_check_param_silent                  =-тихо
+cmd_check_param_random                  =-сл
+cmd_check_section                       =$(cmd_section_admin_info)
+cmd_check_name                          =/пр
+cmd_check_params                        =[$(cmd_check_param_silent)|$(cmd_check_param_random)] ид_игрока
+cmd_check_short                         =проверка игрока или его транспорт на бесмертие
+cmd_check_full                          =
+
+cmd_check_error_is_blocked              =$(color_cmd_error)Нельзя слишком часто проверять $(player_name)
+cmd_check_error_is_preload              =$(color_cmd_error)Нельзя проверить $(player_name), так как у него идет загрузка
+cmd_check_error_not_driver              =$(color_cmd_error)Нельзя проверить $(player_name), так как он в транспорте, но не водитель
+
+
+cmd_check_explode_done_player_admins    =$(color_server_for_admin)$(admin_name) взорвал игрока $(player_name)
+cmd_check_explode_done_player_log       =<log_section check/explode/player/>$(player_name) $(admin_name)
+cmd_check_explode_done_vehicle_admins   =$(color_server_for_admin)$(admin_name) взорвал транспорт игрока $(player_name)
+cmd_check_explode_done_vehicle_log      =<log_section check/explode/vehicle/>$(player_name) $(admin_name)
+
+cmd_check_done_player_admins            =$(color_server_for_admin)$(admin_name) уменьшил жизнь игрока $(player_name) на $(decrease_health), $(decrease_armour): $(health), $(armour)
+cmd_check_done_player_log               =<log_section check/silent/player/>$(player_name) $(admin_name) $(decrease_health) $(decrease_armour) $(health) $(armour)
+cmd_check_done_vehicle_admins           =$(color_server_for_admin)$(admin_name) уменьшил жизнь транспорту игрока $(player_name) на $(decrease_health): $(vehicle_health)
+cmd_check_done_vehicle_log              =<log_section check/silent/vehicle/>$(player_name) $(admin_name) $(decrease_health) $(vehicle_health)
+
+on_death_error_killed_not_in_game       =<log_section on_death/error/killed/not_in_game/>$(player_name) $(killer_name) $(reason)
+on_death_error_suicided_not_in_game     =<log_section on_death/error/suicided/not_in_game/>$(player_name) $(reason)
+
+on_death_error_killed_spectate          =<log_section on_death/error/killed/spectate/>$(player_name) $(killer_name) $(reason)
+on_death_error_suicided_spectate        =<log_section on_death/error/suicided/spectate/>$(player_name) $(reason)
+
+on_death_killed_bubble                  =<color 0xC41E3A/>$(chat_bubble_distance)<time 60000/>Убит игроком $(killer_name)
+on_death_suicided_bubble                =<color 0xC41E3A/>$(chat_bubble_distance)<time 60000/>Умер
+on_spawn_bubble                         =<color 0x33AA33/>$(chat_bubble_distance)<time 30000/>Родился

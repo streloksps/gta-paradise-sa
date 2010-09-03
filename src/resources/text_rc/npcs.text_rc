@@ -1,0 +1,3 @@
+npcs_reject_bad_ip_log              =<log_section npc/connection/reject/bad_ip/>$(id) $(name) $(ip)
+npcs_connect_log                    =<log_section npc/connection/connect/>$(id) $(name) $(ip)
+npcs_disconnect_log                 =<log_section npc/connection/disconnect/>$(id) $(name) $(reason)

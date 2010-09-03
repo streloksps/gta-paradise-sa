@@ -1,0 +1,20 @@
+# Примерная видимость в сампе ника игрока
+player_gamepause_enter_log              =<log_section sleep/enter/>$(player_name)
+
+player_gamepause_leave_bubble           =<color 0xFFFFAA/>$(chat_bubble_distance)<time 30000/>Время сна                           $(time_text)
+player_gamepause_leave_bubble_empty     =<color 0xFFFFAA/>$(chat_bubble_distance)<time 10000/>Очнулся
+player_gamepause_leave_player           =$(color_server_for_user)Время вашего сна: $(time_text)
+player_gamepause_leave_log              =<log_section sleep/leave/game/>$(player_name) $(time)
+player_gamepause_leave_exit_log         =<log_section sleep/leave/exit/>$(player_name) $(time)
+
+player_gamepause_bubble                 =$(bubble)$(progress)$(indicator)
+
+cmd_player_sleep_list_section           =$(cmd_section_info)
+cmd_player_sleep_list_name              =/спящие
+cmd_player_sleep_list_params            =[номер_страницы]
+cmd_player_sleep_list_short             =отображает список спящих игроков на сервере
+cmd_player_sleep_list_full              =
+
+cmd_player_sleep_list_empty             =$(color_cmd_info)На сервере нет спящих игроков
+cmd_player_sleep_list_header            =$(color_cmd_head)Список спящих игроков (находящихся в паузе игры) на сервере ($(count))
+cmd_player_sleep_list_item              =$(color_cmd_text)<preffix _/>$(player_name) - $(time_text);_

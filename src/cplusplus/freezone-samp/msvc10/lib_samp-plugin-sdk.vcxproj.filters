@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\samp-plugin-sdk\amxplugin.cpp" />
+    <ClCompile Include="..\..\samp-plugin-sdk\amx\getch.c">
+      <Filter>amx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\samp-plugin-sdk\plugin.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\samp-plugin-sdk\plugin.h" />
+    <ClInclude Include="..\..\samp-plugin-sdk\plugincommon.h" />
+    <ClInclude Include="..\..\samp-plugin-sdk\amx\amx.h">
+      <Filter>amx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\samp-plugin-sdk\amx\getch.h">
+      <Filter>amx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\samp-plugin-sdk\amx\sclinux.h">
+      <Filter>amx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="amx">
+      <UniqueIdentifier>{0abc782e-20e3-492c-ab18-47ff300e50ee}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

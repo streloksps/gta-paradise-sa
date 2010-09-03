@@ -1,0 +1,12 @@
+<map edf:definitions="editor_main">
+    <object id="transfender ls" model="971" interior="0" dimension="0" posX="1043.0911865234" posY="-1026.0397949219" posZ="30.747497558594" rotX="0" rotY="0" rotZ="0" />
+    <object id="transfender sf" model="971" interior="0" dimension="0" posX="-1935.1823730469" posY="238.5132598877" posZ="33.849700927734" rotX="0" rotY="0" rotZ="0" />
+    <object id="transfender lv" model="971" interior="0" dimension="0" posX="2387.3098144531" posY="1043.3403320313" posZ="9.8753271102905" rotX="0" rotY="0" rotZ="0" />
+    <object id="loco_low_co" model="971" interior="0" dimension="0" posX="2644.8967285156" posY="-2039.1119384766" posZ="11.187990188599" rotX="0" rotY="270" rotZ="0" />
+    <object id="arch_angels" model="971" interior="0" dimension="0" posX="-2715.98" posY="218.361" posZ="3.7954" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (sanpedbeaut) (1)" model="4848" interior="0" dimension="0" posX="1052.985" posY="-1023.58" posZ="34.5923" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (lawnbuildg) (1)" model="5819" interior="0" dimension="0" posX="-1927.7547607422" posY="244.60836791992" posZ="32.622417449951" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (shop11_lvs) (1)" model="8435" interior="0" dimension="0" posX="2377.396484375" posY="1047.00390625" posZ="13.815288543701" rotX="0" rotY="0" rotZ="270" />
+    <object id="object (hrbrmstr_SFN01) (1)" model="9247" interior="0" dimension="0" posX="2645.7209472656" posY="-2033.7170410156" posZ="19.000564575195" rotX="0" rotY="0" rotZ="0" />
+    <object id="object (LAcityhall4_LAn) (1)" model="4048" interior="0" dimension="0" posX="-2723.4299316406" posY="202.87091064453" posZ="15.193261146545" rotX="0" rotY="0" rotZ="90" />
+</map>

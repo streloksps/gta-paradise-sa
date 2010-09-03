@@ -1,0 +1,53 @@
+cmd_reconfigure_section         =$(cmd_section_admin_system)
+cmd_reconfigure_name            =/переконфигурировать
+cmd_reconfigure_params          =
+cmd_reconfigure_short           =перечитывает конфигурацию сервера
+cmd_reconfigure_full            =
+
+cmd_reconfigure_begin_admins    =$(color_server_for_admin)$(cmd_player_name) запустил переконфигурирование сервера...
+cmd_reconfigure_begin_log       =<log_section server/reconfig/begin/>$(cmd_player_name)
+cmd_reconfigure_begin_slog      =reconfig init
+cmd_reconfigure_end_admins      =$(color_server_for_admin)Переконфигурирование сервера завершено
+cmd_reconfigure_end_log         =<log_section server/reconfig/done/>
+cmd_reconfigure_end_slog        =reconfig end
+
+
+cmd_reboot_section              =$(cmd_section_admin_system)
+cmd_reboot_name                 =/перезагрузить
+cmd_reboot_params               =
+cmd_reboot_short                =выводит всем сообщение о перезагрузке и перезагружает сервер
+cmd_reboot_full                 =
+
+cmd_reboot_already_rebooting    =$(color_cmd_error)Сервер уже перезагружается
+cmd_reboot_begin_players        =$(color_admin_for_user)Сервер сейчас будет перезагружен... Пожалуйста, после отключения подключитесь заново.
+cmd_reboot_begin_admins         =$(color_server_for_admin)$(cmd_player_name) запустил перезагрузку сервера...
+cmd_reboot_begin_log            =<log_section server/rebooting/>$(cmd_player_name)
+cmd_reboot_execute_log          =<log_section server/reboot/>
+
+
+server_start_log                =<log_section server/start/>$(server_mode_full)
+server_stop_log                 =<log_section server/stop/>$(work_time) $(server_mode_full)
+
+site_url_textdraw               =<x 87.0/><y 427.0/><color 0xffffff99/><alignment center/><background_color 0xffffff99/><font_style style1/><letter_size_x 0.3/><letter_size_y 1.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>$(server_site_full)
+
+
+# Георгиевская ленточка, принято носить с 24 апреля по 12 мая, начиная с 2005 года
+# Получение времени в эпохе:
+# date '-d04/24/2010' +%s
+# date '-d05/13/2010' +%s
+# 
+!ifexp ($(time) > 1272052800) && ($(time) < 1273694400)
+    server_time_textdraw=<x 595.0/><y 437.0/><color 0xffffff99/><alignment right/><background_color 0xffffff99/><font_style style1/><letter_size_x 0.225/><letter_size_y 0.95/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>$(server_name_suffix) $(time) msk\
+        <x 618.0/><y 414.0/><color 0x000000FF/><alignment left/><background_color 0x000000FF/><font_style style2/><letter_size_x 2.77/><letter_size_y 4.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>/\
+        <x 611.0/><y 414.0/><color 0xF6B853FF/><alignment left/><background_color 0x000000FF/><font_style style2/><letter_size_x 2.77/><letter_size_y 4.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>/\
+        <x 606.0/><y 413.0/><color 0x000000FF/><alignment left/><background_color 0x000000FF/><font_style style2/><letter_size_x 2.77/><letter_size_y 4.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>/\
+        <x 600.0/><y 413.0/><color 0xF6B853FF/><alignment left/><background_color 0x000000FF/><font_style style2/><letter_size_x 2.77/><letter_size_y 4.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>/\
+        <x 594.0/><y 413.0/><color 0x000000FF/><alignment left/><background_color 0x000000FF/><font_style style2/><letter_size_x 2.77/><letter_size_y 4.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>/\
+        <x 631.0/><y 391.0/><color 0x000000FF/><alignment left/><background_color 0x000000FF/><font_style style2/><letter_size_x 2.77/><letter_size_y 4.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>/\
+        <x 622.0/><y 392.0/><color 0xF6B853FF/><alignment left/><background_color 0x000000FF/><font_style style2/><letter_size_x 2.77/><letter_size_y 4.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>/\
+        <x 617.0/><y 392.0/><color 0x000000FF/><alignment left/><background_color 0x000000FF/><font_style style2/><letter_size_x 2.77/><letter_size_y 4.6/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>/
+!else
+    server_time_textdraw=<x 637.0/><y 437.0/><color 0xffffff99/><alignment right/><background_color 0xffffff99/><font_style style1/><letter_size_x 0.225/><letter_size_y 0.95/><is_proportional true/><shadow 0/><outline 0/><box_is_use false/><box_color 0x00000000/><box_x 0.0/><box_y 0.0/>$(server_name_suffix) $(time) msk
+!endif
+
+server_time_stamp_time_format   =%Y-%m-%d %H:%M

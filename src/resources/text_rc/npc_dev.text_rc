@@ -1,0 +1,40 @@
+cmd_npc_dev_record_section                      =$(cmd_section_admin_develop_npc)
+cmd_npc_dev_record_name                         =/бот_писать
+cmd_npc_dev_record_params                       =[префикс]
+cmd_npc_dev_record_short                        =включает/отключает режим записи для ботов
+cmd_npc_dev_record_full                         =
+
+cmd_npc_dev_record_on_player                    =$(color_cmd_ok)Вы включили режим записи с префиксом '$(prefix)'. Чтобы начать/остановить запись нажмите клавишу посмотра назад
+cmd_npc_dev_record_on_log                       =<log_section npc_dev/record/on/>$(cmd_player_name) '$(prefix)'
+
+cmd_npc_dev_record_off_player                   =$(color_cmd_ok)Вы выключили режим записи
+cmd_npc_dev_record_off_log                      =<log_section npc_dev/record/off/>$(cmd_player_name)
+
+npc_dev_recordind_vehicle_nitro_start_player    =$(color_cmd_ok)Вы начали запись '$(recording_name)' на транспорте. Вы можете использовать нитро
+npc_dev_recordind_vehicle_nitro_start_log       =<log_section npc_dev/recordind/vehicle_nitro/on/>$(player_name) '$(recording_name)'
+npc_dev_recordind_vehicle_start_player          =$(color_cmd_ok)Вы начали запись '$(recording_name)' на транспорте
+npc_dev_recordind_vehicle_start_log             =<log_section npc_dev/recordind/vehicle/on/>$(player_name) '$(recording_name)'
+npc_dev_recordind_onfoot_start_player           =$(color_cmd_ok)Вы начали запись '$(recording_name)' пешком
+npc_dev_recordind_onfoot_start_log              =<log_section npc_dev/recordind/onfoot/on/>$(player_name) '$(recording_name)'
+
+npc_dev_recordind_stop_player                   =$(color_cmd_ok)Вы закончили запись $(recording_name);$(recording_desc)
+npc_dev_recordind_stop_log                      =<log_section npc_dev/recordind/off/>$(player_name) $(recording_name);$(recording_desc)
+
+cmd_npc_dev_play_section                        =$(cmd_section_admin_develop_npc)
+cmd_npc_dev_play_name                           =/бот_играть
+cmd_npc_dev_play_params                         =имя_записи
+cmd_npc_dev_play_short                          =воспроизводит указанную запись
+cmd_npc_dev_play_full                           =
+
+cmd_npc_dev_play_player                         =$(color_cmd_ok)Запущено воспроизведение '$(record_name)'
+cmd_npc_dev_play_log                            =<log_section npc_dev/play/>$(cmd_player_name) '$(record_name)'
+
+cmd_npc_dev_create_vehicle_section              =$(cmd_section_admin_develop_npc)
+cmd_npc_dev_create_vehicle_name                 =/бот_трдобавить
+cmd_npc_dev_create_vehicle_params               =ид_модели|название
+cmd_npc_dev_create_vehicle_short                =создает транспорт указанной модели
+cmd_npc_dev_create_vehicle_full                 =
+
+npc_dev_create_vehicle_error_invehicle          =$(color_cmd_error)Нельзя создавать новый транспорт, пока вы находитесь в транспорте
+npc_dev_create_vehicle_done_player              =$(color_cmd_ok)Вы создали $(vehicle_id) модель: $(model_id)
+npc_dev_create_vehicle_done_log                 =<log_section npc_dev/create_vehicle/>$(cmd_player_name) $(vehicle_id) $(model_id)

@@ -1,0 +1,4 @@
+<map edf:definitions="editor_main">
+    <object id="object (lasrnway6_LAS) (1)" model="5004" interior="0" dimension="0" posX="3017.2255859375" posY="452.0407409668" posZ="98.766" rotX="0" rotY="0" rotZ="0" />
+    <marker id="marker (cylinder) (1)" type="cylinder" color="#0000ff99" size="1" interior="0" dimension="0" posX="2969.8273925781" posY="448.93603515625" posZ="101.234375" rotX="0" rotY="0" rotZ="0" />
+</map>

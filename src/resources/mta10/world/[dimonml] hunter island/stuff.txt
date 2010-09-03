@@ -1,0 +1,9 @@
+echo 3301 92 | awk '{for (i = 0; i < 299; ++i) {printf("    <object id=\"road\" model=\"5794\" interior=\"0\" dimension=\"0\" posX=\"-1045\" posY=\"%d\" posZ=\"29.437601089478\" rotX=\"0\" rotY=\"0\" rotZ=\"0\" />\n", i*$2 + $1)}}'
+
+echo 5620.7 20.7 | awk '{for (i = 0; i < 115; ++i) {printf("    <object id=\"arka\" model=\"6232\" interior=\"0\" dimension=\"0\" posX=\"-1045\" posY=\"%f\" posZ=\"46.909851074219\" rotX=\"0\" rotY=\"0\" rotZ=\"0\" />\n", i*$2 + $1)}}'
+
+echo 4066.16 -20.7 80 | awk '{for (i = 1; i < $3; ++i) {printf("    <object id=\"arka\" model=\"6232\" interior=\"0\" dimension=\"0\" posX=\"7269.9384765625\" posY=\"%f\" posZ=\"21.6\" rotX=\"0\" rotY=\"0\" rotZ=\"0\" />\n", i*$2 + $1)}}'
+
+
+echo -696 170 19 | awk '{for (i = 0; i < $3; ++i) {printf("    <object id=\"air_land\" model=\"10767\" interior=\"0\" dimension=\"0\" posX=\"%f\" posY=\"8039.3876953125\" posZ=\"32.1\" rotX=\"225\" rotY=\"90\" rotZ=\"90\" />\n", i*$2 + $1)}}'
+

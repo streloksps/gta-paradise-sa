@@ -1,0 +1,5 @@
+<map edf:definitions="editor_main">
+    <object id="object0" model="14553" interior="0" dimension="0" posX="-144.952881" posY="2501.172363" posZ="4999.751953" rotX="0" rotY="0" rotZ="-89.9999812760317" />
+    <object id="object1" model="14548" interior="0" dimension="0" posX="-141.2802734375" posY="2501.1865234375" posZ="4999.494140625" rotX="0" rotY="0" rotZ="270" />
+    <vehicle id="vehicle (NRG-500) (1)" paintjob="3" model="522" plate="2BVBG51" interior="0" dimension="0" posX="-150.44097900391" posY="2501.2033691406" posZ="5000.2158203125" rotX="0" rotY="0" rotZ="270" upgrades="" />
+</map>

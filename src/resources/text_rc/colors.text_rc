@@ -1,0 +1,30 @@
+# Цвета для сообщений
+# Creating Windows XP Icons - http://msdn.microsoft.com/en-us/library/ms997636.aspx
+#
+
+color_server_for_user       =<color 0xF4A419/>
+color_server_for_user_030   =<color 0xBDD2EB/>
+color_server_for_admin      =<color 0x99CDFF/>
+color_admin_for_user        =<color 0x0099FF/>
+
+color_cmd_ok                =<color 0x33AA33/>
+color_cmd_error             =<color 0xDC143C/>
+
+color_cmd_head              =<color 0x009900/>
+color_cmd_sub_head          =<color 0x66CC33/>
+color_cmd_text              =<color 0xFFFFFF/>
+color_cmd_info              =<color 0xFFFF00/>
+
+color_chat_pm               =<color 0xFFDC18/>
+color_chat_admin_chat       =<color 0x99FF66/>
+color_chat_group_chat       =<color 0x66FFFB/>
+
+# Сообщения админам
+color_chat_report           =<color 0xC41E3A/>
+color_chat_pm_to_admins     =<color 0x6495ED/>
+color_chat_group_to_admins  =<color 0x63BAED/>
+
+color_announcement          =<color 0xCC00CC/>
+
+
+color_connection_msg=$(color_server_for_user_030)

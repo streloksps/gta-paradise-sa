@@ -1,0 +1,92 @@
+cmd_animation_section           =$(cmd_section_animation)
+cmd_animation_name              =/аним
+cmd_animation_params            =имя_библиотеки ид_анимации
+cmd_animation_short             =запускает указанную анимацию. Смотрите $(cmd_animation_list_name)
+cmd_animation_full              =
+
+animation_error_bad_lib_name    =$(color_cmd_error)Имя библиотеки анимаций '$(anim_lib_name)' неверно. Смотрите список: $(cmd_animation_list_name)
+animation_error_bad_index       =$(color_cmd_error)Задан неверный индекс библиотеки '$(anim_lib_name)'. Возможные значения: $(anim_index_min) - $(anim_index_max)
+animation_error_not_for_vehicle =$(color_cmd_error)Указанная анимация не может воспроизводиться в транспорте
+animation_done_player           =$(color_cmd_ok)Запущена анимация библиотеки '$(anim_lib_name)' №$(anim_index) ($(anim_lib_name_raw), $(anim_name_raw))
+animation_done_log              =<log_section animation/standart/>$(cmd_player_name) $(anim_lib_name) $(anim_index) $(anim_lib_name_raw) $(anim_name_raw)
+
+
+cmd_animation_list_section      =$(cmd_section_info)
+cmd_animation_list_name         =/анимс
+cmd_animation_list_params       =[номер_страницы]
+cmd_animation_list_short        =выводит список библиотек для конманды $(cmd_animation_name)
+cmd_animation_list_full         =
+
+animation_list_empty            =$(color_cmd_error)Анимации не загружены
+animation_list_header           =$(color_cmd_head)Список библиотек анимаций (с количеством) для команды $(cmd_animation_name). Всего $(anim_count) анимаций в $(anim_libs_count) группах
+animation_list_item             =$(color_cmd_text)<preffix _/>$(anim_name)~($(anim_count));_
+
+
+cmd_special_dance_section       =$(cmd_section_animation)
+cmd_special_dance_name          =/танец
+cmd_special_dance_params        =ид_танца
+cmd_special_dance_short         =вы начинаете танцевать, ид_танца может быть от 1 до 4
+cmd_special_dance_full          =
+
+special_dance_error_id          =$(color_cmd_error)Задан неверный ид танца. Возможные значения от 1 до 4
+special_dance_done_player       =$(color_cmd_ok)Вы танцуете стилем $(dance_id)
+special_dance_done_log          =<log_section animation/special/dance/>$(cmd_player_name) $(dance_id)
+
+
+cmd_special_handsup_section     =$(cmd_section_animation)
+cmd_special_handsup_name        =/руки
+cmd_special_handsup_params      =
+cmd_special_handsup_short       =вы поднимаете руки вверх
+cmd_special_handsup_full        =
+
+special_handsup_done_player     =$(color_cmd_ok)Вы подняли руки
+special_handsup_done_log        =<log_section animation/special/handsup/>$(cmd_player_name)
+
+
+cmd_special_phone_section       =$(cmd_section_animation)
+cmd_special_phone_name          =/звонить
+cmd_special_phone_params        =
+cmd_special_phone_short         =вы начинаете звонить по телефону
+cmd_special_phone_full          =
+
+special_phone_start_done_player =$(color_cmd_ok)Вы начали говорить по телефону
+special_phone_start_done_log    =<log_section animation/special/phone/start/>$(cmd_player_name)
+
+special_phone_stop_done_player  =$(color_cmd_ok)Вы закончили говорить по телефону
+special_phone_stop_done_log     =<log_section animation/special/phone/stop/>$(cmd_player_name)
+
+
+cmd_special_pissing_section     =$(cmd_section_animation)
+cmd_special_pissing_name        =/мочиться
+cmd_special_pissing_params      =
+cmd_special_pissing_short       =вы начинаете мочиться
+cmd_special_pissing_full        =пусто
+
+special_pissing_done_player     =$(color_cmd_ok)Вы мочитесь
+special_pissing_done_log        =<log_section animation/special/pissing/>$(cmd_player_name)
+
+player_pissing_handsup          =$(color_cmd_error)Вы не можете поднять руки, пока вы мочитесь
+player_pissing_phone            =$(color_cmd_error)Вы не можете позвонить, пока вы мочитесь
+
+
+cmd_special_drink_section       =$(cmd_section_animation)
+cmd_special_drink_name          =/пить
+cmd_special_drink_params        =$(cmd_special_drink_param_beer)|$(cmd_special_drink_param_wine)|$(cmd_special_drink_param_sprunk)
+cmd_special_drink_short         =вы начинаете пить, если пьете алкогольное, то пьянеете
+cmd_special_drink_full          =
+cmd_special_drink_param_beer    =пиво
+cmd_special_drink_param_wine    =вино
+cmd_special_drink_param_sprunk  =спрайт
+
+cmd_special_drink_done_player   =$(color_cmd_ok)Вы пьете $(action_to_player)
+cmd_special_drink_done_log      =<log_section animation/special/drink/$(action)/>$(cmd_player_name)
+
+
+cmd_special_smoke_section       =$(cmd_section_animation)
+cmd_special_smoke_name          =/курить
+cmd_special_smoke_params        =
+cmd_special_smoke_short         =вы начинаете курить сигару
+cmd_special_smoke_full          =пусто
+
+special_smoke_done_player       =$(color_cmd_ok)Вы курите сигару
+special_smoke_done_log          =<log_section animation/special/smoke/>$(cmd_player_name)

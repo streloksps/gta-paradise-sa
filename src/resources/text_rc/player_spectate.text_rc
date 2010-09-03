@@ -1,0 +1,28 @@
+cmd_spectate_section        =$(cmd_section_admin_info)
+cmd_spectate_name           =/сл
+cmd_spectate_params         =[ид_игрока]
+cmd_spectate_short          =переводит в режим наблюдения за игроком
+cmd_spectate_full           =
+
+spectate_error_not_found    =$(color_cmd_error)Не найдено игроков для наблюдения
+
+spectate_spawn_after_log    =<log_section spectate/spawn/>$(player_name_full)
+
+spectate_start_admins       =$(color_server_for_admin)> $(player_name_full) вошел в режим наблюдения
+spectate_start_log          =<log_section spectate/start/>$(player_name_full) за $(spectated_player_name_full)
+
+spectate_change_log         =<log_section spectate/change/>$(player_name_full) за $(spectated_player_name_full)
+
+spectate_stop_error_admins  =$(color_cmd_error)< $(player_name_full) вышел из режима наблюдения из-за ошибки!!!
+spectate_stop_ok_admins     =$(color_server_for_admin)< $(player_name_full) вышел из режима наблюдения
+spectate_stop_error_log     =<log_section spectate/stop/error/>$(player_name_full) $(spectate_time)
+spectate_stop_ok_log        =<log_section spectate/stop/>$(player_name_full) $(spectate_time)
+
+spectate_keys_info_textdraw =<x 470.0/><y 380.0/><letter_size_x 0.3/><letter_size_y 0.9/><color 0xFFFFFFFF/><alignment left/><background_color 0x000000FF/><font_style style1/><is_proportional true/><shadow 1/><outline 1/><box_is_use false/><box_color 0x000000FF/><box_x 0.00/><box_y 0.00/>\
+    Spectate keys:~n~\
+    ~b~~h~~k~~VEHICLE_ENTER_EXIT~:~w~ exit to game;~n~\
+    ~b~~h~~k~~VEHICLE_FIREWEAPON_ALT~:~w~ next player;~n~\
+    ~b~~h~~k~~PED_FIREWEAPON~:~w~ previous player;~n~\
+    ~b~~h~~k~~PED_SPRINT~:~w~ check player exploded;~n~\
+    ~b~~h~~k~~PED_JUMPING~:~w~ check player silent;
+    

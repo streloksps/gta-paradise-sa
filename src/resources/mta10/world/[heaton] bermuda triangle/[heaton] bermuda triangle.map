@@ -1,0 +1,40 @@
+<map edf:definitions="editor_main">
+    <object id="object (ap_jumbo_01) (1)" model="1683" interior="0" dimension="0" name="delux object" posX="-831.479065" posY="308.789398" posZ="-62.471413" rotX="0.0000" rotY="22.3454" rotZ="54.1445" />
+    <object id="object (ap_learjet1_01) (1)" model="1681" interior="0" dimension="0" name="delux object (1)" posX="-872.440186" posY="338.974823" posZ="-61.389668" rotX="0.0000" rotY="232.8034" rotZ="0.0000" />
+    <object id="object (ap_learjet1_01) (2)" model="1681" interior="0" dimension="0" name="delux object (2)" posX="-890.178284" posY="374.890259" posZ="-54.129101" rotX="0.0000" rotY="16.3293" rotZ="101.2500" />
+    <object id="object (androm_des_obj) (1)" model="14553" interior="0" dimension="0" name="delux object (3)" posX="-803.471680" posY="466.666107" posZ="-64.133575" rotX="0.0000" rotY="348.8273" rotZ="356.5623" />
+    <object id="object (ap_jumbo_01) (2)" model="1683" interior="0" dimension="0" name="delux object (4)" posX="-815.802673" posY="381.492188" posZ="-61.069794" rotX="0.0000" rotY="327.3414" rotZ="0.0000" />
+    <object id="object (submarine) (1)" model="1612" interior="0" dimension="0" name="delux object (5)" posX="-855.963745" posY="409.655121" posZ="-50.995975" rotX="0.0000" rotY="311.8716" rotZ="281.2500" />
+    <object id="object (freight_SFW33) (1)" model="9585" interior="0" dimension="0" name="delux object (6)" posX="-792.200928" posY="310.639069" posZ="-66.885544" rotX="0.0000" rotY="192.4096" rotZ="45.0000" />
+    <object id="object (submarr_sfe) (1)" model="9958" interior="0" dimension="0" name="delux object (7)" posX="-852.844666" posY="332.930267" posZ="-59.404385" rotX="0.0000" rotY="321.3253" rotZ="0.0000" />
+    <object id="object (freighter_sfe) (1)" model="10230" interior="0" dimension="0" name="delux object (8)" posX="-912.952820" posY="352.201172" posZ="-51.716331" rotX="342.8113" rotY="329.9197" rotZ="0.0000" />
+    <object id="object (shark) (1)" model="1608" interior="0" dimension="0" name="delux object (9)" posX="-860.638123" posY="402.539093" posZ="-57.098816" rotX="0.0000" rotY="0.0000" rotZ="202.5000" />
+    <object id="object (pirtshp01_lvs) (1)" model="8493" interior="0" dimension="0" name="delux object (10)" posX="-835.426147" posY="404.626923" posZ="-50.065994" rotX="0.0000" rotY="327.3414" rotZ="292.5000" />
+    <object id="object (pirtshp01_lvs) (2)" model="8493" interior="0" dimension="0" name="delux object (11)" posX="-876.574707" posY="304.867340" posZ="-55.643761" rotX="0.0000" rotY="24.9237" rotZ="0.8594" />
+    <object id="object (pirtshp01_lvs) (3)" model="8493" interior="0" dimension="0" name="delux object (12)" posX="-848.861938" posY="353.614258" posZ="15.120628" rotX="0.0000" rotY="339.3735" rotZ="353.9839" />
+    <object id="object (exbrtorch01) (1)" model="3525" interior="0" dimension="0" name="delux object (13)" posX="-850.162964" posY="343.743317" posZ="1.236180" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (2)" model="3525" interior="0" dimension="0" name="delux object (14)" posX="-850.292664" posY="343.127136" posZ="1.286948" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (3)" model="3525" interior="0" dimension="0" name="delux object (15)" posX="-849.268555" posY="343.751160" posZ="1.395679" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (4)" model="3525" interior="0" dimension="0" name="delux object (16)" posX="-849.424805" posY="342.087219" posZ="1.452825" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (5)" model="3525" interior="0" dimension="0" name="delux object (17)" posX="-850.152344" posY="341.397522" posZ="1.107702" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (6)" model="3525" interior="0" dimension="0" name="delux object (18)" posX="-849.467468" posY="345.010284" posZ="1.246553" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (7)" model="3525" interior="0" dimension="0" name="delux object (19)" posX="-848.746216" posY="344.326935" posZ="1.518495" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (8)" model="3525" interior="0" dimension="0" name="delux object (20)" posX="-848.293945" posY="342.823578" posZ="1.797088" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (9)" model="3525" interior="0" dimension="0" name="delux object (21)" posX="-849.321655" posY="346.837738" posZ="1.204051" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (10)" model="3525" interior="0" dimension="0" name="delux object (22)" posX="-848.296997" posY="345.969269" posZ="1.596853" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (11)" model="3525" interior="0" dimension="0" name="delux object (23)" posX="-848.520813" posY="348.093353" posZ="1.479284" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (12)" model="3525" interior="0" dimension="0" name="delux object (24)" posX="-849.315491" posY="349.807617" posZ="1.683579" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (13)" model="3525" interior="0" dimension="0" name="delux object (25)" posX="-849.457458" posY="348.660828" posZ="1.043489" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (14)" model="3525" interior="0" dimension="0" name="delux object (26)" posX="-848.573547" posY="347.066223" posZ="1.550056" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (15)" model="3525" interior="0" dimension="0" name="delux object (27)" posX="-849.012512" posY="345.697906" posZ="1.464730" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (16)" model="3525" interior="0" dimension="0" name="delux object (28)" posX="-849.181152" posY="347.581360" posZ="1.252296" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (ap_jumbo_01) (3)" model="1683" interior="0" dimension="0" name="delux object (29)" posX="-909.716919" posY="410.502411" posZ="5.906832" rotX="0.0000" rotY="39.5341" rotZ="291.4859" />
+    <object id="object (exbrtorch01) (17)" model="3525" interior="0" dimension="0" name="delux object (30)" posX="-908.332764" posY="412.882843" posZ="3.268389" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (18)" model="3525" interior="0" dimension="0" name="delux object (31)" posX="-907.107544" posY="412.802612" posZ="2.840074" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (19)" model="3525" interior="0" dimension="0" name="delux object (32)" posX="-907.395203" posY="413.525238" posZ="3.432369" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (20)" model="3525" interior="0" dimension="0" name="delux object (33)" posX="-906.572449" posY="413.561859" posZ="3.271882" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (21)" model="3525" interior="0" dimension="0" name="delux object (34)" posX="-911.940674" posY="419.642120" posZ="11.227491" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (22)" model="3525" interior="0" dimension="0" name="delux object (35)" posX="-911.836182" posY="415.186035" posZ="9.231698" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (exbrtorch01) (23)" model="3525" interior="0" dimension="0" name="delux object (36)" posX="-912.693848" posY="418.158569" posZ="11.359901" rotX="0.0000" rotY="0.0000" rotZ="0.0000" />
+    <object id="object (refthinchim1) (1)" model="3258" interior="0" dimension="0" name="delux object (37)" posX="-906.927490" posY="397.742706" posZ="-6.921868" rotX="0.0000" rotY="51.5661" rotZ="109.0622" />
+</map>

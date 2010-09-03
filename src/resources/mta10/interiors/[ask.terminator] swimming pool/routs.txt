@@ -1,0 +1,46 @@
+
+        enterb = CreatePickup(1318,1,2481.2170,1524.9906,11.7737);
+        exitb = CreatePickup(1318,1,575.5093,-2050.3943,16.1670);
+        entersp = CreatePickup(1318,1,559.5461,-2033.9458,16.1743);
+        exitsp =  CreatePickup(1318,1,559.5261,-2095.8760,2.6254);
+        entersauna = CreatePickup(1318,1,570.5856,-2095.8291,2.6077);
+        exitsauna = CreatePickup(1318,1,530.4130,-2082.5781,17.2253);
+        bigjump = CreatePickup(1318,1,578.6855,-2195.5337,1.6288);
+        anim = CreatePickup(1318,1,578.6855,-2195.5337,1.6288);
+
+
+
+        if(pickupid == enterb)
+                {
+                SetPlayerPos(playerid,575.7503,-2046.9207,16.1670);
+                }
+        if(pickupid == exitb)
+            {
+            SetPlayerPos(playerid,2483.1611,1526.7001,11.3387);
+            }
+        if(pickupid == entersp)
+            {
+            SetPlayerPos(playerid,559.4380,-2092.8203,2.67120);
+                 }
+        if(pickupid == exitsp)
+            {
+            SetPlayerPos(playerid,561.7214,-2033.8285,16.1670);
+            }
+        if(pickupid == entersauna)
+            {
+            SetPlayerPos(playerid,527.8544,-2082.4460,17.2253);
+            }
+        if(pickupid == exitsauna)
+            {
+            SetPlayerPos(playerid,570.3227,-2093.3599,2.6448);
+            }
+        if(pickupid == bigjump)
+            {
+                SetPlayerPos(playerid,578.5896,-2194.7065,7.1380);
+                }
+        if(pickupid == anim)
+            {
+                ApplyAnimation(playerid,"DAM_JUMP","DAM_LAUNCH",2,0,1,1,0,0);
+                }
+
+

@@ -1,0 +1,67 @@
+cmd_version_section             =$(cmd_section_info)
+cmd_version_name                =/версия
+cmd_version_params              =
+cmd_version_short               =показывает служебную информацию о моде
+cmd_version_full                =
+
+cmd_version_header              =$(color_cmd_head)Информация о сервере $(server_address): $(server_name)
+cmd_version_text                =$(color_cmd_text)\
+                                _Версия мода: $(server_mode_full), $(server_version)\n\
+                                _Время работы: $(ver_work_time)\n\
+                                _Мод загружен: $(ver_load_time)\n\
+                                _Текущее время сервера: $(ver_curr_time)\n\
+                                _Базы MaxMind: $(geo_dbs)\n\
+                                _Компилятор: $(ver_platform), $(ver_compiler)\n\
+                                _Библиотеки: $(ver_stdlib), $(ver_boost), MaxMind GeoIP, hashlib++ v0.3.1\n\
+                                _Статистика: $(ver_stat)
+
+
+cmd_rules_section               =$(cmd_section_info_main)
+cmd_rules_name                  =/правила
+cmd_rules_params                =
+cmd_rules_short                 =правила сервера
+cmd_rules_text                  =$(color_cmd_head)Правила сервера. Запрещается:\n\
+                                 $(color_cmd_text) 1. $(rule1)\n\
+                                 $(color_cmd_text) 2. $(rule2)\n\
+                                 $(color_cmd_text) 3. $(rule3)\n\
+                                 $(color_cmd_text) 4. $(rule4)\n\
+                                 $(color_cmd_text) 5. $(rule5)\n\
+                                 $(color_cmd_text) 6. $(rule6)\n\
+                                 $(color_cmd_text) 7. $(rule7)\n\
+                                 $(color_cmd_text) 8. $(rule8)\n\
+                                 $(color_cmd_info)$(rules_comment)
+
+
+cmd_help_section                =$(cmd_section_info_main)
+cmd_help_name                   =/помощь
+cmd_help_params                 =
+cmd_help_short                  =общая справка
+cmd_help_text                   =$(color_cmd_head)Справка сервера $(server_name)\n\
+                                 $(color_cmd_text)Ознакомьтесь с правилами сервера: $(cmd_rules_name)\n\
+                                 $(color_cmd_text)Почитайте о сервере: $(cmd_server_about_name)\n\
+                                 $(color_cmd_text)Посмотрите список команд: $(cmd_commands_name)\n\
+                                 $(color_cmd_info)Сервер только начинает свое существование, поэтому на нем почти ничего нет. Со временем это исправится :)
+
+
+health_suicide_log              =<log_section health/suicided/>$(player_name_full) причина $(reason)
+health_kill_log                 =<log_section health/killed/>$(player_name_full) убит игроком $(killer_name_full) причина $(reason)
+
+player_free_for_all_spawn       =<log_section free_for_all/spawn/>$(player_name_full)
+
+
+cmd_server_about_section        =$(cmd_section_info_main)
+cmd_server_about_name           =/сервер
+cmd_server_about_params         =[номер_страницы]
+cmd_server_about_short          =выводит информацию о сервере и его концепции
+cmd_server_about_text           =\
+$(color_cmd_head)О сервере\n\
+$(color_cmd_text)Сервер GTA - Paradise является частным некоммерческим объединением группы энтузиастов. Мы создали сервер, чтобы обеспечить себе максимально комфортные условия для общения и совместного времяпрепровождения.\n\
+$(color_cmd_head)Порядок\n\
+$(color_cmd_text)Мы считаем, что комфорт возможен только тогда, когда все без исключения игроки относятся друг к другу с уважением. Для обеспечения этого, были разработаны правила сервера, которые позволяют получить четкое и однозначное понимание правомерности конкретных поступков. Нарушение правил сервера, независимо от сопутствующих обстоятельств, расценивается как неуважение ко всем игрокам нашего сервера и будет наказываться самым жестким образом.\n\
+\n\
+$(color_cmd_head)Концепция\n\
+$(color_cmd_text)Главная отличительная особенность и главная ценность ГТА, за которую мы ее любим, это свобода. Поэтому, при создании сервера и выборе правил, мы старались максимально разнообразить и сбалансировать игру, но при этом сохранить свободу действий каждому, при условии, что она не ущемляет свободы других игроков. У нас на сервере вам не навязывается, какая либо модель поведения. Вы сами решаете, что вам делать и чего не делать, при условии, что это не запрещено правилами сервера.\n\
+$(color_cmd_head)Игроки\n\
+$(color_cmd_text)Если ваше представление о ГТА, понимание порядка и правил сервера не совпадают с нашими, то в интернете достаточно других игровых серверов.\n\
+$(color_cmd_head)Гарантии\n\
+$(color_cmd_text)Так как сервер является частным и некоммерческим, мы не берем на себя никаких обязательств перед игроками относительно доступности сервера, его качества и соответствия их ожиданиям.

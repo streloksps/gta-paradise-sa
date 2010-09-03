@@ -1,0 +1,44 @@
+cmd_begin_process_log           =<log_section cmd/pre_process/>$(cmd_player_name) $(cmd_raw_name) '$(cmd_full_text)'
+
+cmd_not_login_to_game           =$(color_cmd_error)Вы не можете использовать команды, пока не вошли в игру
+cmd_not_login_to_game_log       =<log_section cmd/pre_error/not_login_to_game/>$(cmd_player_name) '$(cmd_full_text)'
+
+cmd_not_found                   =$(color_cmd_error)Неизвестная команда. Смотрите список команд сервера: $(cmd_commands_name)
+cmd_not_found_log               =<log_section cmd/pre_error/not_found/>$(cmd_player_name) '$(cmd_full_text)'
+
+cmd_not_in_game                 =$(color_cmd_error)Вы не можете использовать игровые команды, когда вы не в игре
+cmd_not_in_game_log             =<log_section cmd/pre_error/not_in_game/>$(cmd_player_name) $(cmd_sys_name) $(cmd_name) '$(cmd_full_text)'
+
+cmd_use_phone                   =$(color_cmd_error)Вы не можете использовать игровые команды, когда вы говорите по телефону
+cmd_use_phone_log               =<log_section cmd/pre_error/use_phone/>$(cmd_player_name) $(cmd_sys_name) $(cmd_name) '$(cmd_full_text)'
+
+cmd_loading_active              =$(color_cmd_error)Вы не можете использовать игровые команды, когда идет загрузка
+cmd_loading_active_log          =<log_section cmd/pre_error/preload/>$(cmd_player_name) $(cmd_sys_name) $(cmd_name) '$(cmd_full_text)'
+
+cmd_antiflood_block             =$(color_cmd_error)Вы слишком часто используете команды. Подождите $(time_out) секунд(ы)
+cmd_antiflood_block_log         =<log_section cmd/pre_error/antiflood/>$(cmd_player_name) $(cmd_sys_name) $(cmd_name) $(time_out) '$(cmd_full_text)'
+
+
+cmd_auto_log                    =<log_section cmd/ok/auto_page/>$(cmd_player_name) $(cmd_sys_name) $(cmd_name) $(cmd_pager_page) '$(cmd_full_text)'
+
+cmd_ok_log                      =<log_section cmd/ok/>$(cmd_player_name) $(cmd_sys_name) $(cmd_name) '$(cmd_full_text)'
+
+cmd_syntax_error                =$(color_cmd_error)Ошибка синтаксиса вызова команды\n\
+                                 $(color_cmd_text)Использование: $(cmd_name) $(cmd_params)
+
+cmd_syntax_error_log            =<log_section cmd/error/syntax/>$(cmd_player_name) $(cmd_sys_name) $(cmd_name) '$(cmd_full_text)'
+
+cmd_process_error_log           =<log_section cmd/error/process/>$(cmd_player_name) $(cmd_sys_name) $(cmd_name) '$(cmd_full_text)'
+
+cmd_commands_section            =$(cmd_section_info_main)
+cmd_commands_name               =/кмд
+cmd_commands_params             =[номер_страницы]
+cmd_commands_short              =показывает список команд сервера
+cmd_commands_full               =Команда выводит подробный список команд сервера
+
+cmd_commands_header1            =$(color_cmd_head)Список команд сервера:
+cmd_commands_header2            =$(color_cmd_sub_head) $(cmd_item_section)
+cmd_commands_item               =$(color_cmd_text)  $(cmd_item_name) $(cmd_item_short_desc)
+
+cmd_short_desc                  =- $(short_desc)
+cmd_short_desc_with_params      =$(params) - $(short_desc)
