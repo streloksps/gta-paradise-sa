@@ -12,6 +12,12 @@
     <Link>
       <ModuleDefinitionFile>$(src_cpp_root)samp-plugin-sdk\plugin.def</ModuleDefinitionFile>
     </Link>
+    <PostBuildEvent>
+      <Command>set result_bin=$(out_solution)bin\plugins\
+mkdir "%result_bin%" &gt; nul 2&gt; nul
+copy "$(TargetDir)$(TargetFileName)" "%result_bin%"
+</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

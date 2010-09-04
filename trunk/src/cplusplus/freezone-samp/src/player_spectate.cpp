@@ -30,10 +30,16 @@ void player_spectate::create() {
 
 void player_spectate::configure_pre() {
     keys_info_timeout = 5000;
+    is_check_pos = true;
+    check_pos = pos3(50.0f, 50.0f, 50.0f);
+    check_pos_threshold = 1.0f;
 }
 
 void player_spectate::configure(buffer::ptr const& buff, def_t const& def) {
     SERIALIZE_ITEM(keys_info_timeout);
+    SERIALIZE_ITEM(is_check_pos);
+    SERIALIZE_ITEM(check_pos);
+    SERIALIZE_ITEM(check_pos_threshold);
 }
 
 void player_spectate::configure_post() {
@@ -307,6 +313,9 @@ void player_spectate_item::on_keystate_change(int keys_new, int keys_old) {
 void player_spectate_item::on_timer5000() {
     if (is_spectate()) {
         get_root()->health_set_inf();
+        if (manager.is_check_pos) {
+            do_check_pos();
+        }
     }
 }
 
@@ -439,6 +448,13 @@ bool player_spectate_item::is_can_spectate() const {
 void player_spectate_item::on_player_stream_out(player_ptr_t const& player_ptr) {
     if (is_spectate_to(player_ptr)) {
         // Если игрок выподает из зоны видимости следящего, то слежка сбивается
+        do_refresh();
+    }
+}
+
+void player_spectate_item::do_check_pos() {
+    pos4 pos = get_root()->get_item<player_position_item>()->pos_get();
+    if (get_points_metric_square_noiw(manager.check_pos, pos) <= manager.check_pos_threshold * manager.check_pos_threshold) {
         do_refresh();
     }
 }

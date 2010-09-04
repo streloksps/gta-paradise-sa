@@ -2,24 +2,6 @@
 #include "player_ban_serial.hpp"
 #include "core/module_c.hpp"
 
-player_ban_serial_item_t::player_ban_serial_item_t(): as_num(as_num) {
-}
-
-player_ban_serial_item_t::player_ban_serial_item_t(int as_num, std::string const& serial): serial(serial), as_num(as_num) {
-}
-
-player_ban_serial_item_t::player_ban_serial_item_t(player_ptr_t const& player_ptr) {
-    serial = player_ptr->get_serial();
-    as_num = player_ptr->geo_get_ip_info().get_as_num();
-}
-
-void player_ban_serial_item_t::dump_to_params(messages_params& params) const {
-    params
-        ("as_num", as_num)
-        ("serial", serial)
-        ;
-}
-
 REGISTER_IN_APPLICATION(player_ban_serial);
 
 player_ban_serial::ptr player_ban_serial::instance() {
@@ -40,8 +22,18 @@ void player_ban_serial::create() {
 void player_ban_serial::configure_pre() {
     is_serial_bans_active = false;
     preban_min_count = 3;
-    preban_timeout = 12 * 60 * 60 * 1000; // 12 часов
-    bans_timeout = 4 * 24 * 60 * 60 * 1000; // 4 дня
+    preban_timeout = 24 * 60 * 60; // 12 часов
+    bans_timeout = 4 * 24 * 60 * 60; // 4 дня
+
+    whitelist_ips.clear();
+    whitelist_serials.clear();
+    whitelist_as_nums.clear();
+    whitelist_ban_items.clear();
+    
+    blacklist_ips.clear();
+    blacklist_serials.clear();
+    blacklist_as_nums.clear();
+    blacklist_ban_items.clear();
 }
 
 void player_ban_serial::configure(buffer::ptr const& buff, def_t const& def) {
@@ -49,14 +41,19 @@ void player_ban_serial::configure(buffer::ptr const& buff, def_t const& def) {
     SERIALIZE_ITEM(preban_min_count);
     SERIALIZE_ITEM(preban_timeout);
     SERIALIZE_ITEM(bans_timeout);
-    SERIALIZE_ITEM(perma_serials);
-    SERIALIZE_ITEM(perma_as_nums);
-    SERIALIZE_ITEM(perma_ban_items);
+    SERIALIZE_ITEM(whitelist_ips);
+    SERIALIZE_ITEM(whitelist_serials);
+    SERIALIZE_ITEM(whitelist_as_nums);
+    SERIALIZE_ITEM(whitelist_ban_items);
+    SERIALIZE_ITEM(blacklist_ips);
+    SERIALIZE_ITEM(blacklist_serials);
+    SERIALIZE_ITEM(blacklist_as_nums);
+    SERIALIZE_ITEM(blacklist_ban_items);
 }
 
 void player_ban_serial::configure_post() {
-    prebans.set_time_out(preban_timeout);
-    bans.set_time_out(bans_timeout);
+    prebans.set_time_out(preban_timeout * time_base::millisecond_t(1000));
+    bans.set_time_out(bans_timeout * time_base::millisecond_t(1000));
 }
 
 // Истина - разрешить подключение
@@ -64,7 +61,8 @@ void player_ban_serial::configure_post() {
 bool player_ban_serial::on_rejectable_connect(player_ptr_t const& player_ptr) {
     if (is_serial_bans_active) {
         player_ban_serial_item_t item = player_ban_serial_item_t(player_ptr);
-        if (is_banned(item)) {
+        ban_reason_t::ban_reason_e reason;
+        if (is_banned(item, player_ptr->geo_get_ip_info().ip_string, reason)) {
             // Серийный номер забанен
 
             messages_item msg_item;
@@ -73,6 +71,7 @@ bool player_ban_serial::on_rejectable_connect(player_ptr_t const& player_ptr) {
                 ("player_name_full", player_ptr->name_get_full())
                 ("player_geo_long_desc", player_ptr->geo_get_long_desc())
                 ("player_serial", player_ptr->get_serial())
+                ("reason", ban_reason_t::get_reason_string(reason))
                 ;
 
             msg_item.get_sender()
@@ -173,7 +172,7 @@ command_arguments_rezult player_ban_serial::cmd_ban_serial_list(player_ptr_t con
             params
                 ("remain", (static_cast<time_base::millisecond_t>(bans_timeout) - tick_count + bans_item.second.last_update) / 1000)
                 ;
-            pager.items_add("$(ban_serial_list_item)");
+            pager("$(ban_serial_list_item)");
         }
     }
     pager.items_done();
@@ -185,15 +184,36 @@ bool player_ban_serial::access_checker(player_ptr_t const& player_ptr, std::stri
     return is_serial_bans_active;
 }
 
-bool player_ban_serial::is_banned(player_ban_serial_item_t const& item) const {
-    if (perma_serials.end() != perma_serials.find(item.serial)) {
-        return true;
+bool player_ban_serial::is_banned(player_ban_serial_item_t const& item, std::string const& ip_string, ban_reason_t::ban_reason_e& reason) const {
+    reason = ban_reason_t::reason_none;
+
+    if (whitelist_ips.end() != whitelist_ips.find(ip_string)) {
+        return false;
     }
-    if (perma_as_nums.end() != perma_as_nums.find(item.as_num)) {
-        return true;
+    if (whitelist_serials.end() != whitelist_serials.find(item.serial)) {
+        return false;
     }
-    if (perma_ban_items.end() != perma_ban_items.find(item)) {
-        return true;
+    if (whitelist_as_nums.end() != whitelist_as_nums.find(item.as_num)) {
+        return false;
     }
-    return bans.is_exist(item);
+    if (whitelist_ban_items.end() != whitelist_ban_items.find(item)) {
+        return false;
+    }
+
+    if (blacklist_ips.end() != blacklist_ips.find(ip_string)) {
+        reason += ban_reason_t::reason_ip;
+    }
+    if (blacklist_serials.end() != blacklist_serials.find(item.serial)) {
+        reason += ban_reason_t::reason_serial;
+    }
+    if (blacklist_as_nums.end() != blacklist_as_nums.find(item.as_num)) {
+        reason += ban_reason_t::reason_as_num;
+    }
+    if (blacklist_ban_items.end() != blacklist_ban_items.find(item)) {
+        reason += ban_reason_t::reason_ban_item;
+    }
+    if (bans.is_exist(item)) {
+        reason += ban_reason_t::reason_ban_item_dynamic;
+    }
+    return ban_reason_t::reason_none != reason;
 }

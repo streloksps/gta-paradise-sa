@@ -386,18 +386,19 @@ void player::block(std::string const& reason_group, std::string const& reason_in
     msg_item.get_params()
         ("player_name", name_get_full())
         ("player_geo_long_desc", geo_get_long_desc())
+        ("player_serial", get_serial())
         ("reason_group", reason_group)
         ("reason_info", reason_info)
         ;
     if (reason_info.empty()) {
         msg_item.get_sender()
-            ("$(player_block)", msg_log)
+            ("$(player_block_log)", msg_log)
             //("$(player_block_admins)", msg_players_all_admins)
             ;
     }
     else {
         msg_item.get_sender()
-            ("$(player_block_info)", msg_log)
+            ("$(player_block_info_log)", msg_log)
             //("$(player_block_info_admins)", msg_players_all_admins)
             ;
     }

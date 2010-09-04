@@ -1,38 +1,31 @@
 #ifndef PLAYER_BAN_SERIAL_HPP
 #define PLAYER_BAN_SERIAL_HPP
 #include "core/module_h.hpp"
+#include "player_ban_serial_item.hpp"
 #include <string>
 #include <set>
 #include <map>
+#include <bitset>
 
-struct player_ban_serial_item_t {
-    int as_num;
-    std::string serial;
-
-    player_ban_serial_item_t();
-    player_ban_serial_item_t(int as_num, std::string const& serial);
-    player_ban_serial_item_t(player_ptr_t const& player_ptr);
-    bool operator<(player_ban_serial_item_t const& right) const {
-        if (as_num == right.as_num) return serial < right.serial;
-        return as_num < right.as_num;
+struct ban_reason_t {
+    enum ban_reason_e {
+        reason_none = 0,
+        reason_ip = 1 << 0,
+        reason_serial = 1 << 1,
+        reason_as_num = 1 << 2,
+        reason_ban_item = 1 << 3,
+        reason_ban_item_dynamic = 1 << 4
+    };
+    static inline std::string get_reason_string(ban_reason_e reason) {
+        std::bitset<5> b(reason);
+        return b.to_string();
     }
-    void dump_to_params(messages_params& params) const;
 };
 
-template <class char_t, class traits_t>
-inline std::basic_istream<char_t, traits_t>& operator>>(std::basic_istream<char_t, traits_t>& is, player_ban_serial_item_t& item) {
-    is>>item.as_num>>item.serial;
-    if (!is.eof()) {
-        is.setstate(std::ios_base::failbit);
-    }
-    return is;
+inline ban_reason_t::ban_reason_e operator +=(ban_reason_t::ban_reason_e& a, ban_reason_t::ban_reason_e b) {
+    a = static_cast<ban_reason_t::ban_reason_e>(a + b);
+    return a;
 }
-
-#include "core/serialization/is_streameble.hpp"
-namespace serialization {
-    template <> struct is_streameble_read <player_ban_serial_item_t>: std::tr1::true_type {};
-} // namespace serialization {
-
 
 class player_ban_serial
     :public application_item
@@ -73,19 +66,28 @@ public:
 private:
     typedef time_outs<player_ban_serial_item_t, int> prebans_t;
     typedef time_outs<player_ban_serial_item_t> bans_t;
-    typedef std::set<std::string> serials_t;
-    typedef std::set<int> as_nums_t;
-    typedef std::set<player_ban_serial_item_t> ban_items_t;
+    
+    typedef std::set<std::string>               ips_t;
+    typedef std::set<std::string>               serials_t;
+    typedef std::set<int>                       as_nums_t;
+    typedef std::set<player_ban_serial_item_t>  ban_items_t;
 
     bool is_serial_bans_active;
     int preban_min_count;
     int preban_timeout;
     int bans_timeout;
     
-    // Список пермонентных банов
-    serials_t perma_serials;
-    as_nums_t perma_as_nums;
-    ban_items_t perma_ban_items;
+    // Список белых листов
+    ips_t       whitelist_ips;
+    serials_t   whitelist_serials;
+    as_nums_t   whitelist_as_nums;
+    ban_items_t whitelist_ban_items;
+
+    // Список черных листов
+    ips_t       blacklist_ips;
+    serials_t   blacklist_serials;
+    as_nums_t   blacklist_as_nums;
+    ban_items_t blacklist_ban_items;
 
     prebans_t prebans;
     bans_t bans;
@@ -93,7 +95,7 @@ private:
 private:
     void on_unban_serial(player_ban_serial_item_t const& item, time_base::millisecond_t const& last_update, time_outs_dummy_val const& dummy);
     bool access_checker(player_ptr_t const& player_ptr, std::string const& cmd_name);
-    bool is_banned(player_ban_serial_item_t const& item) const;
+    bool is_banned(player_ban_serial_item_t const& item, std::string const& ip_string, ban_reason_t::ban_reason_e& reason) const;
 };
 
 #endif // PLAYER_BAN_SERIAL_HPP

@@ -34,7 +34,7 @@ void buffer_reader::load_stream(std::istream& file, boost::filesystem::path root
 
     filter06_t filter06(*this, preprocess_vars, expressions_ptr);
     filter05_t filter05(filter06);
-    filter04_t filter04(filter05, root_directory);
+    filter04_t filter04(filter05, root_directory, preprocess_vars);
     filter03_t filter03(filter04);
     filter02_t filter02(filter03);
     filter01_t filter01(filter02);
