@@ -10,19 +10,19 @@ player_name_bad_name_info           =$(color_cmd_info)1. Допустимая длина ника о
 player_name_bad_name_head           =
 
 player_name_bad_name_length         =$(player_name_bad_name_head)$(color_cmd_error)У вас не правильная длина ника (пункт 1) '$(connect_name)': $(connect_name_length)\n$(player_name_bad_name_info)
-player_name_bad_name_length_log     =<log_section connection/reject/badname/length/>'$(connect_name)' ($(player_geo_long_desc))
+player_name_bad_name_length_log     =<log_section connection/reject/badname/length/>'$(connect_name)' ($(player_geo_long_desc)) {$(player_serial)}
 
 player_name_bad_name_validchars     =$(player_name_bad_name_head)$(color_cmd_error)У вас не правильные символы в нике (пункт 2) '$(connect_name)'\n$(player_name_bad_name_info)
-player_name_bad_name_validchars_log =<log_section connection/reject/badname/validchars/>'$(connect_name)' ($(player_geo_long_desc))
+player_name_bad_name_validchars_log =<log_section connection/reject/badname/validchars/>'$(connect_name)' ($(player_geo_long_desc)) {$(player_serial)}
 
 player_name_bad_name_regex          =$(player_name_bad_name_head)$(color_cmd_error)У вас не правильное использование символов '[', ']' или длина ника (пункт 3) '$(connect_name)'\n$(player_name_bad_name_info)
-player_name_bad_name_regex_log      =<log_section connection/reject/badname/regex/>'$(connect_name)' ($(player_geo_long_desc))
+player_name_bad_name_regex_log      =<log_section connection/reject/badname/regex/>'$(connect_name)' ($(player_geo_long_desc)) {$(player_serial)}
 
 player_name_bad_finalname           =$(player_name_bad_name_head)$(color_cmd_error)У вас длина ника '$(final_name)' менее $(name_min_length) символов (пункт 3)\n$(player_name_bad_name_info)
-player_name_bad_finalname_log       =<log_section connection/reject/badfinalname/len/>'$(connect_name)' '$(final_name)' ($(player_geo_long_desc))
+player_name_bad_finalname_log       =<log_section connection/reject/badfinalname/len/>'$(connect_name)' '$(final_name)' ($(player_geo_long_desc)) {$(player_serial)}
 
 player_name_bad_finaltag            =$(player_name_bad_name_head)$(color_cmd_error)У вас длина тега '$(final_tag)' менее $(tag_min_length) символов (пункт 3)\n$(player_name_bad_name_info)
-player_name_bad_finaltag_log        =<log_section connection/reject/badfinaltag/len/>'$(connect_name)' '$(final_tag)' ($(player_geo_long_desc))
+player_name_bad_finaltag_log        =<log_section connection/reject/badfinaltag/len/>'$(connect_name)' '$(final_tag)' ($(player_geo_long_desc)) {$(player_serial)}
 
 cmd_find_player_section             =$(cmd_section_info)
 cmd_find_player_name                =/имя

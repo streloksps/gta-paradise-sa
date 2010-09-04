@@ -53,6 +53,11 @@ public:
 private:
     text_draw::td_item::ptr keys_info;
     int keys_info_timeout;
+    
+    // Параметры проверок позиций. Если следящий находиться в заданной позиции, то рефрешим его
+    bool    is_check_pos;
+    pos3    check_pos;
+    float   check_pos_threshold;
 };
 
 class player_spectate_item
@@ -84,6 +89,7 @@ private:
     void state_save();
     void state_preload();
     void state_load();
+    void do_check_pos();
 
     void on_spectate_start(player_ptr_t const& spectated_player_ptr);
     void on_spectate_change(player_ptr_t const& new_spectated_player_ptr);
@@ -110,16 +116,16 @@ public: // player_events::*
     virtual void on_player_stream_out(player_ptr_t const& player_ptr);
 
 private:
-    player_spectate&    manager;
-    player_ptr_t        curr_spec_player_ptr;
-    bool                is_ending;
+    player_spectate&        manager;
+    player_ptr_t            curr_spec_player_ptr;
+    bool                    is_ending;
 
 private: // Состояние перед спеком
     game_context::ptr		state_context;
 	player_health_armour	state_healht;
     pos4                    state_pos;
     int                     state_money;
-    weapons_t          state_weapons;
+    weapons_t               state_weapons;
     std::time_t             state_start;
 
     static void shift_it(players_t::iterator& it, players_t& players, bool is_next);

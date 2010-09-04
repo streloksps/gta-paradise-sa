@@ -230,14 +230,15 @@ template <typename filter_next_t>
 struct filter_preprocessor_include_t {
     filter_next_t& filter_next;
     boost::filesystem::path& root_directory;
-    filter_preprocessor_include_t(filter_next_t& filter_next, boost::filesystem::path& root_directory): filter_next(filter_next), root_directory(root_directory) {}
+    buffer_ptr_c_t const& vars;
+    filter_preprocessor_include_t(filter_next_t& filter_next, boost::filesystem::path& root_directory, buffer_ptr_c_t const& vars): filter_next(filter_next), root_directory(root_directory), vars(vars) {}
     void filter_addline(std::string const& line) {
         std::string statement_name;
         std::string statement_params;
         if (get_preprocessor_statement(line, statement_name, statement_params)) {
             // Начинаем обрабатывать инструкцию
             if (boost::iequals(statement_name, "tryinclude", locale_ru)) {
-                process_statement_tryinclude(statement_params);
+                process_statement_tryinclude(statement_params, vars);
                 return;
             }
         }
@@ -245,12 +246,12 @@ struct filter_preprocessor_include_t {
         filter_next.filter_addline(line);
     }
 
-    void process_statement_tryinclude(std::string const& params) {
+    void process_statement_tryinclude(std::string const& params, buffer_ptr_c_t const& vars) {
         if (params.empty()) {
             assert(false && "пустые параметры");
             return;
         }
-        boost::filesystem::path include_filename = root_directory / params;
+        boost::filesystem::path include_filename = root_directory / vars->process_all_vars(params);
         if (!boost::filesystem::exists(include_filename)) {
             return;
         }
@@ -265,7 +266,7 @@ struct filter_preprocessor_include_t {
             typedef filter_dropcomments_t           <filter02_t>    filter01_t;
             typedef filter_streamreader_t           <filter01_t>    filter00_t;
 
-            filter04_t filter04(filter_next, root_directory);
+            filter04_t filter04(filter_next, root_directory, vars);
             filter03_t filter03(filter04);
             filter02_t filter02(filter03);
             filter01_t filter01(filter02);

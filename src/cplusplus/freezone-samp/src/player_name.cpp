@@ -88,6 +88,7 @@ bool player_name::on_pre_rejectable_connect(player_ptr_t const& player_ptr) {
         ("connect_name", connect_name)
         ("connect_name_length", connect_name.length())
         ("player_geo_long_desc", player_ptr->geo_get_long_desc())
+        ("player_serial", player_ptr->get_serial())
         ("name_length_min", name_length_min)
         ("name_length_max", name_length_max)
         ("name_valid_chars", name_valid_chars)

@@ -6,6 +6,7 @@
     <src_cpp_root>$(SolutionDir)..\..\</src_cpp_root>
     <obj_root>$(svn_root)obj\</obj_root>
     <out_root>$(svn_root)out\</out_root>
+    <out_solution>$(out_root)$(SolutionName)_$(Configuration)\</out_solution>
   </PropertyGroup>
   <PropertyGroup>
     <OutDir>$(obj_root)$(SolutionName)_$(ProjectName)_$(Configuration)\</OutDir>
@@ -31,6 +32,10 @@
     </BuildMacro>
     <BuildMacro Include="out_root">
       <Value>$(out_root)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+    <BuildMacro Include="out_solution">
+      <Value>$(out_solution)</Value>
       <EnvironmentVariable>true</EnvironmentVariable>
     </BuildMacro>
   </ItemGroup>

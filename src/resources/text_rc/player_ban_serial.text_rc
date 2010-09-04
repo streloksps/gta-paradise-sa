@@ -1,8 +1,8 @@
 # ресурсы модул€ работы с ником
 
-player_ban_serial_reject            =$(color_cmd_error)¬ы забанены на этом сервере.
-player_ban_serial_reject_admins     =$(color_server_for_admin)<nonewline/>< $(player_name_full) сер-кик гео: $(player_geo_long_desc)
-player_ban_serial_reject_log        =<log_section connection/reject/serial/>$(player_name_full) ($(player_geo_long_desc)) {$(player_serial)}
+player_ban_serial_reject            =$(color_cmd_error)¬ы забанены на этом сервере ($(reason)).
+player_ban_serial_reject_admins     =$(color_server_for_admin)<nonewline/>< $(player_name_full) сер-кик $(reason) гео: $(player_geo_long_desc)
+player_ban_serial_reject_log        =<log_section connection/reject/serial/>$(player_name_full) $(reason) ($(player_geo_long_desc)) {$(player_serial)}
 
 cmd_ban_serial_unban_section        =$(cmd_section_admin_penalty_cancel)
 cmd_ban_serial_unban_name           =/разсериал
@@ -19,7 +19,7 @@ cmd_ban_serial_list_short           =выводит список забаненных серийных номеров
 cmd_ban_serial_list_full            =
 
 ban_serial_list_header              =$(color_cmd_head)«абаненные серийные номера ($(count)):
-ban_serial_list_item                =$(color_cmd_text)<preffix __/>AS$(as_num) {$(serial)} $(remain);_
+ban_serial_list_item                =$(color_cmd_text)<preffix __/>AS$(as_num) {$(serial)} $(remain);
 ban_serial_list_empty               =$(color_cmd_text)Ќет забаненных серийных номеров
 
 ban_serial_unban_ok                 =$(color_cmd_text)»з бан листа удален серийный номер: AS$(as_num) {$(serial)}

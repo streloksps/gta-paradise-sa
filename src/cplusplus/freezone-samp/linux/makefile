@@ -1,7 +1,7 @@
 #
 #  Мейк файл для компиляции мода под линуксом
 #
-boost_root        := $(FREE_MODE_BOOST_DIR)
+boost_root        := $(FREE_ZONE_BOOST_DIR)
 include_glob_dirs := $(boost_root)/boost/tr1/tr1 $(boost_root)
 
 rezult_name       := freezone

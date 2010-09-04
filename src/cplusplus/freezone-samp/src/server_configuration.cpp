@@ -28,6 +28,11 @@ server_configuration::ptr server_configuration::instance() {
 server_configuration::server_configuration()
 :is_first_configurated(false)
 {
+    server_vers.push_back(std::make_pair(std::tr1::regex("^a1.*$"), "anderius"));
+    server_vers.push_back(std::make_pair(std::tr1::regex("^cr.*$"), "cr"));
+    server_vers.push_back(std::make_pair(std::tr1::regex("^g6.*$"), "gostown"));
+    server_vers.push_back(std::make_pair(std::tr1::regex("^u1.*$"), "united"));
+    server_vers.push_back(std::make_pair(std::tr1::regex("^.*$"), "sa"));
 }
 
 server_configuration::~server_configuration() {
@@ -164,7 +169,7 @@ std::string server_configuration::get_trimed_expression(std::string const& expr)
     return boost::erase_all_copy(expr, " ");
 }
 
-void server_configuration::calc_vals(expressions_t const& expressions, expressions_vals_t& expressions_vals) {
+void server_configuration::calc_vals(expressions_t const& expressions, expressions_vals_t& expressions_vals) const {
     expressions_vals.clear();
     expressions_vals.reserve(expressions.size());
     integer_expression_calc calc;
@@ -195,10 +200,6 @@ void server_configuration::reconfig_on_changed_vals() {
 namespace { // Описание переменных препроцессора
     // Константы
     std::string const preprocessor_game_name        = "game";
-    std::string const preprocessor_game_sa          = "sa";
-    std::string const preprocessor_game_united      = "united";
-    std::string const preprocessor_game_gostown     = "gostown";
-    std::string const preprocessor_game_anderius    = "anderius";
 
     std::string const preprocessor_ver_name         = "ver";
 
@@ -218,7 +219,7 @@ namespace { // Описание переменных препроцессора
     std::string const preprocessor_players_max_name = "players_max";
 } // namespace {
 
-buffer_ptr_c_t server_configuration::get_preprocessor_params() {
+buffer_ptr_c_t server_configuration::get_preprocessor_params() const {
     std::string preprocessor_game;
     std::string preprocessor_ver;
     std::string preprocessor_debug;
@@ -226,22 +227,14 @@ buffer_ptr_c_t server_configuration::get_preprocessor_params() {
     std::string preprocessor_bind_ip;
 
     {
-        samp::api::ptr api_ptr = samp::api::instance();
-        std::string query_version = api_ptr->get_server_var_as_string("version");
+        std::string query_version = samp::api::instance()->get_server_var_as_string("version");
 
-        if (boost::starts_with(query_version, "a1")) {
-            preprocessor_game = preprocessor_game_anderius;
+        BOOST_FOREACH(server_vers_t::value_type const& pair, server_vers) {
+            if (std::tr1::regex_match(query_version, pair.first)) {
+                preprocessor_game = pair.second;
+                break;
+            }
         }
-        else if (boost::starts_with(query_version, "u1") || "GTA:U" == query_version) {
-            preprocessor_game = preprocessor_game_united;
-        }
-        else if (boost::starts_with(query_version, "g6")) {
-            preprocessor_game = preprocessor_game_gostown;
-        }
-        else {
-            preprocessor_game = preprocessor_game_sa;
-        }
-
         {
 #       ifndef NDEBUG
             // В режиме отладки
@@ -258,7 +251,7 @@ buffer_ptr_c_t server_configuration::get_preprocessor_params() {
 #       endif // ifdef DEVELOP
 
 
-        preprocessor_bind_ip = api_ptr->get_server_var_as_string("bind");
+        preprocessor_bind_ip = samp::api::instance()->get_server_var_as_string("bind");
     }
 
     buffer::ptr buff(new buffer);

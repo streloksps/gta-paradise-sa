@@ -252,6 +252,7 @@
       <Filter>core\samp\pawn</Filter>
     </ClCompile>
     <ClCompile Include="..\src\player_ban_serial.cpp" />
+    <ClCompile Include="..\src\player_ban_serial_item.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\core\buffer\buffer.hpp">
@@ -645,6 +646,7 @@
     <ClInclude Include="..\src\core\samp\pawn\pawn_marshaling_params.hpp">
       <Filter>core\samp\pawn</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\player_ban_serial_item.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\src\windows\freemode.rc">

@@ -24,7 +24,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -150,6 +150,7 @@
     <ClCompile Include="..\src\player_animation.cpp" />
     <ClCompile Include="..\src\player_authorization.cpp" />
     <ClCompile Include="..\src\player_ban_serial.cpp" />
+    <ClCompile Include="..\src\player_ban_serial_item.cpp" />
     <ClCompile Include="..\src\player_chat.cpp" />
     <ClCompile Include="..\src\player_chat_automute_meaningless.cpp" />
     <ClCompile Include="..\src\player_classes.cpp" />
@@ -181,6 +182,7 @@
     <ClCompile Include="..\src\weapons.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +321,7 @@
     <ClInclude Include="..\src\player_animation_t.hpp" />
     <ClInclude Include="..\src\player_authorization.hpp" />
     <ClInclude Include="..\src\player_ban_serial.hpp" />
+    <ClInclude Include="..\src\player_ban_serial_item.hpp" />
     <ClInclude Include="..\src\player_chat.hpp" />
     <ClInclude Include="..\src\player_chat_automute_meaningless.hpp" />
     <ClInclude Include="..\src\player_chat_automute_meaningless_t.hpp" />

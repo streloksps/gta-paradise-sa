@@ -53,7 +53,7 @@ namespace samp {
     }
     namespace {
         //Заменяет вызов функции на наш. Возращает истину, если смог заменить
-        bool overwrite_instruction(DWORD address, char const* prefix, size_t prefix_size, DWORD new_value) {
+        inline bool overwrite_instruction(DWORD address, char const* prefix, size_t prefix_size, DWORD new_value) {
             bool rezult = false;
 #           ifdef WIN32
             DWORD d, ds;
@@ -164,12 +164,11 @@ namespace samp {
         }
 
         int API_CALL on_recvfrom(SOCKET s, char* buf, int len, int flags, sockaddr_in* from, socklen_t* fromlen) {
-            int recv_size = recvfrom(s, buf, len, flags, (sockaddr*)from, fromlen);
             if (!hook_events::is_hook_network) {
                 // Запрещена обработка
-                return recv_size;
+                return recvfrom(s, buf, len, flags, (sockaddr*)from, fromlen);
             }
-            
+
             { // Вызываем очистку
                 static int counter = 0;
                 ++counter;
@@ -178,41 +177,46 @@ namespace samp {
                     counter = 0;
                 }
             }
-            
-            if (SOCKET_ERROR != recv_size && buf && from) {
-                //Вызываем наш обработчик
-                unsigned int ip = ntohl(from->sin_addr.s_addr);
-                unsigned short port = ntohs(from->sin_port);
-                
-                for (int stress_index = 0; stress_index <= hook_events::stress_load_count; ++stress_index) {
+
+            for (;;) {
+                // В случае, если что-то блочим, то выгребаем весь буффер приема, а не только одно сообщение,
+                // иначе самп будет засыпать раньше нужного момента и пойдут лаги
+                int recv_size = recvfrom(s, buf, len, flags, (sockaddr*)from, fromlen);
+
+                if (SOCKET_ERROR != recv_size && buf && from) {
+                    //Вызываем наш обработчик
+                    unsigned int ip = ntohl(from->sin_addr.s_addr);
+                    unsigned short port = ntohs(from->sin_port);
+
                     on_recive_network_data_from_fast(ip, recv_size);
                     if (!on_network_activity(ip)) {
                         // Если адрес забанен - то блокируем сетевую активность на него
-                        return SOCKET_ERROR;
+                        continue;
                     }
                     on_recive_network_data_from(ip, port, recv_size);
                     if (!on_recive_network_hook_rcon_cmd(buf, recv_size, ip, port)) {
                         // Если ошибка парсинга ркона, то блочим ркон
-                        return SOCKET_ERROR;
+                        continue;
                     }
                     if (hook_events::is_disable_brief_description && on_recive_network_is_brief_description(buf, recv_size)) {
-                        return SOCKET_ERROR;
+                        continue;
                     }
                     if (hook_events::is_process_connection_request && on_recive_network_is_connection_request(buf, recv_size)) {
                         // Мы получили запрос на подключение
                         on_network_connection_request_action action = on_recive_network_connection_request_get_response(ip);
                         if (on_network_connection_request_action_drop == action) {
-                            return SOCKET_ERROR;
+                            continue;
                         }
                         else if (on_network_connection_request_action_send_full == action) {
                             const char server_full_data[] = {0x21, 0x00};
                             sendto(s, server_full_data, sizeof(server_full_data), 0, reinterpret_cast<sockaddr*>(from), *fromlen);
-                            return SOCKET_ERROR;
+                            continue;
                         }
                     }
+                    return recv_size;
                 }
+                return SOCKET_ERROR;
             }
-            return recv_size;
         }
 
         int API_CALL on_sendto(SOCKET s, char* buf, int len, int flags, sockaddr_in const* to, socklen_t tolen) {
@@ -232,12 +236,10 @@ namespace samp {
                     if (SOCKET_ERROR != rezult) {
                         //Вызываем наш обработчик
                         on_send_network_data_to(ip, port, rezult);
-                        for (int stress_index = 0; stress_index < hook_events::stress_load_count; ++stress_index) {
-                            on_send_network_data_to_fast(ip, len);
-                            on_network_activity(ip);
-                            on_send_network_hook_rcon_cmd(buf, len, ip, port);
-                            on_send_network_data_to(ip, port, rezult);
-                        }
+                        on_send_network_data_to_fast(ip, len);
+                        on_network_activity(ip);
+                        on_send_network_hook_rcon_cmd(buf, len, ip, port);
+                        on_send_network_data_to(ip, port, rezult);
                     }
                 }
             }
@@ -289,25 +291,21 @@ namespace samp {
     bool    hook_events::is_hook_network = false;
     bool    hook_events::is_disable_brief_description = false;
     bool    hook_events::is_process_connection_request = false;
-    int     hook_events::stress_load_count = 0;
 
     void hook_events::configure_pre() {
         is_hook_network_internal = false;
         is_hook_network = false;
         is_disable_brief_description = false;
         is_process_connection_request = false;
-        stress_load_count = 0;
     }
 
     void hook_events::configure(buffer::ptr const& buff, def_t const& def) {
         SERIALIZE_NAMED_ITEM(is_hook_network_internal, "is_hook_network");
-        SERIALIZE_ITEM(stress_load_count);
         SERIALIZE_ITEM(is_disable_brief_description);
         SERIALIZE_ITEM(is_process_connection_request);
     }
 
     void hook_events::configure_post() {
-        if (stress_load_count < 0) stress_load_count = 0;
         is_hook_network = is_hook_network_internal;
     }
 

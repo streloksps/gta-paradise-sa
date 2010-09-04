@@ -35,7 +35,6 @@ namespace samp {
         static bool is_hook_network;
         static bool is_disable_brief_description;
         static bool is_process_connection_request;
-        static int stress_load_count; // 0, если обычное использование
     private:
         static bool is_hook_network_internal;
     };
